@@ -1,0 +1,1947 @@
+- title: Authentification
+  slug: authentication
+  description: Sécuriser vos identifiants de connexion en ligne
+  icon: password
+  color: yellow
+  intro: >-
+    La plupart des violations de données signalées sont causées par l'utilisation de mots de passe faibles, par défaut ou volés
+    (selon [ce rapport Verizon](http://www.verizonenterprise.com/resources/reports/rp_dbir-2016-executive-summary_xg_en.pdf)).
+    Utilisez des mots de passe longs, forts et uniques, gérez-les dans un gestionnaire de mots de passe sécurisé, activez
+    l'authentification à deux facteurs, surveillez les violations et soyez prudent lors de la connexion à vos comptes.
+  checklist:
+  - point: Utilisez un mot de passe fort
+    priority: Essentiel
+    details: >-
+      Si votre mot de passe est trop court ou contient des mots du dictionnaire, des lieux ou des noms, il peut être facilement
+      craqué par force brute ou deviné par quelqu'un. La façon la plus simple de créer un mot de passe fort est de le rendre long
+      (12+ caractères) - envisagez d'utiliser une "phrase de passe", composée de plusieurs mots. Alternativement,
+      utilisez un générateur de mots de passe pour créer un mot de passe long, fort et aléatoire. Essayez
+      [HowSecureIsMyPassword.net](https://howsecureismypassword.net) pour avoir une idée de la rapidité avec laquelle les mots de passe
+      courants peuvent être craqués. En savoir plus sur la création de mots de passe forts :
+      [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/)
+
+  - point: Ne réutilisez pas les mots de passe
+    priority: Essentiel
+    details: >-
+      Si quelqu'un réutilise un mot de passe et qu'un site sur lequel il a un compte subit une fuite, un criminel pourrait facilement
+      accéder sans autorisation à ses autres comptes. Cela se fait généralement par des demandes de connexion automatisées à grande échelle,
+      et cela s'appelle le "Credential Stuffing". Malheureusement, c'est trop courant, mais il est simple de s'en protéger - utilisez un
+      mot de passe différent pour chacun de vos comptes en ligne.
+
+  - point: Utilisez un gestionnaire de mots de passe sécurisé
+    priority: Essentiel
+    details: >-
+      Pour la plupart des gens, il sera presque impossible de se souvenir de centaines de mots de passe forts et uniques.
+      Un gestionnaire de mots de passe est une application qui génère, stocke et remplit automatiquement vos identifiants de connexion.
+      Tous vos mots de passe seront chiffrés avec un mot de passe maître (que vous devez retenir, et qui doit être très fort).
+      La plupart des gestionnaires de mots de passe ont des extensions de navigateur et des applications mobiles, donc quel que soit l'appareil
+      que vous utilisez, vos mots de passe peuvent être remplis automatiquement. Un bon choix est
+      [Bitwarden](https://awesome-privacy.xyz/essentials/password-managers/bitwarden), ou consultez
+      [Gestionnaires de mots de passe recommandés](https://awesome-privacy.xyz/essentials/password-managers)
+
+  - point: Évitez de partager les mots de passe
+    priority: Essentiel
+    details: >-
+      Bien qu'il puisse y avoir des moments où vous devez partager l'accès à un compte avec une autre personne, vous devriez généralement
+      éviter de le faire car cela facilite la compromission du compte. Si vous devez absolument partager un mot de passe, par exemple
+      lorsque vous travaillez en équipe avec un compte partagé, cela devrait être fait via les fonctionnalités intégrées à un gestionnaire de mots de passe.
+
+  - point: Activez l'authentification à deux facteurs (2FA)
+    priority: Essentiel
+    details: >-
+      La 2FA consiste à fournir à la fois quelque chose que vous connaissez (un mot de passe) et quelque chose que vous possédez (comme un
+      code sur votre téléphone) pour vous connecter. Cela signifie que si quelqu'un obtient votre mot de passe (par exemple via du phishing,
+      un malware ou une fuite de données), il ne pourra pas se connecter à votre compte. C'est facile à configurer, téléchargez
+      [une application d'authentification](https://github.com/Lissy93/awesome-privacy#2-factor-authentication)
+      sur votre téléphone, puis allez dans les paramètres de sécurité de votre compte et suivez les étapes pour activer la 2FA. La prochaine
+      fois que vous vous connecterez sur un nouvel appareil, vous serez invité à entrer le code affiché dans l'application sur votre téléphone
+      (cela fonctionne sans internet, et le code change généralement toutes les 30 secondes).
+
+  - point: Gardez les codes de secours en sécurité
+    priority: Essentiel
+    details: >-
+      Lorsque vous activez l'authentification à plusieurs facteurs, vous recevrez généralement plusieurs codes que vous pouvez utiliser si
+      votre méthode de 2FA est perdue, cassée ou indisponible. Gardez ces codes dans un endroit sûr pour éviter de les perdre ou qu'ils
+      soient accessibles sans autorisation. Vous devriez les stocker sur papier ou dans un endroit sûr sur disque (par exemple dans un
+      stockage hors ligne ou dans un fichier/lecteur chiffré). Ne les stockez pas dans votre gestionnaire de mots de passe, car les sources
+      de 2FA et les mots de passe doivent être conservés séparément.
+
+  - point: Inscrivez-vous aux alertes de violation
+    priority: Optionnel
+    details: >-
+      Après qu'un site web subit une violation de données importante, les données divulguées finissent souvent sur internet. Il existe
+      plusieurs sites web qui collectent ces enregistrements divulgués et vous permettent de rechercher votre adresse e-mail pour vérifier
+      si vous figurez dans l'une de leurs listes. [Firefox Monitor](https://monitor.firefox.com), [Have I been pwned](https://haveibeenpwned.com)
+      et [DeHashed](https://dehashed.com) vous permettent de vous inscrire à une surveillance, où ils vous notifieront si votre adresse e-mail
+      apparaît dans de nouveaux ensembles de données. Il est utile de le savoir le plus tôt possible pour que vous puissiez changer vos
+      mots de passe pour les comptes concernés. [Have I been pwned](https://awesome-privacy.xyz/security-tools/online-tools/have-i-been-pwned)
+      propose également une notification à l'échelle du domaine, où vous pouvez recevoir des alertes si des adresses e-mail sous votre domaine
+      entier apparaissent (utile si vous utilisez des alias pour [le transfert anonyme de courrier](https://github.com/Lissy93/awesome-privacy#anonymous-mail-forwarding)).
+
+  - point: Protégez votre mot de passe/ code PIN
+    priority: Optionnel
+    details: >-
+      Lorsque vous tapez votre mot de passe dans des lieux publics, assurez-vous que vous n'êtes pas en ligne directe avec une caméra de
+      surveillance et que personne ne peut voir par-dessus votre épaule. Couvrez votre mot de passe ou code PIN pendant que vous le tapez,
+      et ne révélez aucun mot de passe en texte clair à l'écran.
+
+  - point: Mettez à jour les mots de passe critiques périodiquement
+    priority: Optionnel
+    details: >-
+      Les fuites et violations de bases de données sont courantes, et il est probable que plusieurs de vos mots de passe sont déjà quelque
+      part en ligne. Mettre à jour occasionnellement les mots de passe des comptes critiques pour la sécurité peut aider à atténuer cela.
+      Mais à condition que tous vos mots de passe soient longs, forts et uniques, il n'est pas nécessaire de le faire trop souvent - une fois
+      par an devrait suffire. Forcer les changements de mot de passe obligatoires au sein des organisations est
+      [déconseillé](https://duo.com/decipher/microsoft-will-no-longer-recommend-forcing-periodic-password-changes),
+      car cela encourage les collègues à choisir des mots de passe plus faibles.
+
+  - point: Ne sauvegardez pas vos mots de passe dans les navigateurs
+    priority: Optionnel
+    details: >-
+      La plupart des navigateurs modernes proposent de sauvegarder vos identifiants lorsque vous vous connectez à un site. Ne permettez pas
+      cela, car ils ne sont pas toujours chiffrés, ce qui pourrait permettre à quelqu'un d'accéder à vos comptes. Utilisez plutôt un
+      gestionnaire de mots de passe dédié pour stocker (et remplir automatiquement) vos mots de passe.
+
+  - point: Évitez de vous connecter sur l'appareil de quelqu'un d'autre
+    priority: Optionnel
+    details: >-
+      Évitez de vous connecter sur l'ordinateur d'une autre personne, car vous ne pouvez pas être sûr que son système est propre. Soyez
+      particulièrement prudent avec les machines publiques, car les logiciels malveillants et le suivi y sont plus courants. Utiliser
+      l'appareil de quelqu'un d'autre est particulièrement dangereux avec des comptes critiques comme la banque en ligne. Lorsque vous
+      utilisez l'appareil de quelqu'un d'autre, assurez-vous que vous êtes dans une session privée/incognito (Utilisez Ctrl+Maj+N/
+      Cmd+Maj+N). Cela demandera au navigateur de ne pas sauvegarder vos identifiants, cookies et historique de navigation.
+
+  - point: Évitez les indices de mot de passe
+    priority: Optionnel
+    details: >-
+      Certains sites vous permettent de définir des indices de mot de passe. Souvent, il est très facile de deviner les réponses. Dans les
+      cas où les indices de mot de passe sont obligatoires, utilisez des réponses aléatoires et enregistrez-les dans votre gestionnaire de
+      mots de passe (`Nom de la première école : 6D-02-8B-!a-E8-8F-81`).
+
+  - point: Ne répondez jamais honnêtement aux questions de sécurité en ligne
+    priority: Optionnel
+    details: >-
+      Si un site pose des questions de sécurité (comme le lieu de naissance, le nom de jeune fille de la mère ou la première voiture, etc.),
+      ne fournissez pas de réponses réelles. Il est trivial pour les pirates de trouver ces informations en ligne ou via l'ingénierie sociale.
+      Au lieu de cela, créez une réponse fictive et stockez-la dans votre gestionnaire de mots de passe. Utiliser des mots réels est mieux
+      que des caractères aléatoires, [expliqué ici](https://news.ycombinator.com/item?id=29244870).
+
+  - point: N'utilisez pas de code PIN à 4 chiffres
+    priority: Optionnel
+    details: >-
+      N'utilisez pas un code PIN court pour accéder à votre smartphone ou ordinateur. Utilisez plutôt un mot de passe texte ou un code PIN
+      beaucoup plus long. Les phrases de passe numériques sont faciles à craquer (un code PIN à 4 chiffres a 10 000 combinaisons, contre
+      7,4 millions pour un code alphanumérique de 4 caractères).
+
+  - point: Évitez d'utiliser les SMS pour la 2FA
+    priority: Optionnel
+    details: >-
+      Lorsque vous activez l'authentification à plusieurs facteurs, optez pour des codes basés sur une application ou un jeton matériel, si
+      pris en charge. Les SMS sont susceptibles à plusieurs menaces courantes, comme le
+      [SIM-swapping](https://www.maketecheasier.com/sim-card-hijacking)
+      et l'[interception](https://secure-voice.com/ss7_attacks). Il n'y a également aucune garantie sur la manière dont votre numéro de
+      téléphone sera stocké, ou à quoi il sera utilisé. D'un point de vue pratique, les SMS ne fonctionnent que lorsque vous avez du signal,
+      et peuvent être lents. Si un site web ou un service nécessite l'utilisation d'un numéro SMS pour la récupération, envisagez d'acheter
+      un deuxième numéro de téléphone prépayé uniquement utilisé pour la récupération de compte dans ces cas.
+
+  - point: Évitez d'utiliser votre gestionnaire de mots de passe pour générer des OTP
+    priority: Avancé
+    details: >-
+      De nombreux gestionnaires de mots de passe sont également capables de générer des codes 2FA. Il est préférable de ne pas utiliser votre
+      gestionnaire de mots de passe principal comme authentificateur 2FA, car il deviendrait un point de défaillance unique en cas de
+      compromission. Utilisez plutôt une [application d'authentification dédiée](https://github.com/Lissy93/awesome-privacy#2-factor-authentication)
+      sur votre téléphone ou ordinateur portable.
+
+  - point: Évitez le déverrouillage facial
+    priority: Avancé
+    details: >-
+      La plupart des téléphones et ordinateurs portables offrent une fonctionnalité de reconnaissance faciale pour l'authentification,
+      utilisant la caméra pour comparer une capture de votre visage avec un hachage stocké. Cela peut être très pratique, mais il existe de
+      nombreuses façons de [le tromper](https://www.forbes.com/sites/jvchamary/2017/09/18/security-apple-face-id-iphone-x/)
+      et d'accéder à l'appareil, via des photos numériques et des reconstructions à partir de séquences de vidéosurveillance. Contrairement
+      à votre mot de passe, il y a probablement des photos de votre visage sur internet, et des vidéos enregistrées par des caméras de
+      surveillance.
+
+  - point: Méfiez-vous des keyloggers
+    priority: Avancé
+    details: >-
+      Un [keylogger matériel](https://fr.wikipedia.org/wiki/Keylogger_mat%C3%A9riel) est un dispositif physique placé entre
+      votre clavier et le port USB, qui intercepte toutes les frappes, et relaie parfois les données vers un serveur distant.
+      Cela donne à un pirate l'accès à tout ce que vous tapez, y compris les mots de passe. La meilleure façon de vous protéger est de
+      vérifier votre connexion USB après que votre PC ait été laissé sans surveillance. Il est également possible que des keyloggers soient
+      placés à l'intérieur du boîtier du clavier, alors recherchez tout signe de manipulation du boîtier, et envisagez d'apporter votre
+      propre clavier au travail. Les données tapées sur un clavier virtuel, collées à partir du presse-papiers ou remplies automatiquement
+      par un gestionnaire de mots de passe ne peuvent pas être interceptées par un keylogger matériel.
+
+  - point: Envisagez un jeton matériel
+    priority: Avancé
+    details: >-
+      Une clé de sécurité U2F/ FIDO2 est un dispositif USB (ou NFC) que vous insérez lors de la connexion à un service en ligne, pour
+      vérifier votre identité, au lieu d'entrer un OTP depuis votre authentificateur. [SoloKey](https://solokeys.com) et
+      [NitroKey](https://www.nitrokey.com) sont des exemples de telles clés. Elles offrent plusieurs avantages en matière de sécurité,
+      car le navigateur communique directement avec le dispositif et ne peut pas être trompé sur l'hôte qui demande l'authentification,
+      car le certificat TLS est vérifié. [Ce post](https://security.stackexchange.com/a/71704) est
+      une bonne explication de la sécurité de l'utilisation des jetons FIDO U2F. Bien sûr, il est important de stocker la clé physique
+      dans un endroit sûr, ou de la garder sur vous. Certains comptes en ligne permettent d'activer plusieurs méthodes de 2FA.
+
+  - point: Envisagez un gestionnaire de mots de passe hors ligne
+    priority: Avancé
+    details: >-
+      Pour une sécurité accrue, un gestionnaire de mots de passe chiffré hors ligne vous donnera un contrôle total sur vos données.
+      [KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass) est un choix populaire, avec de nombreux [plugins](https://[KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass).info/plugins.html) et
+      des forks communautaires avec une compatibilité et une fonctionnalité supplémentaires. Les clients populaires incluent : [KeePassXC](https://keepassxc.org)
+      (bureau), [KeePassDX](https://www.keepassdx.com) (Android) et [StrongBox](https://apps.apple.com/us/app/strongbox-password-safe/id897283731)
+      (iOS). L'inconvénient est que cela peut être légèrement moins pratique pour certains, et il vous incombera de le sauvegarder,
+      et de le stocker en toute sécurité.
+
+  - point: "Envisagez des noms d'utilisateur uniques"
+    priority: "Avancé"
+    details: >-
+      Avoir des mots de passe différents pour chaque compte est un bon premier pas, mais si vous utilisez également un nom d'utilisateur,
+      un e-mail ou un numéro de téléphone unique pour vous connecter, il sera beaucoup plus difficile pour quiconque d'essayer 
+      d'obtenir un accès non autorisé. La méthode la plus simple pour gérer plusieurs e-mails est d'utiliser des alias générés 
+      automatiquement pour le transfert de courrier anonyme. Cela signifie que [n'importe quoi]@votredomaine.com arrivera dans 
+      votre boîte de réception, vous permettant d'utiliser un e-mail différent pour chaque compte.
+    softwareLinks:
+      - title: "Password Managers"
+        url: "https://github.com/Lissy93/awesome-privacy#password-managers"
+      - title: "2-Factor Authentication"
+        url: "https://github.com/Lissy93/awesome-privacy#2-factor-authentication"
+
+- title: "Navigation Web"
+  slug: "web-browsing"
+  description: "Éviter le traçage, la censure et la collecte de données en ligne"
+  icon: "browser"
+  intro: >-
+    La plupart des sites web sur Internet utilisent une forme de traçage, souvent pour obtenir
+    des informations sur le comportement et les préférences de leurs utilisateurs. Ces données peuvent être 
+    incroyablement détaillées, et sont donc extrêmement précieuses pour les entreprises, les gouvernements 
+    et les voleurs de propriété intellectuelle. Les violations et fuites de données sont courantes, et 
+    la désanonymisation de l'activité web des utilisateurs est souvent une tâche triviale.
+  checklist:
+  - point: "Bloquez les publicités"
+    priority: "Essentiel"
+    details: >-
+      L'utilisation d'un bloqueur de publicités peut aider à améliorer votre confidentialité en bloquant les traceurs
+      que les publicités mettent en œuvre. uBlock Origin est une extension de navigateur très efficace et open source,
+      développée par Raymond Hill. Lorsque des publicités tierces sont affichées sur une page web, elles ont la capacité
+      de vous suivre, collectant des informations personnelles sur vous et vos habitudes.
+
+  - point: "Assurez-vous que le site web est légitime"
+    priority: "Essentiel"
+    details: >-
+      Cela peut sembler évident, mais lorsque vous vous connectez à des comptes en ligne, vérifiez que l'URL est correcte.
+      Stocker les sites fréquemment visités dans vos favoris est un bon moyen de s'assurer que l'URL est facile à trouver.
+      Lors de la visite de nouveaux sites web, recherchez les signes courants qu'il pourrait être dangereux : avertissements
+      du navigateur, redirections, spam sur site et pop-ups.
+
+  - point: "Méfiez-vous des logiciels malveillants du navigateur"
+    priority: "Essentiel"
+    details: >-
+      Votre système ou navigateur peut être compromis par des logiciels espions, des mineurs, des détourneurs de navigateur,
+      des redirections malveillantes, des logiciels publicitaires, etc. Vous pouvez généralement rester protégé simplement en
+      ignorant les pop-ups, en faisant attention à ce sur quoi vous cliquez, en ne continuant pas vers un site web si votre
+      navigateur vous avertit qu'il pourrait être malveillant.
+
+  - point: "Utilisez un navigateur respectueux de la vie privée"
+    priority: "Essentiel"
+    details: >-
+      Firefox (avec quelques ajustements) et Brave sont des navigateurs sécurisés et respectueux de la vie privée. Les deux
+      sont rapides, open source, conviviaux et disponibles sur tous les principaux systèmes d'exploitation. Votre navigateur
+      a accès à tout ce que vous faites en ligne, donc si possible, évitez Google Chrome, Edge et Safari car (sans une
+      configuration correcte) tous les trois collectent des données d'utilisation.
+
+  - point: "Utilisez un moteur de recherche privé"
+    priority: "Essentiel"
+    details: >-
+      L'utilisation d'un moteur de recherche préservant la confidentialité et ne traçant pas réduira le risque que vos
+      termes de recherche soient enregistrés ou utilisés contre vous. Considérez DuckDuckGo ou Qwant. Google met en œuvre
+      des politiques de traçage incroyablement invasives et a un historique d'affichage de résultats de recherche biaisés.
+
+  - point: "Supprimez les extensions de navigateur inutiles"
+    priority: "Essentiel"
+    details: >-
+      Les extensions peuvent voir, enregistrer ou modifier tout ce que vous faites dans le navigateur, et certaines
+      applications de navigateur d'apparence innocente ont des intentions malveillantes. Les sites web peuvent voir
+      quelles extensions vous avez installées et peuvent utiliser cela pour améliorer votre empreinte digitale.
+
+  - point: "Gardez le navigateur à jour"
+    priority: "Essentiel"
+    details: >-
+      Les vulnérabilités du navigateur sont constamment découvertes et corrigées, il est donc important de le maintenir
+      à jour pour éviter une exploitation zero-day. Vous pouvez voir quelle version de navigateur vous utilisez ici,
+      ou suivre ce guide pour les instructions sur la mise à jour.
+
+  - point: "Vérifiez la présence de HTTPS"
+    priority: "Essentiel"
+    details: >-
+      Si vous saisissez des informations sur un site web non-HTTPS, ces données sont transportées non chiffrées et peuvent
+      donc être lues par quiconque les intercepte. Ne saisissez aucune donnée sur un site web non-HTTPS, mais ne laissez
+      pas non plus le cadenas vert vous donner un faux sentiment de sécurité.
+
+  - point: "Utilisez DNS-over-HTTPS"
+    priority: "Essentiel"
+    details: >-
+      Le DNS traditionnel fait des requêtes en texte clair que tout le monde peut voir. Il permet l'espionnage et
+      la manipulation des données DNS via des attaques homme-du-milieu. Le DNS-over-HTTPS effectue la résolution DNS
+      via le protocole HTTPS, ce qui signifie que les données entre vous et votre résolveur DNS sont chiffrées.
+
+  - point: "Conteneurs multi-sessions"
+    priority: "Essentiel"
+    details: >-
+      La compartimentation est vraiment importante pour garder différents aspects de votre navigation séparés. Par
+      exemple, utiliser différents profils pour le travail, la navigation générale, les médias sociaux, les achats
+      en ligne, etc. réduira le nombre d'associations que les courtiers en données peuvent vous lier.
+
+  - point: "Utilisez la navigation privée"
+    priority: "Essentiel"
+    details: >-
+      Lorsque vous utilisez la machine de quelqu'un d'autre, assurez-vous d'être en session privée/incognito. Cela
+      empêchera l'historique du navigateur, les cookies et certaines données d'être sauvegardés, mais ce n'est pas
+      infaillible - vous pouvez toujours être tracé.
+
+  - point: "Comprenez votre empreinte digitale de navigateur"
+    priority: "Essentiel"
+    details: >-
+      L'empreinte digitale du navigateur est une méthode de traçage incroyablement précise, où un site web vous
+      identifie en fonction des informations de votre appareil. Vous pouvez voir votre empreinte sur amiunique.org
+      - Le but est d'être aussi peu unique que possible.
+
+  - point: "Gérez les cookies"
+    priority: "Essentiel"
+    details: >-
+      Effacer régulièrement les cookies est une étape que vous pouvez prendre pour aider à réduire le traçage par
+      les sites web. Les cookies peuvent également stocker votre jeton de session, qui, s'il est capturé, permettrait
+      à quelqu'un d'accéder à vos comptes sans identifiants.
+
+  - point: "Bloquez les cookies tiers"
+    priority: "Essentiel"
+    details: >-
+      Les cookies tiers sont placés sur votre appareil par un site web autre que celui que vous visitez. Cela
+      pose un risque pour la confidentialité, car une entité tierce peut collecter des données de votre session
+      actuelle.
+
+  - point: "Bloquez les traceurs tiers"
+    priority: "Essentiel"
+    details: >-
+      Bloquer les traceurs aidera à empêcher les sites web, les annonceurs, les analyses et plus encore de vous
+      suivre en arrière-plan. Privacy Badger, DuckDuckGo Privacy Essentials, uBlock Origin et uMatrix (avancé)
+      sont tous des bloqueurs de traceurs très efficaces et open source disponibles pour tous les navigateurs majeurs.
+
+  - point: "Méfiez-vous des redirections"
+    priority: "Optionnel"
+    details: >-
+      Bien que certaines redirections soient inoffensives, d'autres, comme les redirections non validées, sont utilisées 
+      dans les attaques de phishing et peuvent faire paraître un lien malveillant légitime. Si vous avez des doutes sur 
+      une URL de redirection, vous pouvez vérifier où elle mène avec un outil comme RedirectDetective.
+
+  - point: "Ne vous connectez pas à votre navigateur"
+    priority: "Optionnel"
+    details: >-
+      De nombreux navigateurs vous permettent de vous connecter pour synchroniser l'historique, les favoris et d'autres 
+      données de navigation entre les appareils. Cependant, cela permet non seulement une collecte de données supplémentaire, 
+      mais augmente aussi la surface d'attaque en fournissant une autre voie pour qu'un acteur malveillant obtienne des 
+      informations personnelles.
+
+  - point: "Désactivez les services de prédiction"
+    priority: "Optionnel"
+    details: >-
+      Certains navigateurs proposent des services de prédiction, où vous recevez des résultats de recherche en temps réel 
+      ou l'auto-complétion d'URL. Si cette fonction est activée, les données sont envoyées à Google (ou votre moteur de 
+      recherche par défaut) à chaque frappe, plutôt que lorsque vous appuyez sur entrée.
+
+  - point: "Évitez G Translate pour les pages web"
+    priority: "Optionnel"
+    details: >-
+      Lorsque vous visitez une page web écrite dans une langue étrangère, on peut vous proposer d'installer l'extension 
+      Google Translate. Sachez que Google collecte toutes les données (y compris les champs de saisie), ainsi que les 
+      détails de l'utilisateur actuel. Utilisez plutôt un service de traduction non lié à votre navigateur.
+
+  - point: "Désactivez les notifications web"
+    priority: "Optionnel"
+    details: >-
+      Les notifications push du navigateur sont une méthode courante utilisée par les criminels pour vous inciter à 
+      cliquer sur leur lien, car il est facile de falsifier la source. Soyez conscient de cela, et pour les instructions 
+      sur la désactivation des notifications du navigateur, consultez cet article.
+
+  - point: "Désactivez les téléchargements automatiques"
+    priority: "Optionnel"
+    details: >-
+      Les téléchargements furtifs sont une méthode courante pour installer des fichiers nuisibles sur l'appareil d'un 
+      utilisateur. Cela peut être atténué en désactivant les téléchargements automatiques de fichiers, et en étant 
+      prudent avec les sites web qui vous invitent à télécharger des fichiers de manière inattendue.
+
+  - point: "Interdire l'accès aux capteurs"
+    priority: "Optionnel"
+    details: >-
+      Les sites web mobiles peuvent accéder aux capteurs de votre appareil sans demander. Si vous accordez ces permissions 
+      à votre navigateur une fois, tous les sites web peuvent utiliser ces capacités, sans permission ni notification.
+
+  - point: "Désactiver la localisation"
+    priority: "Optionnel"
+    details: >-
+      Les services de localisation permettent aux sites de demander votre position physique pour améliorer votre expérience. 
+      Cela devrait être désactivé dans les paramètres. Notez qu'il existe encore d'autres méthodes pour déterminer votre 
+      position approximative.
+
+  - point: "Désactiver l'accès à la caméra/au microphone"
+    priority: "Optionnel"
+    details: >-
+      Vérifiez les paramètres du navigateur pour vous assurer qu'aucun site web n'a accès à la webcam ou au microphone. 
+      Il peut aussi être bénéfique d'utiliser une protection physique comme un cache webcam et un bloqueur de microphone.
+
+  - point: "Désactiver la sauvegarde des mots de passe du navigateur"
+    priority: "Optionnel"
+    details: >-
+      Ne permettez pas à votre navigateur de stocker les noms d'utilisateur et mots de passe. Ceux-ci peuvent être 
+      facilement consultés ou accédés. Utilisez plutôt un gestionnaire de mots de passe.
+
+  - point: "Désactiver l'auto-remplissage du navigateur"
+    priority: "Optionnel"
+    details: >-
+      Désactivez l'auto-remplissage pour toutes les informations confidentielles ou personnelles. Cette fonctionnalité 
+      peut être dangereuse si votre navigateur est compromis de quelque manière que ce soit. Utilisez plutôt la 
+      fonction Notes de votre gestionnaire de mots de passe.
+
+  - point: "Protection contre l'attaque Exfil"
+    priority: "Optionnel"
+    details: >-
+      L'attaque CSS Exfiltrate est une méthode où les identifiants et autres détails sensibles peuvent être récupérés 
+      avec du CSS pur. Vous pouvez rester protégé avec le plugin CSS Exfil Protection.
+
+  - point: "Désactiver ActiveX"
+    priority: "Optionnel"
+    details: >-
+      ActiveX est une API d'extension de navigateur intégrée à Microsoft IE et activée par défaut. Elle n'est plus 
+      beaucoup utilisée, mais comme elle donne aux plugins des droits d'accès intimes et peut être dangereuse, vous 
+      devriez la désactiver.
+
+  - point: "Désactiver WebRTC"
+    priority: "Optionnel"
+    details: >-
+      WebRTC permet la communication audio/vidéo de haute qualité et le partage de fichiers pair à pair directement 
+      depuis le navigateur. Cependant, cela peut constituer une fuite de confidentialité. Pour en savoir plus, 
+      consultez ce guide.
+
+  - point: "Falsifier la signature HTML5 Canvas"
+    priority: "Optionnel"
+    details: >-
+      Le Canvas Fingerprinting permet aux sites web d'identifier et de suivre les utilisateurs très précisément. Vous 
+      pouvez utiliser l'extension Canvas-Fingerprint-Blocker pour falsifier votre empreinte digitale ou utiliser Tor.
+
+  - point: "Falsifier l'User Agent"
+    priority: "Optionnel"
+    details: >-
+      L'user agent indique au site web quel appareil, navigateur et version vous utilisez. Changer d'user agent 
+      périodiquement est une petite étape que vous pouvez faire pour devenir moins unique.
+
+  - point: "Ne pas tenir compte du DNT"
+    priority: "Optionnel"
+    details: >-
+      L'activation de Do Not Track a un impact très limité, car de nombreux sites web ne respectent pas ou ne suivent 
+      pas cette option. Comme elle est rarement utilisée, elle peut aussi ajouter à votre signature, vous rendant plus unique.
+
+  - point: "Prévenir le suivi HSTS"
+    priority: "Optionnel"
+    details: >-
+      HSTS a été conçu pour aider à sécuriser les sites web, mais des préoccupations en matière de confidentialité ont 
+      été soulevées car il permettait aux opérateurs de sites de planter des super-cookies. Il peut être désactivé en 
+      visitant chrome://net-internals/#hsts dans les navigateurs basés sur Chromium.
+
+  - point: "Empêcher les connexions automatiques du navigateur"
+    priority: "Optionnel"
+    details: >-
+      Même lorsque vous n'utilisez pas votre navigateur, il peut appeler à la maison pour signaler l'activité 
+      d'utilisation, les analyses et les diagnostics. Vous pouvez souhaiter désactiver certains de ces éléments, 
+      ce qui peut être fait via les paramètres.
+
+  - point: "Activer l'isolation First-Party"
+    priority: "Optionnel"
+    details: >-
+      L'isolation First-Party signifie que toutes les sources d'identifiants et l'état du navigateur sont limités 
+      en utilisant le domaine de la barre d'URL, ce qui peut grandement réduire le suivi.
+
+  - point: "Supprimer les paramètres de suivi des URLs"
+    priority: "Avancé"
+    details: >-
+      Les sites web ajoutent souvent des paramètres GET supplémentaires aux URLs sur lesquelles vous cliquez, pour 
+      identifier des informations comme la source/le référent. Vous pouvez assainir manuellement, ou utiliser une 
+      extension comme ClearURLs pour supprimer automatiquement les données de suivi des URLs.
+
+  - point: "Sécurité au premier lancement"
+    priority: "Avancé"
+    details: >-
+      Après l'installation d'un navigateur web, la première fois que vous le lancez (avant de configurer ses paramètres 
+      de confidentialité), la plupart des navigateurs appellent à la maison. Par conséquent, après l'installation d'un 
+      navigateur, vous devriez d'abord désactiver votre connexion internet, puis configurer les options de confidentialité 
+      avant de réactiver votre connectivité internet.
+
+  - point: "Utiliser le navigateur Tor"
+    priority: "Avancé"
+    details: >-
+      Le projet Tor fournit un navigateur qui chiffre et route votre trafic à travers plusieurs nœuds, gardant les 
+      utilisateurs à l'abri de l'interception et du suivi. Les principaux inconvénients sont la vitesse et l'expérience 
+      utilisateur.
+
+  - point: "Désactiver JavaScript"
+    priority: "Avancé"
+    details: >-
+      De nombreuses applications web modernes sont basées sur JavaScript, donc le désactiver diminuera grandement votre 
+      expérience de navigation. Mais si vous voulez vraiment aller jusqu'au bout, cela réduira vraiment votre surface 
+      d'attaque.
+  softwareLinks:
+    - title: "Privacy Browsers"
+      url: "https://github.com/Lissy93/awesome-privacy#browsers"
+    - title: "Search Engines"
+      url: "https://github.com/Lissy93/awesome-privacy#search-engines"
+    - title: "Browser Extensions"
+      url: "https://github.com/Lissy93/awesome-privacy#browser-extensions"
+    - title: "Browser & Bookmark Sync"
+      url: "https://github.com/Lissy93/awesome-privacy#browser-sync"
+  color: "emerald"
+
+- title: "Email"
+  slug: "email"
+  description: "Protéger la porte d'entrée de vos comptes en ligne"
+  icon: "email"
+  intro: >-
+    Près de 50 ans après l'envoi du premier email, c'est encore une grande partie de notre 
+    vie quotidienne, et continuera de l'être dans un avenir proche. Donc, considérant la 
+    confiance que nous leur accordons, il est surprenant de voir à quel point cette 
+    infrastructure est fondamentalement peu sûre. La fraude liée aux emails 
+    [est en hausse](https://www.csoonline.com/article/3247670/email/email-security-in-2018.html), 
+    et sans prendre des mesures de base, vous pourriez être à risque.
+    
+
+    Si un pirate accède à vos emails, cela fournit une porte d'entrée pour que vos autres 
+    comptes soient compromis (via la réinitialisation des mots de passe), donc la sécurité 
+    des emails est primordiale pour votre sécurité numérique.
+
+
+    Les grandes entreprises fournissant des services de messagerie gratuits n'ont pas une 
+    bonne réputation en matière de respect de la vie privée des utilisateurs : Gmail a été 
+    pris en train de donner [un accès complet aux tiers](https://www.wsj.com/articles/techs-dirty-secret-the-app-developers-sifting-through-your-gmail-1530544442) 
+    aux emails des utilisateurs et aussi de [tracer tous vos achats](https://www.cnbc.com/2019/05/17/google-gmail-tracks-purchase-history-how-to-delete-it.html). 
+    Yahoo a également été pris en train de scanner les emails en temps réel 
+    [pour les agences de surveillance américaines](http://news.trust.org/item/20161004170601-99f8c). 
+    Les annonceurs [ont obtenu l'accès](https://thenextweb.com/insider/2018/08/29/both-yahoo-and-aol-are-scanning-customer-emails-to-attract-advertisers) 
+    aux messages des utilisateurs de Yahoo et AOL pour identifier et segmenter les clients 
+    potentiels en repérant les signaux d'achat contextuels et les achats passés.
+
+  checklist:
+  - point: Avoir Plus d'Une Adresse Email
+    priority: Essential
+    details: >-
+      Envisagez d'utiliser une adresse email différente pour les communications critiques 
+      en matière de sécurité et pour les courriers moins importants comme les newsletters. 
+      Cette compartimentation pourrait réduire l'ampleur des dommages causés par une fuite 
+      de données, et faciliter également la récupération d'un compte compromis.
+
+  - point: Garder l'Adresse Email Privée
+    priority: Essential
+    details: >-
+      Ne partagez pas votre email principal publiquement, car les adresses mail sont souvent 
+      le point de départ de la plupart des attaques de phishing.
+
+  - point: Sécuriser Votre Compte
+    priority: Essential
+    details: >-
+      Utilisez un mot de passe long et unique, activez la 2FA et soyez prudent lors de la 
+      connexion. Votre compte email fournit un point d'entrée facile vers tous vos autres 
+      comptes en ligne pour un attaquant.
+
+  - point: Désactiver le Chargement Automatique du Contenu Distant
+    priority: Essential
+    details: >-
+      Les messages email peuvent contenir du contenu distant comme des images ou des feuilles 
+      de style, souvent chargés automatiquement depuis le serveur. Vous devriez désactiver 
+      cela, car cela expose votre adresse IP et les informations de votre appareil, et est 
+      souvent utilisé pour le traçage. Pour plus d'informations, voir 
+      [cet article](https://www.theverge.com/2019/7/3/20680903/email-pixel-trackers-how-to-stop-images-automatic-download).
+
+  - point: Utiliser le Texte Brut
+    priority: Optional
+    details: >-
+      Il existe deux types principaux d'emails sur internet : texte brut et HTML. Le premier 
+      est fortement préféré pour la confidentialité et la sécurité car les messages HTML 
+      incluent souvent des identifiants dans les liens et les images intégrées, qui peuvent 
+      collecter des données d'utilisation et personnelles. Il y a aussi de nombreux risques 
+      d'exécution de code à distance ciblant l'analyseur HTML de votre client mail, qui ne 
+      peuvent pas être exploités si vous utilisez le texte brut. Pour plus d'informations, 
+      ainsi que des instructions de configuration pour votre fournisseur de messagerie, voir 
+      [UsePlaintext.email](https://useplaintext.email/).
+
+  - point: Ne Pas Connecter d'Applications Tierces
+    priority: Optional
+    details: >-
+      Si vous donnez à une application ou un plugin tiers un accès complet à votre boîte de 
+      réception, ils ont effectivement un accès total et sans entrave à tous vos emails et 
+      leur contenu, ce qui pose des risques significatifs pour la sécurité et la confidentialité.
+
+  - point: Ne Pas Partager de Données Sensibles par Email
+    priority: Optional
+    details: >-
+      Les emails sont très facilement interceptés. De plus, vous ne pouvez pas être sûr de 
+      la sécurité de l'environnement de votre destinataire. Par conséquent, les emails ne 
+      peuvent pas être considérés comme sûrs pour échanger des informations confidentielles, 
+      sauf s'ils sont chiffrés.
+
+  - point: Envisager un Fournisseur de Mail Sécurisé
+    priority: Optional
+    details: >-
+      Des fournisseurs de messagerie sécurisés et réputés comme 
+      [Forward Email](https://awesome-privacy.xyz/communication/encrypted-email/forward-email), 
+      [ProtonMail](https://awesome-privacy.xyz/communication/mail-forwarding/protonmail), 
+      et [Tutanota](https://awesome-privacy.xyz/communication/encrypted-email/tuta) permettent 
+      le chiffrement de bout en bout, une confidentialité totale ainsi que des fonctionnalités 
+      plus axées sur la sécurité. Contrairement aux fournisseurs de messagerie typiques, votre 
+      boîte aux lettres ne peut être lue que par vous, car tous les messages sont chiffrés.
+
+  - point: Utiliser une Clé Intelligente
+    priority: Advanced
+    details: >-
+      OpenPGP ne prend pas en charge le secret permanent, ce qui signifie que si votre clé 
+      privée ou celle du destinataire est un jour volée, tous les messages précédents chiffrés 
+      avec elle seront exposés. Par conséquent, vous devez prendre grand soin de garder vos 
+      clés privées en sécurité. Une méthode pour ce faire est d'utiliser une clé USB intelligente 
+      pour signer ou déchiffrer les messages, vous permettant de le faire sans que votre clé 
+      privée ne quitte le périphérique USB.
+
+  - point: Utiliser l'Aliasing / Transfert Anonyme
+    priority: Advanced
+    details: >-
+      L'aliasing d'email permet aux messages d'être envoyés à [n'importe quoi]@mon-domaine.com 
+      et d'arriver quand même dans votre boîte de réception principale. Cela vous permet 
+      effectivement d'utiliser une adresse email différente et unique pour chaque service 
+      auquel vous vous inscrivez. Cela signifie que si vous commencez à recevoir du spam, 
+      vous pouvez bloquer cet alias et déterminer quelle entreprise a divulgué votre adresse 
+      email.
+
+  - point: Sous-adressage
+    priority: Optional
+    details: >-
+      Une alternative à l'aliasing est le sous-adressage, où tout ce qui suit le symbole `+` 
+      est omis lors de la livraison du courrier. Cela vous permet de garder une trace de qui 
+      a partagé/divulgué votre adresse email, mais contrairement à l'aliasing, cela ne 
+      protégera pas contre la révélation de votre adresse réelle.
+
+  - point: Utiliser un Domaine Personnalisé
+    priority: Advanced
+    details: >-
+      Utiliser un domaine personnalisé signifie que vous n'êtes pas dépendant de l'adresse 
+      attribuée par votre fournisseur de messagerie. Ainsi, vous pouvez facilement changer 
+      de fournisseur à l'avenir et ne pas vous soucier de l'arrêt d'un service.
+
+  - point: Synchroniser avec un Client pour Sauvegarde
+    priority: Advanced
+    details: >-
+      Pour éviter de perdre l'accès temporaire ou permanent à vos emails lors d'un événement 
+      imprévu (comme une panne ou un verrouillage de compte), Thunderbird peut synchroniser/sauvegarder 
+      les messages de plusieurs comptes via IMAP et les stocker localement sur votre appareil 
+      principal.
+
+  - point: Attention aux Signatures Mail
+    priority: Advanced
+    details: >-
+      Vous ne savez pas à quel point l'environnement de messagerie du destinataire de votre 
+      message peut être sécurisé. Il existe plusieurs extensions qui parcourent automatiquement 
+      les messages et créent une base de données détaillée des informations de contact basée 
+      sur les signatures email.
+
+  - point: Attention aux Réponses Automatiques
+    priority: Advanced
+    details: >-
+      Les réponses automatiques d'absence du bureau sont très utiles pour informer les gens 
+      qu'il y aura un délai dans la réponse, mais trop souvent les gens révèlent trop 
+      d'informations - qui peuvent être utilisées dans l'ingénierie sociale et les attaques ciblées.
+
+  - point: Choisir le Bon Protocole Mail
+    priority: Advanced
+    details: >-
+      N'utilisez pas de protocoles obsolètes (en dessous d'IMAPv4 ou POPv3), les deux ont 
+      des vulnérabilités connues et une sécurité dépassée.
+
+  - point: Auto-hébergement
+    priority: Advanced
+    details: >-
+      L'auto-hébergement de votre propre serveur de messagerie n'est pas recommandé pour les 
+      utilisateurs non avancés, car le sécuriser correctement est critique et nécessite de 
+      solides connaissances en réseaux.
+
+  - point: Toujours utiliser les ports TLS
+    priority: Avancé
+    details: >-
+      Il existe des options SSL pour POP3, IMAP et SMTP comme ports TCP/IP standard. Ils sont faciles à utiliser et largement
+      pris en charge, ils devraient donc toujours être utilisés à la place des ports email en texte brut.
+
+  - point: Disponibilité DNS
+    priority: Avancé
+    details: >-
+      Pour les serveurs de messagerie auto-hébergés, afin de prévenir les problèmes DNS impactant la disponibilité - utilisez au moins 2 enregistrements MX, avec
+      des enregistrements MX secondaires et tertiaires pour la redondance en cas de défaillance de l'enregistrement MX primaire.
+
+  - point: Prévenir les attaques DDoS et par force brute
+    priority: Avancé
+    details: >-
+      Pour les serveurs de messagerie auto-hébergés (spécifiquement SMTP), limitez votre nombre total de connexions simultanées et le taux maximal
+      de connexions pour réduire l'impact des tentatives d'attaques par bots.
+
+  - point: Maintenir une liste rouge d'IP
+    priority: Avancé
+    details: >-
+      Pour les serveurs de messagerie auto-hébergés, vous pouvez améliorer les filtres anti-spam et renforcer la sécurité en maintenant une
+      liste rouge locale d'IP à jour et des listes de blocage en temps réel d'URI spam pour filtrer les hyperliens malveillants.
+  color: teal
+  softwareLinks:
+    - title: Fournisseurs de messagerie sécurisée
+      url: https://github.com/Lissy93/awesome-privacy#encrypted-email
+    - title: Transfert de courrier
+      url: https://github.com/Lissy93/awesome-privacy#anonymous-mail-forwarding
+    - title: Serveurs de messagerie préconfigurés
+      url: https://github.com/Lissy93/awesome-privacy#pre-configured-mail-servers
+    - title: Clients de messagerie
+      url: https://github.com/Lissy93/awesome-privacy#email-clients
+
+- title: Messagerie
+  slug: messaging
+  description: Garder vos communications privées et sécurisées
+  icon: messaging
+  intro: ''
+  checklist:
+  - point: Utiliser uniquement des messageries entièrement chiffrées de bout en bout
+    priority: Essentiel
+    details: >-
+      Le chiffrement de bout en bout est un système de communication où les messages sont chiffrés sur votre appareil et
+      ne sont déchiffrés que lorsqu'ils atteignent le destinataire prévu. Cela garantit que tout acteur qui intercepte
+      le trafic ne peut pas lire le contenu du message, ni quiconque ayant accès aux serveurs centraux où
+      les données sont stockées.
+
+  - point: Utiliser uniquement des plateformes de messagerie open source
+    priority: Essentiel
+    details: >-
+      Si le code est open source, il peut être examiné et audité de manière indépendante par toute personne qualifiée
+      pour le faire, afin de s'assurer qu'il n'y a pas de portes dérobées, de vulnérabilités ou d'autres problèmes de sécurité.
+
+  - point: Utiliser une plateforme de messagerie digne de confiance
+    priority: Essentiel
+    details: >-
+      Lors de la sélection d'une application de messagerie chiffrée, assurez-vous qu'elle est entièrement open source, stable, activement maintenue,
+      et idéalement soutenue par des développeurs réputés.
+
+  - point: Vérifier les paramètres de sécurité
+    priority: Essentiel
+    details: >-
+      Activez les paramètres de sécurité, y compris la vérification des contacts, les notifications de sécurité et le chiffrement.
+      Désactivez les fonctionnalités optionnelles non sécurisées telles que l'accusé de lecture, la dernière connexion et la notification de frappe.
+
+  - point: S'assurer que l'environnement de vos destinataires est sécurisé
+    priority: Essentiel
+    details: >-
+      Votre conversation ne peut être que aussi sécurisée que le maillon le plus faible. Souvent, la façon la plus simple d'infiltrer un
+      canal de communication est de cibler l'individu ou le nœud ayant le moins de protection.
+
+  - point: Désactiver les services cloud
+    priority: Essentiel
+    details: >-
+      Certaines applications de messagerie mobile offrent un compagnon web ou bureau. Cela augmente non seulement la surface d'attaque mais
+      a été lié à plusieurs problèmes de sécurité critiques, et devrait donc être évité si possible.
+
+  - point: Sécuriser les discussions de groupe
+    priority: Essentiel
+    details: >-
+      Le risque de compromission augmente exponentiellement avec le nombre de participants dans un groupe, car la surface d'attaque
+      augmente. Vérifiez périodiquement que tous les participants sont légitimes.
+
+  - point: Créer un environnement sûr pour la communication
+    priority: Essentiel
+    details: >-
+      Il y a plusieurs étapes où vos communications numériques pourraient être surveillées ou interceptées. Cela inclut :
+      votre appareil ou celui de vos participants, votre FAI, la passerelle nationale ou la journalisation gouvernementale, le fournisseur de messagerie,
+      les serveurs.
+
+  - point: Convenir d'un plan de communication
+    priority: Optionnel
+    details: >-
+      Dans certaines situations, il peut être utile d'établir un plan de communication. Celui-ci devrait inclure des méthodes principales et de secours
+      pour entrer en contact de manière sécurisée.
+
+  - point: Supprimer les métadonnées des médias
+    priority: Optionnel
+    details: >-
+      Les métadonnées sont des données sur les données ou des informations supplémentaires jointes à un fichier ou une transaction. Lorsque vous envoyez une
+      photo, un enregistrement audio, une vidéo ou un document, vous pouvez révéler plus que ce que vous aviez l'intention de partager.
+
+  - point: Neutraliser les URLs
+    priority: Optionnel
+    details: >-
+      L'envoi de liens via divers services peut involontairement exposer vos informations personnelles. C'est parce que,
+      lorsqu'une vignette ou un aperçu est généré, cela se produit côté client.
+
+  - point: Vérifier votre destinataire
+    priority: Optionnel
+    details: >-
+      Assurez-vous toujours que vous parlez au destinataire prévu et qu'il n'a pas été compromis. Une méthode
+      pour ce faire est d'utiliser une application qui prend en charge la vérification des contacts.
+
+  - point: Activer les messages éphémères
+    priority: Optionnel
+    details: >-
+      Les messages qui s'autodétruisent sont une fonctionnalité qui fait que vos messages se suppriment automatiquement après un certain temps.
+      Cela signifie que si votre appareil est perdu, volé ou saisi, un adversaire n'aura accès qu'aux
+      communications les plus récentes.
+
+  - point: Éviter les SMS
+    priority: Optionnel
+    details: >-
+      Les SMS peuvent être pratiques, mais ils ne sont pas sécurisés. Ils sont vulnérables aux menaces telles que l'interception, l'échange de carte SIM,
+      la manipulation et les logiciels malveillants.
+
+  - point: Attention aux trackers
+    priority: Optionnel
+    details: >-
+      Méfiez-vous des applications de messagerie avec des trackers, car les statistiques d'utilisation détaillées qu'ils collectent sont souvent très
+      invasives et peuvent parfois révéler votre identité ainsi que des informations personnelles que vous n'auriez autrement pas
+      l'intention de partager.
+
+  - point: Considérer la juridiction
+    priority: Avancé
+    details: >-
+      Les juridictions où l'organisation est basée et où les données sont hébergées doivent également être prises en compte.
+
+  - point: Utiliser une plateforme anonyme
+    priority: Avancé
+    details: >-
+      Si vous pensez que vous pourriez être ciblé, vous devriez opter pour une plateforme de messagerie anonyme qui ne nécessite pas
+      de numéro de téléphone ou toute autre information personnellement identifiable pour s'inscrire ou l'utiliser.
+
+  - point: S'assurer que la confidentialité persistante est prise en charge
+    priority: Avancé
+    details: >-
+      Optez pour une plateforme qui implémente la confidentialité persistante. C'est là que votre application génère une nouvelle clé de chiffrement
+      pour chaque message.
+
+  - point: Considérer une plateforme décentralisée
+    priority: Avancé
+    details: >-
+      Si toutes les données passent par un fournisseur central, vous devez lui faire confiance avec vos données et métadonnées. Vous ne pouvez pas
+      vérifier que le système en cours d'exécution est authentique sans portes dérobées.
+  softwareLinks:
+    - title: Applications de messagerie sécurisée
+      url: https://github.com/Lissy93/awesome-privacy#encrypted-messaging
+    - title: Plateformes de messagerie P2P
+      url: https://github.com/Lissy93/awesome-privacy#p2p-messaging
+  color: cyan    
+
+- title: Réseaux Sociaux
+  slug: social-media
+  description: Minimiser les risques associés à l'utilisation des communautés en ligne
+  icon: social
+  intro: >
+    Les communautés en ligne existent depuis l'invention d'internet et donnent
+    aux personnes du monde entier l'opportunité de se connecter, communiquer et partager.
+    Bien que ces réseaux soient un excellent moyen de promouvoir l'interaction sociale et
+    de rassembler les gens, ils ont un côté sombre - il existe de sérieuses
+    [Préoccupations de confidentialité avec les services de réseaux sociaux](https://en.wikipedia.org/wiki/Privacy_concerns_with_social_networking_services),
+    et ces sites de réseaux sociaux appartiennent à des sociétés privées,
+    qui gagnent leur argent en collectant des données sur les individus et
+    en vendant ces données, souvent à des annonceurs tiers.
+
+    Sécurisez votre compte, verrouillez vos paramètres de confidentialité, mais sachez que même
+    après l'avoir fait, toutes les données téléchargées intentionnellement et non intentionnellement sont
+    effectivement publiques. Si possible, évitez d'utiliser les réseaux sociaux conventionnels.
+  checklist:
+  - point: Sécuriser votre compte
+    priority: Essentiel
+    details: >-
+      Les profils de médias sociaux sont trop souvent volés ou piratés. Pour protéger votre compte : utilisez un mot de passe
+      unique et fort, et activez l'authentification à deux facteurs.
+
+  - point: Vérifier les paramètres de confidentialité
+    priority: Essentiel
+    details: >-
+      La plupart des réseaux sociaux vous permettent de contrôler vos paramètres de confidentialité. Assurez-vous d'être à l'aise avec
+      les données que vous exposez actuellement et à qui.
+
+  - point: Considérer toutes les interactions comme publiques
+    priority: Essentiel
+    details: >-
+      Il existe encore de nombreuses méthodes pour voir le contenu 'privé' d'un utilisateur sur de nombreux réseaux sociaux.
+      Par conséquent, avant de télécharger, publier ou commenter quoi que ce soit, demandez-vous Cela me dérangerait-il si c'était totalement public ?
+
+  - point: Considérer toutes les interactions comme permanentes
+    priority: Essentiel
+    details: >-
+      Pratiquement chaque publication, commentaire, photo, etc. est continuellement sauvegardé par une myriade de services
+      tiers, qui archivent ces données et les rendent indexables et publiquement disponibles presque pour toujours.
+
+  - point: Ne pas trop en révéler
+    priority: Essentiel
+    details: >-
+      Les informations de profil créent une mine d'or d'informations pour les pirates, le type de données qui les aide à personnaliser
+      les arnaques par hameçonnage. Évitez de partager trop de détails (date de naissance, ville natale, école, etc.).
+
+  - point: Être prudent avec ce que vous téléchargez
+    priority: Essentiel
+    details: >-
+      Les mises à jour de statut, commentaires, check-ins et médias peuvent involontairement révéler beaucoup plus que ce que vous aviez
+      l'intention de montrer. C'est particulièrement pertinent pour les photos et vidéos, qui peuvent montrer des choses en arrière-plan.
+
+  - point: Ne pas partager d'email ou de numéro de téléphone
+    priority: Essentiel
+    details: >-
+      Publier votre véritable adresse email ou numéro de mobile donne aux pirates, trolls et spammeurs plus de munitions à
+      utiliser contre vous, et peut également permettre de connecter différents alias, profils ou points de données.
+
+  - point: Ne pas accorder de permissions inutiles
+    priority: Essentiel
+    details: >-
+      Par défaut, de nombreuses applications de réseaux sociaux populaires demanderont la permission d'accéder à vos contacts,
+      journal d'appels, localisation, historique de messagerie, etc. S'ils n'ont pas besoin de cet accès, ne l'accordez pas.
+
+  - point: Être prudent avec les intégrations tierces
+    priority: Essentiel
+    details: >-
+      Évitez de vous inscrire à des comptes en utilisant une connexion via réseau social, révoquez l'accès aux applications sociales que vous n'utilisez plus.
+
+  - point: Éviter de publier des données géographiques en étant encore sur place
+    priority: Essentiel
+    details: >-
+      Si vous prévoyez de partager du contenu qui révèle un lieu, attendez d'avoir quitté cet endroit.
+      C'est particulièrement important lorsque vous êtes en voyage, au restaurant, sur un campus, dans un hôtel/resort, un bâtiment
+      public ou un aéroport.
+
+  - point: Supprimer les métadonnées avant de télécharger des médias
+    priority: Optionnel
+    details: >-
+      La plupart des smartphones et certains appareils photo attachent automatiquement un ensemble complet de données supplémentaires (appelées
+      données EXIF) à chaque photographie. Supprimez ces données avant le téléchargement.
+
+  - point: Implémenter le camouflage d'image
+    priority: Avancé
+    details: >-
+      Des outils comme Fawkes peuvent être utilisés pour modifier très subtilement la structure des visages dans les photos d'une
+      manière imperceptible par les humains, mais qui empêchera les systèmes de reconnaissance faciale de reconnaître
+      un visage donné.
+
+  - point: Envisager de falsifier le GPS à proximité du domicile
+    priority: Avancé
+    details: >-
+      Même si vous n'utilisez jamais les médias sociaux vous-même, il y aura toujours d'autres personnes qui ne sont pas aussi prudentes,
+      et qui pourraient révéler votre localisation.
+
+  - point: Envisager de fausses informations
+    priority: Avancé
+    details: >-
+      Si vous voulez juste lire et n'avez pas l'intention de publier beaucoup - envisagez d'utiliser un nom d'alias et de fausses
+      coordonnées.
+
+  - point: Ne pas avoir de comptes sur les réseaux sociaux
+    priority: Avancé
+    details: >-
+      Les médias sociaux sont fondamentalement non-privés, donc pour une sécurité et une confidentialité en ligne maximales, évitez d'utiliser
+      les réseaux sociaux grand public.
+
+  softwareLinks:
+    - title: Médias sociaux alternatifs
+      url: https://github.com/Lissy93/awesome-privacy#social-networks
+    - title: Plateformes vidéo alternatives
+      url: https://github.com/Lissy93/awesome-privacy#video-platforms
+    - title: Plateformes de blog alternatives
+      url: https://github.com/Lissy93/awesome-privacy#blogging-platforms
+    - title: Lecteurs et agrégation d'actualités
+      url: https://github.com/Lissy93/awesome-privacy#news-readers-and-aggregation
+  color: blue
+
+- title: Réseaux
+  slug: networks
+  description: Protéger votre trafic réseau
+  icon: network
+  intro: >
+    Cette section couvre la façon de connecter vos appareils à internet en toute sécurité,
+    y compris la configuration de votre routeur et la mise en place d'un VPN.
+  checklist:
+  - point: Utiliser un VPN
+    priority: Essentiel
+    details: >-
+      Utilisez un VPN payant réputé. Cela peut aider à empêcher les sites que vous visitez d'enregistrer votre véritable IP, réduire
+      la quantité de données que votre FAI peut collecter, et augmenter la protection sur le WiFi public.
+
+  - point: Changer le mot de passe de votre routeur
+    priority: Essentiel
+    details: >-
+      Après avoir obtenu un nouveau routeur, changez le mot de passe. Les mots de passe par défaut des routeurs sont publiquement disponibles,
+      ce qui signifie que quiconque à proximité pourrait se connecter.
+
+  - point: Utiliser WPA2 et un mot de passe fort
+    priority: Essentiel
+    details: >-
+      Il existe différents protocoles d'authentification pour se connecter au WiFi. Actuellement, les options les plus sécurisées
+      sont WPA2 et WPA3 (sur les routeurs plus récents).
+
+  - point: Maintenir le firmware du routeur à jour
+    priority: Essentiel
+    details: >-
+      Les fabricants publient des mises à jour du firmware qui corrigent les vulnérabilités de sécurité, implémentent de nouvelles normes, et
+      parfois ajoutent des fonctionnalités ou améliorent les performances de votre routeur.
+
+  - point: Implémenter un VPN à l'échelle du réseau
+    priority: Optionnel
+    details: >-
+      Si vous configurez votre VPN sur votre routeur, pare-feu ou serveur domestique, alors le trafic de tous les appareils sera
+      chiffré et acheminé à travers lui, sans nécessiter d'applications VPN individuelles.
+
+  - point: Se protéger contre les fuites DNS
+    priority: Optionnel
+    details: >-
+      Lors de l'utilisation d'un VPN, il est extrêmement important d'utiliser exclusivement le serveur DNS de votre fournisseur VPN ou
+      service sécurisé.
+
+  - point: Utiliser un protocole VPN sécurisé
+    priority: Optionnel
+    details: >-
+      OpenVPN et WireGuard sont des protocoles de tunnelisation open source, légers et sécurisés. Évitez d'utiliser PPTP
+      ou SSTP.
+
+  - point: DNS sécurisé
+    priority: Optionnel
+    details: >-
+      Utilisez DNS-over-HTTPS qui effectue la résolution DNS via le protocole HTTPS, chiffrant les données entre vous
+      et votre résolveur DNS.
+
+  - point: Éviter le routeur gratuit de votre FAI
+    priority: Optionnel
+    details: >-
+      Généralement, ils sont fabriqués à bas coût en masse en Chine, avec un firmware propriétaire non sécurisé qui ne
+      reçoit pas de mises à jour de sécurité régulières.
+
+  - point: Liste blanche des adresses MAC
+    priority: Optionnel
+    details: >-
+      Vous pouvez mettre en liste blanche les adresses MAC dans les paramètres de votre routeur, empêchant tout appareil inconnu de se
+      connecter immédiatement à votre réseau, même s'il connaît vos identifiants.
+
+  - point: Changer l'adresse IP locale du routeur
+    priority: Optionnel
+    details: >-
+      Il est possible qu'un script malveillant dans votre navigateur web exploite une vulnérabilité de script intersites,
+      accédant aux routeurs vulnérables connus à leur adresse IP locale et les altérant.
+
+  - point: Ne pas révéler d'informations personnelles dans le SSID
+    priority: Optionnel
+    details: >-
+      Vous devriez mettre à jour le nom de votre réseau, choisissant un SSID qui ne vous identifie pas, n'inclut pas votre numéro
+      d'appartement/adresse, et ne spécifie pas la marque/modèle de l'appareil.
+
+  - point: Désactiver les listes de routeurs
+    priority: Optionnel
+    details: >-
+      Les SSID WiFi sont scannés, enregistrés, puis publiés sur divers sites web, ce qui constitue une sérieuse préoccupation
+      de confidentialité pour certains.
+
+  - point: Masquer votre SSID
+    priority: Optionnel
+    details: >-
+      L'identifiant de service de votre routeur est simplement le nom du réseau. S'il n'est pas visible, il peut recevoir
+      moins d'abus.
+
+  - point: Désactiver WPS
+    priority: Optionnel
+    details: >-
+      Wi-Fi Protected Setup fournit une méthode plus simple pour se connecter, sans entrer un long mot de passe WiFi, mais
+      WPS introduit une série de problèmes de sécurité majeurs.
+
+  - point: Désactiver UPnP
+    priority: Optionnel
+    details: >-
+      Universal Plug and Play permet aux applications de transférer automatiquement un port sur votre routeur, mais il a
+      une longue histoire de problèmes de sécurité graves.
+
+  - point: Utiliser un réseau invité pour les invités
+    priority: Optionnel
+    details: >-
+      N'accordez pas l'accès à votre réseau WiFi principal aux visiteurs, car cela leur permet d'interagir avec d'autres
+      appareils sur le réseau.
+
+  - point: Changer l'IP par défaut de votre routeur
+    priority: Optionnel
+    details: >-
+      Modifier l'adresse IP par défaut du panneau d'administration de votre routeur rendra plus difficile l'exploitation par des scripts malveillants
+      ciblant les adresses IP locales.
+
+  - point: Arrêter les processus et services inutilisés sur votre routeur
+    priority: Optionnel
+    details: >-
+      Les services comme Telnet et SSH qui fournissent un accès en ligne de commande aux appareils ne devraient jamais être exposés à
+      internet et devraient aussi être désactivés sur le réseau local sauf s'ils sont vraiment nécessaires.
+
+  - point: Ne pas avoir de ports ouverts
+    priority: Optionnel
+    details: >-
+      Fermez tous les ports ouverts sur votre routeur qui ne sont pas nécessaires. Les ports ouverts fournissent une entrée facile pour les pirates.
+
+  - point: Désactiver les protocoles d'accès à distance inutilisés
+    priority: Optionnel
+    details: >-
+      Lorsque des protocoles tels que PING, Telnet, SSH, UPnP et HNAP etc sont activés, ils permettent à votre routeur d'être
+      sondé depuis n'importe où dans le monde.
+
+  - point: Désactiver la gestion basée sur le cloud
+    priority: Optionnel
+    details: >-
+      Vous devriez traiter le panneau d'administration de votre routeur avec le plus grand soin, car des dommages considérables peuvent être causés
+      si un attaquant parvient à y accéder.
+
+  - point: Gérer correctement la portée
+    priority: Optionnel
+    details: >-
+      Il est courant de vouloir pousser la portée de votre routeur au maximum, mais si vous résidez dans un petit appartement, votre
+      surface d'attaque est augmentée lorsque votre réseau WiFi peut être capté de l'autre côté de la rue.
+
+  - point: Acheminer tout le trafic via [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor)
+    priority: Avancé
+    details: >-
+      Les VPN ont leurs faiblesses. Pour une sécurité accrue, acheminez tout votre trafic internet via le réseau
+      [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor).
+
+  - point: Désactiver le WiFi sur tous les appareils
+    priority: Avancé
+    details: >-
+      Se connecter même à un réseau WiFi sécurisé augmente votre surface d'attaque. Désactivez votre WiFi domestique et
+      connectez chaque appareil via Ethernet.
+  color: violet
+  softwareLinks:
+  - title: Réseaux privés virtuels
+    url: https://github.com/Lissy93/awesome-privacy#virtual-private-networks
+  - title: Réseaux mixtes
+    url: https://github.com/Lissy93/awesome-privacy#mix-networks
+  - title: Firmware de routeur
+    url: https://github.com/Lissy93/awesome-privacy#router-firmware
+  - title: Proxies open source
+    url: https://github.com/Lissy93/awesome-privacy#proxies
+  - title: Fournisseurs DNS
+    url: https://github.com/Lissy93/awesome-privacy#dns
+  - title: Pare-feux
+    url: https://github.com/Lissy93/awesome-privacy#firewalls
+  - title: Outils d'analyse réseau
+    url: https://github.com/Lissy93/awesome-privacy#network-analysis
+  - title: Outils de sécurité réseau auto-hébergés
+    url: https://github.com/Lissy93/awesome-privacy#self-hosted-network-security
+
+- title: Appareils Mobiles
+  slug: mobile-devices
+  description: Réduire le suivi invasif pour les téléphones portables, smartphones et tablettes
+  icon: mobile
+  intro: >
+    Les smartphones ont révolutionné tant d'aspects de la vie et ont mis le monde
+    à portée de main. Pour beaucoup d'entre nous, les smartphones sont notre principal moyen de communication,
+    de divertissement et d'accès à la connaissance. Mais alors qu'ils ont apporté la commodité
+    à un tout autre niveau, il y a des choses peu reluisantes qui se passent derrière l'écran.
+
+    Le géo-tracking est utilisé pour tracer nos moindres mouvements, et nous avons peu de contrôle sur
+    qui possède ces données - votre téléphone est même capable de
+    [suivre votre localisation sans GPS](https://gizmodo.com/how-to-track-a-cellphone-without-gps-or-consent-1821125371).
+    Au fil des années, de nombreux rapports ont fait surface, décrivant les façons dont le
+    [micro de votre téléphone peut écouter](https://www.independent.co.uk/life-style/gadgets-and-tech/news/smartphone-apps-listening-privacy-alphonso-shazam-advertising-pool-3d-honey-quest-a8139451.html),
+    et la [caméra peut vous regarder](https://www.businessinsider.com/hackers-governments-smartphone-iphone-camera-wikileaks-cybersecurity-hack-privacy-webcam-2017-6) - le tout sans votre connaissance ou consentement.
+    Et puis il y a les applications malveillantes, le manque de correctifs de sécurité et les portes dérobées potentielles/probables.
+
+    L'utilisation d'un smartphone génère beaucoup de données sur vous - des informations que vous
+    partagez intentionnellement aux données générées silencieusement par vos actions.
+    Il peut être effrayant de voir ce que Google, Microsoft, Apple et Facebook savent sur
+    nous - parfois ils en savent plus que notre famille proche. Il est difficile de comprendre
+    ce que vos données révéleront, surtout en conjonction avec d'autres données.
+
+    Ces données sont utilisées pour
+    [bien plus que la simple publicité](https://internethealthreport.org/2018/the-good-the-bad-and-the-ugly-sides-of-data-tracking/) -
+    plus souvent, elles sont utilisées pour évaluer les personnes pour la finance, l'assurance et l'emploi.
+    Les publicités ciblées peuvent même être utilisées pour une surveillance fine (voir [ADINT](https://adint.cs.washington.edu))
+
+    De plus en plus d'entre nous sont préoccupés par la façon dont
+    [les gouvernements collectent et utilisent nos données de smartphone](https://www.statista.com/statistics/373916/global-opinion-online-monitoring-government/),
+    et à juste titre, les agences fédérales demandent souvent
+    nos données à [Google](https://www.statista.com/statistics/273501/global-data-requests-from-google-by-federal-agencies-and-governments/),
+    [Facebook](https://www.statista.com/statistics/287845/global-data-requests-from-facebook-by-federal-agencies-and-governments/),
+    Apple, Microsoft, Amazon et d'autres entreprises technologiques. Parfois, les demandes sont
+    faites en masse, retournant des informations détaillées sur toutes les personnes dans une certaine zone géographique,
+    [souvent pour des personnes innocentes](https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html).
+    Et cela n'inclut pas tout le trafic internet auquel les agences de renseignement du monde entier ont un accès illimité.
+  checklist:
+  - point: Chiffrer votre appareil
+    priority: Essentiel
+    details: >-
+      Afin de garder vos données à l'abri d'un accès physique, utilisez le chiffrement de fichiers. Cela signifie que si votre
+      appareil est perdu ou volé, personne n'aura accès à vos données.
+
+  - point: Désactiver les fonctionnalités de connectivité non utilisées
+    priority: Essentiel
+    details: >-
+      Lorsque vous n'utilisez pas le WiFi, le Bluetooth, le NFC etc., désactivez ces fonctionnalités. Il existe plusieurs menaces courantes
+      qui utilisent ces fonctionnalités.
+
+  - point: Garder le nombre d'applications au minimum
+    priority: Essentiel
+    details: >-
+      Désinstallez les applications dont vous n'avez pas besoin ou que vous n'utilisez pas régulièrement. Car les applications fonctionnent souvent en arrière-plan, ralentissant votre
+      appareil, mais collectant aussi des données.
+
+  - point: Permissions des applications
+    priority: Essentiel
+    details: >-
+      N'accordez pas aux applications des permissions dont elles n'ont pas besoin. Pour Android, [Bouncer](https://awesome-privacy.xyz/security-tools/mobile-apps/bouncer) est une application qui vous permet d'accorder
+      des permissions temporaires/ponctuelles.
+
+  - point: Installer uniquement des applications de sources officielles
+    priority: Essentiel
+    details: >-
+      Les applications de l'App Store d'Apple et du Google Play Store sont scannées et signées cryptographiquement, les rendant
+      moins susceptibles d'être malveillantes.
+
+  - point: Être prudent avec les menaces de chargement de téléphone
+    priority: Optionnel
+    details: >-
+      Le Juice Jacking est lorsque des pirates utilisent des stations de chargement publiques pour installer des logiciels malveillants sur votre smartphone ou tablette
+      via un port USB compromis.
+
+  - point: Configurer un PIN de l'opérateur mobile
+    priority: Essentiel
+    details: >-
+      Le détournement de SIM est lorsqu'un pirate parvient à faire transférer votre numéro de mobile sur leur carte SIM. Le moyen le plus facile
+      de se protéger contre cela est de configurer un PIN via votre opérateur mobile.
+
+  - point: Se désinscrire des listes d'identification des appelants
+    priority: Optionnel
+    details: >-
+      Pour garder vos détails privés, vous pouvez retirer votre numéro des applications d'identification des appelants comme TrueCaller, CallApp, SyncMe,
+      et Hiya.
+
+  - point: Utiliser des cartes hors ligne
+    priority: Optionnel
+    details: >-
+      Envisagez d'utiliser une application de cartes hors ligne, comme OsmAnd ou Organic Maps, pour réduire les fuites de données des applications de cartes.
+
+  - point: Se désinscrire des publicités personnalisées
+    priority: Optionnel
+    details: >-
+      Vous pouvez légèrement réduire la quantité de données collectées en vous désinscrivant des publicités personnalisées.
+
+  - point: Effacer après trop de tentatives de connexion
+    priority: Optionnel
+    details: >-
+      Pour vous protéger contre un attaquant qui force brutalement votre code PIN, configurez votre appareil pour qu'il s'efface après trop de tentatives
+      de connexion échouées.
+
+  - point: Surveiller les trackers
+    priority: Optionnel
+    details: >-
+      [εxodus](https://awesome-privacy.xyz/security-tools/online-tools/εxodus) est un excellent service qui
+      vous permet de rechercher n'importe quelle application et de voir quels trackers y sont intégrés.
+
+  - point: Utiliser un pare-feu mobile
+    priority: Optionnel
+    details: >-
+      Pour empêcher les applications de divulguer des données sensibles à la vie privée, vous pouvez installer une application de pare-feu.
+
+  - point: Réduire l'activité en arrière-plan
+    priority: Optionnel
+    details: >-
+      Pour Android, SuperFreeze permet de geler entièrement toutes les activités en arrière-plan application par application.
+
+  - point: Isoler les applications mobiles
+    priority: Optionnel
+    details: >-
+      Empêchez les applications gourmandes en permissions d'accéder à vos données privées avec [Island](https://awesome-privacy.xyz/security-tools/mobile-apps/island), un environnement isolé.
+
+  - point: Trafic Tor
+    priority: Avancé
+    details: >-
+      [Orbot](https://awesome-privacy.xyz/security-tools/mobile-apps/orbot) fournit
+      une connexion Tor à l'échelle du système, qui vous aidera à vous protéger contre la surveillance et les menaces du WiFi public.
+
+  - point: Éviter les claviers virtuels personnalisés
+    priority: Optionnel
+    details: >-
+      Il est recommandé de s'en tenir au clavier d'origine de votre appareil. Si vous choisissez d'utiliser une application de clavier tierce,
+      assurez-vous qu'elle est fiable.
+
+  - point: Redémarrer l'appareil régulièrement
+    priority: Optionnel
+    details: >-
+      Redémarrer votre téléphone au moins une fois par semaine effacera l'état des applications mis en cache dans la mémoire et pourrait fonctionner plus efficacement
+      après un redémarrage.
+
+  - point: Éviter les SMS
+    priority: Optionnel
+    details: >-
+      Les SMS ne devraient pas être utilisés pour recevoir des codes 2FA ou pour la communication, utilisez plutôt une application de messagerie chiffrée,
+      comme [Signal](https://awesome-privacy.xyz/communication/encrypted-messaging/signal).
+
+  - point: Garder votre numéro privé
+    priority: Optionnel
+    details: >-
+      [MySudo](https://awesome-privacy.xyz/finance/virtual-credit-cards/mysudo) vous permet
+      de créer et d'utiliser des numéros de téléphone virtuels pour différentes personnes ou groupes. C'est excellent pour
+      la compartimentalisation.
+
+  - point: Attention aux logiciels espions
+    priority: Optionnel
+    details: >-
+      Les logiciels espions sont des logiciels malveillants installés directement sur votre appareil par quelqu'un que vous connaissez.
+      La meilleure façon de s'en débarrasser est par une réinitialisation d'usine.
+
+  - point: Privilégier le navigateur plutôt que l'application dédiée
+    priority: Optionnel
+    details: >-
+      Lorsque possible, envisagez d'utiliser un navigateur sécurisé pour accéder aux sites,
+      plutôt que d'installer des applications dédiées.
+
+  - point: Envisager d'exécuter une ROM personnalisée (Android)
+    priority: Avancé
+    details: >-
+      Si vous êtes préoccupé par le fait que votre fabricant d'appareil collecte trop
+      d'informations personnelles, envisagez une ROM personnalisée axée sur la confidentialité.
+  color: fuchsia
+  softwareLinks:
+  - title: Applications mobiles pour la sécurité + confidentialité
+    url: https://github.com/Lissy93/awesome-privacy#mobile-apps
+  - title: Messagerie chiffrée
+    url: https://github.com/Lissy93/awesome-privacy#encrypted-messaging
+  - title: Systèmes d'exploitation mobiles
+    url: https://github.com/Lissy93/awesome-privacy#mobile-operating-systems
+
+- title: Ordinateurs Personnels
+  slug: personal-computers
+  description: Sécuriser le système d'exploitation, les données et l'activité de votre PC
+  icon: computer
+  intro: >
+    Bien que Windows et OS X soient faciles à utiliser et pratiques, ils sont tous deux loin d'être sécurisés.
+    Votre système d'exploitation fournit l'interface entre le matériel et vos applications, donc s'il est
+    compromis, cela peut avoir des effets préjudiciables.
+  checklist:
+  - point: Maintenir votre système à jour
+    priority: Essentiel
+    details: >-
+      Les mises à jour système contiennent des corrections/correctifs pour les problèmes de sécurité, améliorent les performances, et parfois ajoutent de nouvelles
+      fonctionnalités. Installez les nouvelles mises à jour lorsque vous y êtes invité.
+
+  - point: Chiffrer votre appareil
+    priority: Essentiel
+    details: >-
+      Utilisez BitLocker pour Windows, FileVault sur MacOS, ou LUKS sur Linux, pour activer le chiffrement complet du disque. Cela
+      empêche l'accès non autorisé si votre ordinateur est perdu ou volé.
+
+  - point: Sauvegarder les données importantes
+    priority: Essentiel
+    details: >-
+      Maintenir des sauvegardes chiffrées prévient la perte due aux rançongiciels, au vol ou aux dommages. Envisagez d'utiliser
+      [Cryptomator](https://awesome-privacy.xyz/security-tools/mobile-apps/cryptomator)
+      pour les fichiers cloud ou [VeraCrypt](https://awesome-privacy.xyz/essentials/file-encryption/veracrypt) pour les clés USB.
+
+  - point: Être prudent en branchant des périphériques USB à votre ordinateur
+    priority: Essentiel
+    details: >-
+      Les périphériques USB peuvent poser de sérieuses menaces. Envisagez de créer un désinfecteur USB avec CIRCLean pour vérifier en toute sécurité les périphériques
+      USB.
+
+  - point: Activer le verrouillage d'écran lors de l'inactivité
+    priority: Essentiel
+    details: >-
+      Verrouillez votre ordinateur lorsque vous vous absentez et configurez-le pour qu'il exige un mot de passe à la reprise de l'écran de veille ou du sommeil pour
+      empêcher l'accès non autorisé.
+
+  - point: Désactiver Cortana ou Siri
+    priority: Essentiel
+    details: >-
+      Les assistants contrôlés par la voix peuvent avoir des implications sur la confidentialité en raison des données renvoyées pour traitement. Désactivez
+      ou limitez leurs capacités d'écoute.
+
+  - point: Examiner vos applications installées
+    priority: Essentiel
+    details: >-
+      Gardez les applications installées au minimum pour réduire l'exposition aux vulnérabilités et effacez régulièrement
+      les caches d'applications.
+
+  - point: Gérer les permissions
+    priority: Essentiel
+    details: >-
+      Contrôlez quelles applications ont accès à votre localisation, caméra, microphone, contacts et autres informations
+      sensibles.
+
+  - point: Interdire l'envoi des données d'utilisation vers le cloud
+    priority: Essentiel
+    details: >-
+      Limitez la quantité d'informations d'utilisation ou de retours envoyés vers le cloud pour protéger votre vie privée.
+
+  - point: Éviter le déverrouillage rapide
+    priority: Essentiel
+    details: >-
+      Utilisez un mot de passe fort plutôt que la biométrie ou des codes PIN courts pour déverrouiller votre ordinateur afin d'améliorer
+      la sécurité.
+
+  - point: Éteindre l'ordinateur plutôt que la mise en veille
+    priority: Essentiel
+    details: >-
+      Éteignez votre appareil lorsqu'il n'est pas utilisé, surtout si votre disque est chiffré, pour garder les données sécurisées.
+
+  - point: Ne pas lier votre PC à votre compte Microsoft ou Apple
+    priority: Optionnel
+    details: >-
+      Utilisez uniquement un compte local pour empêcher la synchronisation des données et l'exposition. Évitez d'utiliser des services de synchronisation qui compromettent
+      la confidentialité.
+
+  - point: Vérifier quels services de partage sont activés
+    priority: Optionnel
+    details: >-
+      Désactivez les fonctionnalités de partage réseau que vous n'utilisez pas pour fermer les portes aux menaces courantes.
+
+  - point: Ne pas utiliser le compte Root/Admin pour les tâches non administratives
+    priority: Optionnel
+    details: >-
+      Utilisez un compte utilisateur non privilégié pour les tâches quotidiennes et n'élevez les permissions que pour les modifications administratives
+      pour atténuer les vulnérabilités.
+
+  - point: Bloquer la webcam + le microphone
+    priority: Optionnel
+    details: >-
+      Couvrez votre webcam lorsqu'elle n'est pas utilisée et envisagez de bloquer l'enregistrement audio non autorisé pour protéger la vie privée.
+
+  - point: Utiliser un filtre de confidentialité
+    priority: Optionnel
+    details: >-
+      Utilisez un filtre de confidentialité d'écran dans les espaces publics pour empêcher les regards indiscrets et protéger les informations
+      sensibles.
+
+  - point: Sécuriser physiquement l'appareil
+    priority: Optionnel
+    details: >-
+      Utilisez un verrou Kensington pour sécuriser votre ordinateur portable dans les espaces publics et envisagez des verrous de ports pour empêcher
+      l'accès physique non autorisé.
+
+  - point: Ne pas charger d'appareils depuis votre PC
+    priority: Optionnel
+    details: >-
+      Utilisez une batterie externe ou un chargeur mural AC plutôt que votre PC pour éviter les risques de sécurité associés aux
+      connexions USB.
+
+  - point: Randomiser votre adresse matérielle sur le Wi-Fi
+    priority: Optionnel
+    details: >-
+      Modifiez ou randomisez votre adresse MAC pour vous protéger contre le suivi à travers différents réseaux WiFi.
+
+  - point: Utiliser un pare-feu
+    priority: Optionnel
+    details: >-
+      Installez une application de pare-feu pour surveiller et bloquer l'accès Internet non désiré par certaines applications, protégeant
+      contre les attaques d'accès à distance et les violations de confidentialité.
+
+  - point: Se protéger contre les enregistreurs de frappe logiciels
+    priority: Optionnel
+    details: >-
+      Utilisez des outils de chiffrement des frappes pour vous protéger contre les enregistreurs de frappe logiciels qui enregistrent vos frappes.
+
+  - point: Vérifier la connexion du clavier
+    priority: Optionnel
+    details: >-
+      Soyez vigilant quant aux enregistreurs de frappe matériels lors de l'utilisation d'ordinateurs publics ou inconnus en vérifiant les
+      connexions du clavier.
+
+  - point: Prévenir les attaques par injection de frappe
+    priority: Optionnel
+    details: >-
+      Verrouillez votre PC lorsque vous vous absentez et envisagez d'utiliser USBGuard ou des outils similaires pour vous protéger contre les
+      attaques par injection de frappe.
+
+  - point: Ne pas utiliser d'antivirus commercial gratuit
+    priority: Optionnel
+    details: >-
+      Fiez-vous aux outils de sécurité intégrés et évitez les applications antivirus gratuites en raison de leur potentiel
+      d'invasion de la vie privée et de collecte de données.
+
+  - point: Vérifier périodiquement la présence de rootkits
+    priority: Avancé
+    details: >-
+      Vérifiez régulièrement la présence de rootkits pour détecter et atténuer les menaces de contrôle total du système en utilisant des outils comme
+      [chkrootkit](https://awesome-privacy.xyz/operating-systems/linux-defenses/chkrootkit).
+
+  - point: Mot de passe de démarrage BIOS
+    priority: Avancé
+    details: >-
+      Activez un mot de passe BIOS ou UEFI pour ajouter une couche de sécurité supplémentaire lors du démarrage, mais soyez conscient de
+      ses limitations.
+
+  - point: Utiliser un système d'exploitation axé sur la sécurité
+    priority: Avancé
+    details: >-
+      Envisagez de passer à Linux ou à une distribution axée sur la sécurité comme QubeOS ou
+      [Tails](https://awesome-privacy.xyz/operating-systems/desktop-operating-systems/tails)
+      pour une confidentialité et une
+      sécurité améliorées.
+
+  - point: Utiliser des machines virtuelles
+    priority: Avancé
+    details: >-
+      Utilisez des machines virtuelles pour les activités risquées ou tester des logiciels suspects afin d'isoler les menaces potentielles
+      de votre système principal.
+
+  - point: Compartimenter
+    priority: Avancé
+    details: >-
+      Isolez autant que possible les différents programmes et sources de données les uns des autres pour limiter l'étendue des
+      violations potentielles.
+
+  - point: Désactiver les fonctionnalités non désirées (Windows)
+    priority: Avancé
+    details: >-
+      Désactivez les fonctionnalités et services Windows inutiles qui s'exécutent en arrière-plan pour réduire la collecte de données
+      et l'utilisation des ressources.
+
+  - point: Démarrage sécurisé
+    priority: Avancé
+    details: >-
+      Assurez-vous que le Secure Boot est activé pour empêcher les logiciels malveillants de remplacer votre chargeur de démarrage et autres logiciels
+      critiques.
+
+  - point: Sécuriser l'accès SSH
+    priority: Avancé
+    details: >-
+      Prenez des mesures pour protéger l'accès SSH contre les attaques en changeant le port par défaut, en utilisant des clés SSH et en
+      configurant les pare-feu.
+
+  - point: Fermer les ports ouverts non utilisés
+    priority: Avancé
+    details: >-
+      Désactivez les services écoutant sur les ports externes qui ne sont pas nécessaires pour vous protéger contre les exploits à distance et
+      améliorer la sécurité.
+
+  - point: Implémenter le contrôle d'accès obligatoire
+    priority: Avancé
+    details: >-
+      Restreignez l'accès privilégié pour limiter les dommages qui peuvent être causés si un système est compromis.
+
+  - point: Utiliser des jetons canaris
+    priority: Avancé
+    details: >-
+      Déployez des jetons canaris pour détecter plus rapidement l'accès non autorisé à vos fichiers ou emails et recueillir
+      des informations sur l'intrus.
+  color: pink
+  softwareLinks:
+  - title: Systèmes d'exploitation sécurisés
+    url: https://github.com/Lissy93/awesome-privacy#desktop-operating-systems
+  - title: Défenses Linux
+    url: https://github.com/Lissy93/awesome-privacy#linux-defences
+  - title: Défenses Windows
+    url: https://github.com/Lissy93/awesome-privacy#windows-defences
+  - title: Défenses Mac OS
+    url: https://github.com/Lissy93/awesome-privacy#mac-os-defences
+  - title: Anti-malware
+    url: https://github.com/Lissy93/awesome-privacy#anti-malware
+  - title: Pare-feux
+    url: https://github.com/Lissy93/awesome-privacy#firewalls-1
+  - title: Chiffrement de fichiers
+    url: https://github.com/Lissy93/awesome-privacy#file-encryption
+
+- title: Maison Connectée
+  slug: smart-home
+  description: Utiliser les appareils IoT sans compromettre votre vie privée
+  icon: home
+  intro: >-
+    Les assistants domestiques (comme Google Home, Alexa et Siri) et autres appareils connectés à Internet
+    collectent de grandes quantités de données personnelles (y compris des échantillons vocaux, des données de localisation,
+    des détails sur la maison et des journaux de toutes les interactions). Puisque vous avez un contrôle limité sur ce qui est
+    collecté, comment c'est stocké, et ce pour quoi ce sera utilisé, cela rend difficile de
+    recommander des produits de maison connectée grand public à quiconque se soucie de la confidentialité et de la sécurité.
+
+    Sécurité vs Confidentialité : Il y a beaucoup d'appareils intelligents sur le marché qui prétendent augmenter
+    la sécurité de votre maison tout en étant faciles et pratiques à utiliser (comme les alarmes anti-effraction intelligentes,
+    les caméras de sécurité Internet, les serrures intelligentes et les sonnettes à accès distant pour n'en nommer que quelques-uns).
+    Ces appareils peuvent sembler rendre la sécurité plus facile, mais il y a un compromis en termes de
+    confidentialité : car ils collectent de grandes quantités de données personnelles, et vous laissent sans contrôle
+    sur la façon dont elles sont stockées ou utilisées. La sécurité de ces appareils est également discutable,
+    puisque beaucoup d'entre eux peuvent être (et sont) piratés, permettant à un intrus de contourner
+    la détection avec un minimum d'effort.
+
+    L'option la plus respectueuse de la vie privée serait de ne pas utiliser d'appareils intelligents connectés à Internet
+    dans votre maison, et de ne pas compter sur un dispositif de sécurité qui nécessite une connexion Internet.
+    Mais si vous le faites, il est important de comprendre pleinement les risques de tout
+    produit donné, avant de l'acheter. Puis ajustez les paramètres pour augmenter la confidentialité et la sécurité.
+    La liste de contrôle suivante aidera à atténuer les risques associés aux
+    appareils domestiques connectés à Internet.
+  checklist:
+  - point: Renommer les appareils pour ne pas spécifier la marque/modèle
+    priority: Essentiel
+    details: >-
+      Changez les noms d'appareil par défaut pour quelque chose de générique afin de prévenir les attaques ciblées en masquant les informations de marque ou de modèle.
+
+  - point: Désactiver le microphone et la caméra quand ils ne sont pas utilisés
+    priority: Essentiel
+    details: >-
+      Utilisez des interrupteurs matériels pour éteindre les microphones et caméras sur les appareils intelligents pour protéger contre les enregistrements accidentels ou l'accès ciblé.
+
+  - point: Comprendre quelles données sont collectées, stockées et transmises
+    priority: Essentiel
+    details: >-
+      Recherchez et assurez-vous d'être à l'aise avec les pratiques de gestion des données des appareils domotiques avant l'achat, en évitant les appareils qui partagent des données avec des tiers.
+
+  - point: Définir les paramètres de confidentialité et refuser le partage de données avec des tiers
+    priority: Essentiel
+    details: >-
+      Ajustez les paramètres de l'application pour les contrôles de confidentialité les plus stricts et désactivez le partage de données avec des tiers lorsque possible.
+
+  - point: Ne pas lier vos appareils domotiques à votre véritable identité
+    priority: Essentiel
+    details: >-
+      Utilisez des noms d'utilisateur et mots de passe anonymes, en évitant l'inscription/connexion via les réseaux sociaux ou autres services tiers pour maintenir la confidentialité.
+
+  - point: Maintenir le firmware à jour
+    priority: Essentiel
+    details: >-
+      Mettez régulièrement à jour le firmware des appareils intelligents pour appliquer les correctifs de sécurité et les améliorations.
+
+  - point: Protéger votre réseau
+    priority: Essentiel
+    details: >-
+      Sécurisez votre WiFi et réseau domestique pour empêcher l'accès non autorisé aux appareils intelligents.
+
+  - point: Se méfier des objets connectés portables
+    priority: Optionnel
+    details: >-
+      Considérez les capacités étendues de collecte de données des appareils portables et leurs implications pour la confidentialité.
+
+  - point: Ne pas connecter l'infrastructure critique de votre maison à Internet
+    priority: Optionnel
+    details: >-
+      Évaluez les risques des thermostats, alarmes et détecteurs connectés à Internet en raison de l'accès potentiel à distance par des pirates.
+
+  - point: Atténuer les risques d'Alexa/Google Home
+    priority: Optionnel
+    details: >-
+      Envisagez des alternatives axées sur la confidentialité comme
+      [Mycroft](https://awesome-privacy.xyz/smart-home-and-iot/voice-assistants/mycroft) ou utilisez
+      Project Alias pour empêcher l'écoute passive par les assistants vocaux.
+
+  - point: Surveiller attentivement votre réseau domestique
+    priority: Optionnel
+    details: >-
+      Utilisez des outils comme FingBox ou les fonctionnalités du routeur pour surveiller toute activité réseau inhabituelle.
+
+  - point: Refuser l'accès Internet lorsque possible
+    priority: Avancé
+    details: >-
+      Utilisez des pare-feu pour bloquer l'accès Internet pour les appareils qui n'en ont pas besoin, limitant le fonctionnement à l'utilisation du réseau local.
+
+  - point: Évaluer les risques
+    priority: Avancé
+    details: >-
+      Considérez les implications sur la confidentialité pour tous les membres du foyer et ajustez les paramètres des appareils pour la sécurité et la confidentialité, comme la désactivation des appareils à certains moments.
+  color: red
+  softwareLinks:
+  - title: Domotique
+    url: https://github.com/Lissy93/awesome-privacy#home-automation
+  - title: Assistants vocaux IA
+    url: https://github.com/Lissy93/awesome-privacy#ai-voice-assistants
+
+- title: Finances Personnelles
+  slug: personal-finance
+  description: Protéger vos fonds, comptes financiers et transactions
+  icon: finance
+  intro: >-
+    La fraude aux cartes de crédit est la forme la plus courante de vol d'identité (avec [133 015 signalements aux
+    États-Unis en 2017 seulement](https://www.experian.com/blogs/ask-experian/identity-theft-statistics/)),
+    et une perte totale de 905 millions de dollars, soit une augmentation de 26% par rapport à l'année précédente.
+    Le montant médian perdu par personne était de 429 dollars en 2017.
+    Il est plus important que jamais de prendre des mesures de base pour vous protéger d'en être victime.
+
+    Note sur les cartes de crédit : Les cartes de crédit ont des méthodes technologiques en place pour
+    détecter et arrêter certaines transactions frauduleuses. Les principaux processeurs de paiement mettent en œuvre
+    cela, en exploitant d'énormes quantités de données de leurs détenteurs de cartes, afin de connaître
+    beaucoup de choses sur les habitudes de dépenses de chaque personne. Ces données sont utilisées pour identifier
+    la fraude, mais sont également vendues à d'autres courtiers en données. Les cartes de crédit sont donc bonnes
+    pour la sécurité, mais terribles pour la confidentialité des données.
+  checklist:
+  - point: S'inscrire aux alertes de fraude et à la surveillance du crédit
+    priority: Essentiel
+    details: >-
+      Activez les alertes de fraude et la surveillance du crédit via Experian, TransUnion ou Equifax pour être alerté des activités suspectes.
+
+  - point: Appliquer un gel du crédit
+    priority: Essentiel
+    details: >-
+      Empêchez les demandes de crédit non autorisées en gelant votre crédit via Experian, TransUnion et Equifax.
+
+  - point: Utiliser des cartes virtuelles
+    priority: Optionnel
+    details: >-
+      Utilisez des numéros de carte virtuels pour les transactions en ligne pour protéger vos véritables coordonnées bancaires. Des services comme [Privacy.com](https://awesome-privacy.xyz/finance/virtual-credit-cards/privacy.com) et [MySudo](https://awesome-privacy.xyz/finance/virtual-credit-cards/mysudo) offrent ces fonctionnalités.
+
+  - point: Utiliser du liquide pour les transactions locales
+    priority: Optionnel
+    details: >-
+      Payez en [espèces](https://awesome-privacy.xyz/finance/other-payment-methods/cash) pour les achats locaux et quotidiens pour éviter le profilage financier par les institutions.
+
+  - point: Utiliser la cryptomonnaie pour les transactions en ligne
+    priority: Optionnel
+    details: >-
+      Optez pour des cryptomonnaies axées sur la confidentialité comme
+      [Monero](https://awesome-privacy.xyz/finance/cryptocurrencies/monero) pour
+      les transactions en ligne pour maintenir l'anonymat. Utilisez les cryptomonnaies judicieusement pour assurer la confidentialité.
+
+  - point: Stocker les cryptos de manière sécurisée
+    priority: Avancé
+    details: >-
+      Stockez les cryptomonnaies en toute sécurité en utilisant la génération de portefeuille hors ligne, des portefeuilles matériels
+      comme [Trezor](https://awesome-privacy.xyz/finance/crypto-wallets/trezor) ou
+      [ColdCard](https://awesome-privacy.xyz/finance/crypto-wallets/coldcard), ou
+      envisagez des solutions de stockage à long terme comme
+      [CryptoSteel](https://awesome-privacy.xyz/finance/crypto-wallets/cryptosteel).
+
+  - point: Acheter des cryptos anonymement
+    priority: Avancé
+    details: >-
+      Achetez des cryptomonnaies sans lier à votre identité via des services
+      comme [LocalBitcoins](https://awesome-privacy.xyz/finance/crypto-exchanges/localbitcoins),
+      [Bisq](https://awesome-privacy.xyz/finance/crypto-exchanges/bisq), ou des guichets automatiques Bitcoin.
+
+  - point: Mélanger les pièces
+    priority: Avancé
+    details: >-
+      Utilisez un mélangeur bitcoin ou CoinJoin avant de convertir le Bitcoin en monnaie pour masquer les traces de transaction.
+
+  - point: Utiliser des détails d'alias pour les achats en ligne
+    priority: Avancé
+    details: >-
+      Pour les achats en ligne, envisagez d'utiliser des détails d'alias, des adresses email de transfert, des numéros VOIP et des méthodes de livraison sécurisées pour protéger votre identité.
+
+  - point: Utiliser une adresse de livraison alternative
+    priority: Avancé
+    details: >-
+      Optez pour des livraisons à des adresses non personnelles comme des boîtes postales, des adresses de transfert ou des points de retrait locaux pour éviter de lier directement les achats à vous.
+  color: purple
+  softwareLinks:
+  - title: Cartes de crédit virtuelles
+    url: https://github.com/Lissy93/awesome-privacy#virtual-credit-cards
+  - title: Cryptomonnaies
+    url: https://github.com/Lissy93/awesome-privacy#cryptocurrencies
+  - title: Portefeuilles crypto
+    url: https://github.com/Lissy93/awesome-privacy#crypto-wallets
+  - title: Échanges crypto
+    url: https://github.com/Lissy93/awesome-privacy#crypto-exchanges
+  - title: Autres moyens de paiement
+    url: https://github.com/Lissy93/awesome-privacy#other-payment-methods
+  - title: Outils de budgétisation
+    url: https://github.com/Lissy93/awesome-privacy#budgeting-tools
+
+- title: Aspect Humain
+  slug: human-aspect
+  description: Éviter les risques de sécurité liés à l'ingénierie sociale
+  icon: human
+  intro: >-
+    De nombreuses violations de données, piratages et attaques sont causés par l'erreur humaine.
+    La liste suivante contient les étapes que vous devriez suivre pour réduire le risque que cela
+    vous arrive. Beaucoup relèvent du bon sens, mais il vaut la peine d'en prendre note.
+
+  checklist:
+  - point: Vérifier les destinataires
+    priority: Essentiel
+    details: >-
+      Les emails peuvent être facilement usurpés. Vérifiez l'authenticité de l'expéditeur, particulièrement pour les actions sensibles, et préférez saisir les URL manuellement plutôt que de cliquer sur les liens dans les emails.
+
+  - point: Ne pas faire confiance à vos notifications pop-up
+    priority: Essentiel
+    details: >-
+      Des pop-ups factices peuvent être déployés par des acteurs malveillants. Vérifiez toujours l'URL avant de saisir des informations sur un pop-up.
+
+  - point: Ne jamais laisser un appareil sans surveillance
+    priority: Essentiel
+    details: >-
+      Les appareils non surveillés peuvent être compromis même avec des mots de passe forts. Utilisez le chiffrement et les fonctionnalités d'effacement à distance comme Localiser mon téléphone pour les appareils perdus.
+
+  - point: Prévenir le camfecting
+    priority: Essentiel
+    details: >-
+      Protégez-vous contre le camfecting en utilisant des caches pour webcam et des bloqueurs de microphone. Mettez en sourdine les assistants domestiques lorsqu'ils ne sont pas utilisés ou lors de discussions sensibles.
+
+  - point: Se protéger des regards indiscrets
+    priority: Essentiel
+    details: >-
+      Utilisez des filtres de confidentialité sur les ordinateurs portables et mobiles pour empêcher les autres de lire votre écran dans les espaces publics.
+
+  - point: S'éduquer sur les attaques par hameçonnage
+    priority: Essentiel
+    details: >-
+      Soyez prudent face aux tentatives d'hameçonnage. Vérifiez les URL, le contexte des messages reçus, et employez de bonnes pratiques de sécurité comme l'utilisation de la 2FA et ne pas réutiliser les mots de passe.
+
+  - point: Faire attention aux logiciels espions
+    priority: Essentiel
+    details: >-
+      Soyez conscient des logiciels espions installés par des connaissances pour l'espionnage. Surveillez les signes comme une utilisation inhabituelle de la batterie et effectuez des réinitialisations d'usine en cas de suspicion.
+
+  - point: Installer des logiciels réputés de sources fiables
+    priority: Essentiel
+    details: >-
+      Téléchargez uniquement des logiciels de sources légitimes et vérifiez les fichiers avec des outils
+      comme [Virus Total](https://awesome-privacy.xyz/security-tools/online-tools/virus-total) avant l'installation.
+
+  - point: Stocker les données personnelles de manière sécurisée
+    priority: Essentiel
+    details: >-
+      Assurez-vous que toutes les données personnelles sur les appareils ou dans le cloud sont chiffrées pour les protéger contre l'accès non autorisé.
+
+  - point: Masquer les détails personnels des documents
+    priority: Essentiel
+    details: >-
+      Lors du partage de documents, masquez les détails personnels avec des rectangles opaques pour empêcher la fuite d'informations.
+
+  - point: Ne pas supposer qu'un site est sécurisé uniquement parce qu'il est en `HTTPS`
+    priority: Essentiel
+    details: >-
+      HTTPS ne garantit pas la légitimité d'un site web. Vérifiez les URL et faites preuve de prudence avec les données personnelles.
+
+  - point: Utiliser des cartes virtuelles pour payer en ligne
+    priority: Optionnel
+    details: >-
+      Utilisez des cartes virtuelles pour les paiements en ligne pour protéger vos coordonnées bancaires et limiter les risques de transaction.
+
+  - point: Examiner les autorisations des applications
+    priority: Optionnel
+    details: >-
+      Examinez et gérez régulièrement les autorisations des applications pour vous assurer qu'il n'y a pas d'accès inutile aux fonctionnalités sensibles des appareils.
+
+  - point: Se désinscrire des listes publiques
+    priority: Optionnel
+    details: >-
+      Retirez-vous des bases de données publiques et des listes marketing pour réduire les contacts non désirés et les risques potentiels.
+
+  - point: Ne jamais fournir d'informations personnelles supplémentaires lors de la désinscription
+    priority: Optionnel
+    details: >-
+      Ne fournissez pas d'informations personnelles supplémentaires lors de la désinscription des services de données pour éviter une collecte de données supplémentaire.
+
+  - point: Refuser le partage de données
+    priority: Optionnel
+    details: >-
+      De nombreuses applications et services ont par défaut des paramètres de partage de données. Désactivez-les pour protéger vos données d'être partagées avec des tiers.
+
+  - point: Examiner et mettre à jour la confidentialité des réseaux sociaux
+    priority: Optionnel
+    details: >-
+      Vérifiez et mettez à jour régulièrement vos paramètres de réseaux sociaux en raison des mises à jour fréquentes des conditions qui peuvent affecter vos paramètres de confidentialité.
+
+  - point: Compartimenter
+    priority: Avancé
+    details: >-
+      Gardez différentes zones d'activité numérique séparées pour limiter l'exposition des données en cas de violation.
+
+  - point: Protection de la confidentialité WhoIs
+    priority: Avancé
+    details: >-
+      Utilisez la protection de la confidentialité WhoIs pour les enregistrements de domaine afin de protéger vos informations personnelles des recherches publiques.
+
+  - point: Utiliser une adresse de transfert
+    priority: Avancé
+    details: >-
+      Utilisez une boîte postale ou une adresse de transfert pour le courrier afin d'empêcher les entreprises de connaître votre véritable adresse, ajoutant une couche de protection de la vie privée.
+
+  - point: Utiliser des méthodes de paiement anonymes
+    priority: Avancé
+    details: >-
+      Optez pour des méthodes de paiement anonymes comme les cryptomonnaies pour éviter d'entrer des informations identifiables en ligne.
+
+  color: indigo
+
+- title: Sécurité Physique
+  slug: physical-security
+  description: Prendre des mesures pour prévenir les incidents de sécurité dans la vie réelle
+  icon: physical
+  intro: >-
+    Les registres publics incluent souvent des données personnelles sensibles (nom complet, date de naissance,
+    numéro de téléphone, email, adresse, ethnicité etc), et sont rassemblés à partir d'une variété de
+    sources (registres de recensement, certificats de naissance/décès/mariage, listes électorales,
+    informations marketing, bases de données clients, registres de véhicules à moteur, licences professionnelles/
+    commerciales et tous les dossiers judiciaires en détail). Ces informations personnelles sensibles sont
+    [faciles et légales d'accès](https://www.consumerreports.org/consumerist/its-creepy-but-not-illegal-for-this-website-to-provide-all-your-public-info-to-anyone/),
+    ce qui soulève de [sérieuses préoccupations de confidentialité](https://privacyrights.org/resources/public-records-internet-privacy-dilemma)
+    (vol d'identité, risques pour la sécurité personnelle/harceleurs, destruction de réputations, société du dossier)
+
+
+    La vidéosurveillance est l'un des principaux moyens par lesquels les entreprises, les individus et le gouvernement
+    suivent vos mouvements. À Londres, au Royaume-Uni, une personne moyenne est filmée environ
+    500 fois par jour. Ce réseau continue de croître, et dans de nombreuses villes autour
+    du monde, la reconnaissance faciale est déployée, ce qui signifie que l'État peut connaître
+    l'identité des résidents sur les images en temps réel.
+
+    Une authentification forte, des appareils chiffrés, des logiciels corrigés et une navigation web
+    anonyme peuvent être de peu d'utilité si quelqu'un est capable de vous compromettre physiquement,
+    vos appareils et vos données. Cette section décrit quelques méthodes de base pour la sécurité physique.
+
+  checklist:
+  - point: Détruire les documents sensibles
+    priority: Essentiel
+    details: |
+      Déchiquetez ou censurez les documents sensibles avant de les jeter pour vous protéger contre
+      le vol d'identité et maintenir la confidentialité.
+
+  - point: Se désinscrire des registres publics
+    priority: Essentiel
+    details: |
+      Contactez les sites web de recherche de personnes pour vous désinscrire des listes qui montrent des informations
+      personnelles, en utilisant des guides comme le Personal Data Removal Workbook de Michael Bazzell.
+
+  - point: Filigrane sur les documents
+    priority: Essentiel
+    details: |
+      Ajoutez un filigrane avec le nom du destinataire et la date aux copies numériques des
+      documents personnels pour retracer la source d'une violation.
+
+  - point: Ne pas révéler d'informations sur les appels entrants
+    priority: Essentiel
+    details: |
+      Ne partagez des données personnelles que sur les appels que vous initiez et vérifiez le numéro de téléphone du destinataire.
+
+  - point: Rester vigilant
+    priority: Essentiel
+    details: Soyez conscient de votre environnement et évaluez les risques potentiels dans les nouveaux environnements.
+
+  - point: Sécuriser le périmètre
+    priority: Essentiel
+    details: Assurez la sécurité physique des lieux stockant des informations personnelles et des appareils, minimisant l'accès externe et utilisant des systèmes de détection d'intrusion.
+
+  - point: Sécuriser physiquement les appareils
+    priority: Essentiel
+    details: Utilisez des mesures de sécurité physique comme les verrous Kensington, les caches webcam et les filtres de confidentialité pour les appareils.
+
+  - point: Garder les appareils hors de vue directe
+    priority: Essentiel
+    details: Empêchez les appareils d'être visibles de l'extérieur pour atténuer les risques liés aux lasers et au vol.
+
+  - point: Protéger votre code PIN
+    priority: Essentiel
+    details: Masquez la saisie de votre code PIN des regards indiscrets et des caméras, et nettoyez les écrans tactiles après utilisation.
+
+  - point: Vérifier les skimmers
+    priority: Essentiel
+    details: Inspectez les distributeurs automatiques et les appareils publics pour détecter les dispositifs d'écrémage et les signes de manipulation avant utilisation.
+
+  - point: Protéger votre adresse personnelle
+    priority: Optionnel
+    details: Utilisez des lieux alternatifs, des adresses de transfert et des méthodes de paiement anonymes pour protéger votre adresse personnelle.
+
+  - point: Utiliser un code PIN, pas la biométrie
+    priority: Avancé
+    details: Préférez les codes PIN à la biométrie pour la sécurité des appareils dans les situations où une coercition légale pour déverrouiller les appareils pourrait survenir.
+
+  - point: Réduire l'exposition aux caméras de surveillance
+    priority: Avancé
+    details: Portez des déguisements et choisissez des itinéraires avec moins de caméras pour éviter la surveillance.
+
+  - point: Vêtements anti-reconnaissance faciale
+    priority: Avancé
+    details: Portez des vêtements avec des motifs qui trompent la technologie de reconnaissance faciale.
+
+  - point: Réduire l'exposition à la vision nocturne
+    priority: Avancé
+    details: Utilisez des sources de lumière IR ou des lunettes réfléchissantes pour obstruer les caméras de vision nocturne.
+
+  - point: Protéger votre ADN
+    priority: Avancé
+    details: Évitez de partager votre ADN avec les sites web d'héritage et soyez prudent quant aux traces d'ADN laissées.
+
+  color: lime
