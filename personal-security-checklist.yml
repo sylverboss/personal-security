@@ -1,584 +1,509 @@
 - title: Authentification
   slug: authentication
-  description: Sécurisation des identifiants de connexion en ligne
+  description: Sécuriser vos identifiants de connexion en ligne
   icon: password
   color: yellow
   intro: >-
-    La plupart des violations de données signalées sont causées par l'utilisation de mots de passe faibles, par défaut ou volés 
+    La plupart des violations de données signalées sont causées par l'utilisation de mots de passe faibles, par défaut ou volés
     (selon [ce rapport Verizon](http://www.verizonenterprise.com/resources/reports/rp_dbir-2016-executive-summary_xg_en.pdf)).
-    Utilisez des mots de passe longs, forts et uniques, gérez-les dans un gestionnaire de mots de passe sécurisé, activez 
-    l'authentification à deux facteurs, surveillez les violations et faites attention lors de la connexion à vos comptes.
+    Utilisez des mots de passe longs, forts et uniques, gérez-les dans un gestionnaire de mots de passe sécurisé, activez
+    l'authentification à deux facteurs, surveillez les violations et soyez prudent lors de la connexion à vos comptes.
   checklist:
-  - point: Utiliser un Mot de Passe Fort
-    priority: Essential
+  - point: Utilisez un mot de passe fort
+    priority: Essentiel
     details: >-
-      Si votre mot de passe est trop court ou contient des mots du dictionnaire, des lieux ou des noms, il peut être facilement 
-      craqué par force brute ou deviné par quelqu'un. La façon la plus simple de créer un mot de passe fort est de le rendre 
-      long (12+ caractères) - envisagez d'utiliser une 'phrase de passe', composée de plusieurs mots. Alternativement, 
-      utilisez un générateur de mots de passe pour créer un mot de passe aléatoire long et fort. Jouez avec 
-      [HowSecureIsMyPassword.net](https://howsecureismypassword.net) pour avoir une idée de la rapidité avec laquelle les mots 
-      de passe courants peuvent être craqués. En savoir plus sur la création de mots de passe forts : 
+      Si votre mot de passe est trop court ou contient des mots du dictionnaire, des lieux ou des noms, il peut être facilement
+      craqué par force brute ou deviné par quelqu'un. La façon la plus simple de créer un mot de passe fort est de le rendre long
+      (12+ caractères) - envisagez d'utiliser une "phrase de passe", composée de plusieurs mots. Alternativement,
+      utilisez un générateur de mots de passe pour créer un mot de passe long, fort et aléatoire. Essayez
+      [HowSecureIsMyPassword.net](https://howsecureismypassword.net) pour avoir une idée de la rapidité avec laquelle les mots de passe
+      courants peuvent être craqués. En savoir plus sur la création de mots de passe forts :
       [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/)
 
-  - point: Ne pas réutiliser les Mots de Passe
-    priority: Essential
+  - point: Ne réutilisez pas les mots de passe
+    priority: Essentiel
     details: >-
-      Si quelqu'un réutilise un mot de passe et qu'un site sur lequel il a un compte subit une fuite, alors un 
-      criminel pourrait facilement obtenir un accès non autorisé à ses autres comptes. Cela se fait généralement par 
-      des requêtes de connexion automatisées à grande échelle, et cela s'appelle le bourrage d'identifiants. Malheureusement, 
-      c'est trop courant, mais il est simple de s'en protéger - utilisez un mot de passe différent pour chacun de vos comptes en ligne
+      Si quelqu'un réutilise un mot de passe et qu'un site sur lequel il a un compte subit une fuite, un criminel pourrait facilement
+      accéder sans autorisation à ses autres comptes. Cela se fait généralement par des demandes de connexion automatisées à grande échelle,
+      et cela s'appelle le "Credential Stuffing". Malheureusement, c'est trop courant, mais il est simple de s'en protéger - utilisez un
+      mot de passe différent pour chacun de vos comptes en ligne.
 
-  - point: Utiliser un Gestionnaire de Mots de Passe Sécurisé 
-    priority: Essential
+  - point: Utilisez un gestionnaire de mots de passe sécurisé
+    priority: Essentiel
     details: >-
-      Pour la plupart des gens, il va être presque impossible de se souvenir de centaines de mots de passe forts et uniques.
+      Pour la plupart des gens, il sera presque impossible de se souvenir de centaines de mots de passe forts et uniques.
       Un gestionnaire de mots de passe est une application qui génère, stocke et remplit automatiquement vos identifiants de connexion.
-      Tous vos mots de passe seront chiffrés avec 1 mot de passe maître (que vous devez retenir, et qui doit être 
-      très fort). La plupart des gestionnaires de mots de passe ont des extensions de navigateur et des applications mobiles, donc quel que soit 
-      l'appareil que vous utilisez, vos mots de passe peuvent être remplis automatiquement. Un bon choix polyvalent est 
-      [Bitwarden](https://awesome-privacy.xyz/essentials/password-managers/bitwarden), ou voir 
-      [Gestionnaires de Mots de Passe Recommandés](https://awesome-privacy.xyz/essentials/password-managers)
+      Tous vos mots de passe seront chiffrés avec un mot de passe maître (que vous devez retenir, et qui doit être très fort).
+      La plupart des gestionnaires de mots de passe ont des extensions de navigateur et des applications mobiles, donc quel que soit l'appareil
+      que vous utilisez, vos mots de passe peuvent être remplis automatiquement. Un bon choix est
+      [Bitwarden](https://awesome-privacy.xyz/essentials/password-managers/bitwarden), ou consultez
+      [Gestionnaires de mots de passe recommandés](https://awesome-privacy.xyz/essentials/password-managers)
 
-  - point: Éviter de partager les mots de passe
-    priority: Essential
+  - point: Évitez de partager les mots de passe
+    priority: Essentiel
     details: >-
-      Bien qu'il puisse y avoir des moments où vous devez partager l'accès à un compte avec une autre personne, vous devriez 
-      généralement éviter de le faire car cela facilite la compromission du compte. Si vous devez absolument partager un mot de 
-      passe, par exemple lorsque vous travaillez en équipe avec un compte partagé, cela devrait être fait via les fonctionnalités 
-      intégrées dans un gestionnaire de mots de passe.
+      Bien qu'il puisse y avoir des moments où vous devez partager l'accès à un compte avec une autre personne, vous devriez généralement
+      éviter de le faire car cela facilite la compromission du compte. Si vous devez absolument partager un mot de passe, par exemple
+      lorsque vous travaillez en équipe avec un compte partagé, cela devrait être fait via les fonctionnalités intégrées à un gestionnaire de mots de passe.
 
-  - point: Activer l'Authentification à Deux Facteurs
-    priority: Essential
+  - point: Activez l'authentification à deux facteurs (2FA)
+    priority: Essentiel
     details: >-
-      La 2FA est un système où vous devez fournir à la fois quelque chose que vous connaissez (un mot de passe) et quelque chose 
-      que vous possédez (comme un code sur votre téléphone) pour vous connecter. Cela signifie que si quelqu'un a obtenu votre 
-      mot de passe (par exemple par hameçonnage, malware ou une violation de données), il ne pourra pas se connecter à votre compte. 
-      C'est facile de commencer, téléchargez [une application d'authentification](https://github.com/Lissy93/awesome-privacy#2-factor-authentication) 
-      sur votre téléphone, puis allez dans les paramètres de sécurité de votre compte et suivez les étapes pour activer la 2FA. La 
-      prochaine fois que vous vous connecterez sur un nouvel appareil, vous serez invité à entrer le code qui s'affiche dans 
-      l'application sur votre téléphone (il fonctionne sans internet, et le code change généralement toutes les 30 secondes)
+      La 2FA consiste à fournir à la fois quelque chose que vous connaissez (un mot de passe) et quelque chose que vous possédez (comme un
+      code sur votre téléphone) pour vous connecter. Cela signifie que si quelqu'un obtient votre mot de passe (par exemple via du phishing,
+      un malware ou une fuite de données), il ne pourra pas se connecter à votre compte. C'est facile à configurer, téléchargez
+      [une application d'authentification](https://github.com/Lissy93/awesome-privacy#2-factor-authentication)
+      sur votre téléphone, puis allez dans les paramètres de sécurité de votre compte et suivez les étapes pour activer la 2FA. La prochaine
+      fois que vous vous connecterez sur un nouvel appareil, vous serez invité à entrer le code affiché dans l'application sur votre téléphone
+      (cela fonctionne sans internet, et le code change généralement toutes les 30 secondes).
 
-  - point: Garder les Codes de Secours en Sécurité
-    priority: Essential
+  - point: Gardez les codes de secours en sécurité
+    priority: Essentiel
     details: >-
-      Lorsque vous activez l'authentification multi-facteurs, vous recevrez généralement plusieurs codes que vous pourrez utiliser si 
-      votre méthode 2FA est perdue, cassée ou indisponible. Gardez ces codes quelque part en sécurité pour éviter la perte ou 
-      l'accès non autorisé. Vous devriez stocker ces codes sur papier ou dans un endroit sûr sur le disque (par exemple dans un 
-      stockage hors ligne ou dans un fichier/disque chiffré). Ne les stockez pas dans votre Gestionnaire de Mots de Passe car les 
-      sources 2FA et les mots de passe doivent être conservés séparément.
+      Lorsque vous activez l'authentification à plusieurs facteurs, vous recevrez généralement plusieurs codes que vous pouvez utiliser si
+      votre méthode de 2FA est perdue, cassée ou indisponible. Gardez ces codes dans un endroit sûr pour éviter de les perdre ou qu'ils
+      soient accessibles sans autorisation. Vous devriez les stocker sur papier ou dans un endroit sûr sur disque (par exemple dans un
+      stockage hors ligne ou dans un fichier/lecteur chiffré). Ne les stockez pas dans votre gestionnaire de mots de passe, car les sources
+      de 2FA et les mots de passe doivent être conservés séparément.
 
-  - point: S'inscrire aux Alertes de Violation
-    priority: Optional
+  - point: Inscrivez-vous aux alertes de violation
+    priority: Optionnel
     details: >-
-      Après qu'un site web subit une violation de données significative, les données divulguées se retrouvent souvent sur internet. 
-      Il existe plusieurs sites web qui collectent ces enregistrements divulgués et vous permettent de rechercher votre adresse 
-      e-mail pour vérifier si vous êtes dans leurs listes. [Firefox Monitor](https://monitor.firefox.com), 
-      [Have I been pwned](https://haveibeenpwned.com) et [DeHashed](https://dehashed.com) vous permettent de vous inscrire à la 
-      surveillance, où ils vous notifieront si votre adresse e-mail apparaît dans de nouveaux ensembles de données. Il est utile 
-      de le savoir dès que possible quand cela arrive, afin que vous puissiez changer vos mots de passe pour les comptes affectés. 
-      [Have i been pwned](https://awesome-privacy.xyz/security-tools/online-tools/have-i-been-pwned) propose également des 
-      notifications à l'échelle du domaine, où vous pouvez recevoir des alertes si des adresses e-mail sous votre domaine entier 
-      apparaissent (utile si vous utilisez des alias pour le [transfert anonyme](https://github.com/Lissy93/awesome-privacy#anonymous-mail-forwarding))
+      Après qu'un site web subit une violation de données importante, les données divulguées finissent souvent sur internet. Il existe
+      plusieurs sites web qui collectent ces enregistrements divulgués et vous permettent de rechercher votre adresse e-mail pour vérifier
+      si vous figurez dans l'une de leurs listes. [Firefox Monitor](https://monitor.firefox.com), [Have I been pwned](https://haveibeenpwned.com)
+      et [DeHashed](https://dehashed.com) vous permettent de vous inscrire à une surveillance, où ils vous notifieront si votre adresse e-mail
+      apparaît dans de nouveaux ensembles de données. Il est utile de le savoir le plus tôt possible pour que vous puissiez changer vos
+      mots de passe pour les comptes concernés. [Have I been pwned](https://awesome-privacy.xyz/security-tools/online-tools/have-i-been-pwned)
+      propose également une notification à l'échelle du domaine, où vous pouvez recevoir des alertes si des adresses e-mail sous votre domaine
+      entier apparaissent (utile si vous utilisez des alias pour [le transfert anonyme de courrier](https://github.com/Lissy93/awesome-privacy#anonymous-mail-forwarding)).
 
-  - point: Protéger votre Mot de Passe/PIN
-    priority: Optional
+  - point: Protégez votre mot de passe/ code PIN
+    priority: Optionnel
     details: >-
-      Lorsque vous tapez votre mot de passe dans des lieux publics, assurez-vous que vous n'êtes pas dans la ligne de vue directe 
-      d'une caméra de vidéosurveillance et que personne ne peut voir par-dessus votre épaule. Couvrez votre mot de passe ou code 
-      PIN pendant que vous tapez, et ne révélez aucun mot de passe en texte clair à l'écran
+      Lorsque vous tapez votre mot de passe dans des lieux publics, assurez-vous que vous n'êtes pas en ligne directe avec une caméra de
+      surveillance et que personne ne peut voir par-dessus votre épaule. Couvrez votre mot de passe ou code PIN pendant que vous le tapez,
+      et ne révélez aucun mot de passe en texte clair à l'écran.
 
-  - point: Mettre à jour périodiquement les Mots de Passe Critiques
-    priority: Optional
+  - point: Mettez à jour les mots de passe critiques périodiquement
+    priority: Optionnel
     details: >-
-      Les fuites et violations de bases de données sont courantes, et il est probable que plusieurs de vos mots de passe sont déjà 
-      quelque part en ligne. La mise à jour occasionnelle des mots de passe des comptes critiques pour la sécurité peut aider à 
-      atténuer cela. Mais à condition que tous vos mots de passe soient longs, forts et uniques, il n'est pas nécessaire de le faire 
-      trop souvent - annuellement devrait être suffisant. L'application de changements de mot de passe obligatoires au sein des 
-      organisations n'est [plus recommandée](https://duo.com/decipher/microsoft-will-no-longer-recommend-forcing-periodic-password-changes), 
-      car cela encourage les collègues à choisir des mots de passe plus faibles
+      Les fuites et violations de bases de données sont courantes, et il est probable que plusieurs de vos mots de passe sont déjà quelque
+      part en ligne. Mettre à jour occasionnellement les mots de passe des comptes critiques pour la sécurité peut aider à atténuer cela.
+      Mais à condition que tous vos mots de passe soient longs, forts et uniques, il n'est pas nécessaire de le faire trop souvent - une fois
+      par an devrait suffire. Forcer les changements de mot de passe obligatoires au sein des organisations est
+      [déconseillé](https://duo.com/decipher/microsoft-will-no-longer-recommend-forcing-periodic-password-changes),
+      car cela encourage les collègues à choisir des mots de passe plus faibles.
 
-  - point: Ne pas sauvegarder vos mots de passe dans les navigateurs
-    priority: Optional
+  - point: Ne sauvegardez pas vos mots de passe dans les navigateurs
+    priority: Optionnel
     details: >-
-      La plupart des navigateurs modernes proposent de sauvegarder vos identifiants lorsque vous vous connectez à un site. Ne le 
-      permettez pas, car ils ne sont pas toujours chiffrés, donc pourraient permettre à quelqu'un d'accéder à vos comptes. Utilisez 
-      plutôt un gestionnaire de mots de passe dédié pour stocker (et remplir automatiquement) vos mots de passe
+      La plupart des navigateurs modernes proposent de sauvegarder vos identifiants lorsque vous vous connectez à un site. Ne permettez pas
+      cela, car ils ne sont pas toujours chiffrés, ce qui pourrait permettre à quelqu'un d'accéder à vos comptes. Utilisez plutôt un
+      gestionnaire de mots de passe dédié pour stocker (et remplir automatiquement) vos mots de passe.
 
-  - point: Éviter de se connecter sur l'appareil de quelqu'un d'autre
-    priority: Optional
+  - point: Évitez de vous connecter sur l'appareil de quelqu'un d'autre
+    priority: Optionnel
     details: >-
-      Évitez de vous connecter sur l'ordinateur d'autres personnes, car vous ne pouvez pas être sûr que leur système est propre. 
-      Soyez particulièrement prudent avec les machines publiques, car les malwares et le traçage y sont plus courants. L'utilisation 
-      de l'appareil de quelqu'un d'autre est particulièrement dangereuse avec les comptes critiques comme les services bancaires en 
-      ligne. Lorsque vous utilisez la machine de quelqu'un d'autre, assurez-vous d'être dans une session privée/incognito 
-      (Utilisez Ctrl+Shift+N/ Cmd+Shift+N). Cela demandera au navigateur de ne pas sauvegarder vos identifiants, cookies et 
-      historique de navigation.
+      Évitez de vous connecter sur l'ordinateur d'une autre personne, car vous ne pouvez pas être sûr que son système est propre. Soyez
+      particulièrement prudent avec les machines publiques, car les logiciels malveillants et le suivi y sont plus courants. Utiliser
+      l'appareil de quelqu'un d'autre est particulièrement dangereux avec des comptes critiques comme la banque en ligne. Lorsque vous
+      utilisez l'appareil de quelqu'un d'autre, assurez-vous que vous êtes dans une session privée/incognito (Utilisez Ctrl+Maj+N/
+      Cmd+Maj+N). Cela demandera au navigateur de ne pas sauvegarder vos identifiants, cookies et historique de navigation.
 
-  - point: Éviter les indices de mot de passe
-    priority: Optional
+  - point: Évitez les indices de mot de passe
+    priority: Optionnel
     details: >-
-      Certains sites vous permettent de définir des indices de mot de passe. Souvent, il est très facile de deviner les réponses. 
-      Dans les cas où les indices de mot de passe sont obligatoires, utilisez des réponses aléatoires et enregistrez-les dans le 
-      gestionnaire de mots de passe (`Nom de la première école : 6D-02-8B-!a-E8-8F-81`)
+      Certains sites vous permettent de définir des indices de mot de passe. Souvent, il est très facile de deviner les réponses. Dans les
+      cas où les indices de mot de passe sont obligatoires, utilisez des réponses aléatoires et enregistrez-les dans votre gestionnaire de
+      mots de passe (`Nom de la première école : 6D-02-8B-!a-E8-8F-81`).
 
-  - point: Ne jamais répondre honnêtement aux questions de sécurité en ligne
-    priority: Optional
+  - point: Ne répondez jamais honnêtement aux questions de sécurité en ligne
+    priority: Optionnel
     details: >-
-      Si un site pose des questions de sécurité (comme le lieu de naissance, le nom de jeune fille de la mère ou la première 
-      voiture, etc.), ne fournissez pas de vraies réponses. C'est une tâche triviale pour les pirates de trouver ces informations 
-      en ligne ou par ingénierie sociale. À la place, créez une réponse fictive et stockez-la dans votre gestionnaire de mots de 
-      passe. Utiliser des vrais mots est préférable aux caractères aléatoires, [expliqué ici](https://news.ycombinator.com/item?id=29244870)
+      Si un site pose des questions de sécurité (comme le lieu de naissance, le nom de jeune fille de la mère ou la première voiture, etc.),
+      ne fournissez pas de réponses réelles. Il est trivial pour les pirates de trouver ces informations en ligne ou via l'ingénierie sociale.
+      Au lieu de cela, créez une réponse fictive et stockez-la dans votre gestionnaire de mots de passe. Utiliser des mots réels est mieux
+      que des caractères aléatoires, [expliqué ici](https://news.ycombinator.com/item?id=29244870).
 
-  - point: Ne pas utiliser un PIN à 4 chiffres
-    priority: Optional
+  - point: N'utilisez pas de code PIN à 4 chiffres
+    priority: Optionnel
     details: >-
-      N'utilisez pas un PIN court pour accéder à votre smartphone ou ordinateur. Utilisez plutôt un mot de passe textuel ou un 
-      pin beaucoup plus long. Les phrases de passe numériques sont faciles à craquer (Un PIN à 4 chiffres a 10 000 combinaisons, 
-      contre 7,4 millions pour un code alphanumérique de 4 caractères)
+      N'utilisez pas un code PIN court pour accéder à votre smartphone ou ordinateur. Utilisez plutôt un mot de passe texte ou un code PIN
+      beaucoup plus long. Les phrases de passe numériques sont faciles à craquer (un code PIN à 4 chiffres a 10 000 combinaisons, contre
+      7,4 millions pour un code alphanumérique de 4 caractères).
 
-  - point: Éviter d'utiliser les SMS pour la 2FA
-    priority: Optional
+  - point: Évitez d'utiliser les SMS pour la 2FA
+    priority: Optionnel
     details: >-
-      Lors de l'activation de l'authentification multi-facteurs, optez pour des codes basés sur une application ou un jeton matériel, 
-      si pris en charge. Les SMS sont susceptibles de subir plusieurs menaces courantes, comme le 
-      [SIM-swapping](https://www.maketecheasier.com/sim-card-hijacking) et 
-      l'[interception](https://secure-voice.com/ss7_attacks). Il n'y a également aucune garantie sur la sécurité du stockage de 
-      votre numéro de téléphone ou son utilisation. D'un point de vue pratique, les SMS ne fonctionneront que lorsque vous avez du 
-      réseau et peuvent être lents. Si un site web ou un service nécessite l'utilisation d'un numéro SMS pour la récupération, 
-      envisagez d'acheter un second numéro de téléphone prépayé uniquement utilisé pour la récupération de compte dans ces cas.
+      Lorsque vous activez l'authentification à plusieurs facteurs, optez pour des codes basés sur une application ou un jeton matériel, si
+      pris en charge. Les SMS sont susceptibles à plusieurs menaces courantes, comme le
+      [SIM-swapping](https://www.maketecheasier.com/sim-card-hijacking)
+      et l'[interception](https://secure-voice.com/ss7_attacks). Il n'y a également aucune garantie sur la manière dont votre numéro de
+      téléphone sera stocké, ou à quoi il sera utilisé. D'un point de vue pratique, les SMS ne fonctionnent que lorsque vous avez du signal,
+      et peuvent être lents. Si un site web ou un service nécessite l'utilisation d'un numéro SMS pour la récupération, envisagez d'acheter
+      un deuxième numéro de téléphone prépayé uniquement utilisé pour la récupération de compte dans ces cas.
 
-  - point: Éviter d'utiliser votre GM pour Générer des OTP
-    priority: Advanced
+  - point: Évitez d'utiliser votre gestionnaire de mots de passe pour générer des OTP
+    priority: Avancé
     details: >-
-      De nombreux gestionnaires de mots de passe sont également capables de générer des codes 2FA. Il est préférable de ne pas 
-      utiliser votre gestionnaire de mots de passe principal comme authentificateur 2FA également, car il deviendrait un point 
-      unique de défaillance s'il était compromis. Utilisez plutôt une 
-      [application d'authentification](https://github.com/Lissy93/awesome-privacy#2-factor-authentication) dédiée sur votre 
-      téléphone ou ordinateur portable
+      De nombreux gestionnaires de mots de passe sont également capables de générer des codes 2FA. Il est préférable de ne pas utiliser votre
+      gestionnaire de mots de passe principal comme authentificateur 2FA, car il deviendrait un point de défaillance unique en cas de
+      compromission. Utilisez plutôt une [application d'authentification dédiée](https://github.com/Lissy93/awesome-privacy#2-factor-authentication)
+      sur votre téléphone ou ordinateur portable.
 
-  - point: Éviter le Déverrouillage Facial
-    priority: Advanced
+  - point: Évitez le déverrouillage facial
+    priority: Avancé
     details: >-
-      La plupart des téléphones et ordinateurs portables offrent une fonction d'authentification par reconnaissance faciale, 
-      utilisant la caméra pour comparer une photo de votre visage avec un hash stocké. Cela peut être très pratique, mais il 
-      existe de nombreuses façons de la [tromper](https://www.forbes.com/sites/jvchamary/2017/09/18/security-apple-face-id-iphone-x/) 
-      et d'accéder à l'appareil, via des photos numériques et des reconstructions à partir d'images de vidéosurveillance. 
-      Contrairement à votre mot de passe, il y a probablement des photos de votre visage sur internet et des vidéos enregistrées 
-      par des caméras de surveillance
+      La plupart des téléphones et ordinateurs portables offrent une fonctionnalité de reconnaissance faciale pour l'authentification,
+      utilisant la caméra pour comparer une capture de votre visage avec un hachage stocké. Cela peut être très pratique, mais il existe de
+      nombreuses façons de [le tromper](https://www.forbes.com/sites/jvchamary/2017/09/18/security-apple-face-id-iphone-x/)
+      et d'accéder à l'appareil, via des photos numériques et des reconstructions à partir de séquences de vidéosurveillance. Contrairement
+      à votre mot de passe, il y a probablement des photos de votre visage sur internet, et des vidéos enregistrées par des caméras de
+      surveillance.
 
-  - point: Watch out for Keyloggers
-    priority: Advanced
+  - point: Méfiez-vous des keyloggers
+    priority: Avancé
     details: >-
-      Un [keylogger](https://en.wikipedia.org/wiki/Hardware_keylogger) matériel est un dispositif physique installé entre 
-      votre clavier et le port USB, qui intercepte toutes les frappes et parfois transmet les données à un serveur distant. 
-      Il donne à un pirate accès à tout ce qui est tapé, y compris les mots de passe. La meilleure façon de rester protégé est 
-      simplement de vérifier votre connexion USB après que votre PC a été laissé sans surveillance. Il est également possible 
-      que des keyloggers soient installés à l'intérieur du boîtier du clavier, alors recherchez tout signe de manipulation 
-      du boîtier et envisagez d'apporter votre propre clavier au travail. Les données tapées sur un clavier virtuel, collées 
-      depuis le presse-papiers ou auto-remplies par un gestionnaire de mots de passe ne peuvent pas être interceptées par un 
-      keylogger matériel.
+      Un [keylogger matériel](https://fr.wikipedia.org/wiki/Keylogger_mat%C3%A9riel) est un dispositif physique placé entre
+      votre clavier et le port USB, qui intercepte toutes les frappes, et relaie parfois les données vers un serveur distant.
+      Cela donne à un pirate l'accès à tout ce que vous tapez, y compris les mots de passe. La meilleure façon de vous protéger est de
+      vérifier votre connexion USB après que votre PC ait été laissé sans surveillance. Il est également possible que des keyloggers soient
+      placés à l'intérieur du boîtier du clavier, alors recherchez tout signe de manipulation du boîtier, et envisagez d'apporter votre
+      propre clavier au travail. Les données tapées sur un clavier virtuel, collées à partir du presse-papiers ou remplies automatiquement
+      par un gestionnaire de mots de passe ne peuvent pas être interceptées par un keylogger matériel.
 
-  - point: Consider a Hardware Token
-    priority: Advanced
+  - point: Envisagez un jeton matériel
+    priority: Avancé
     details: >-
-      Une clé de sécurité U2F/FIDO2 est un dispositif USB (ou NFC) que vous insérez lors de la connexion à un service en ligne,
-      pour vérifier votre identité, au lieu d'entrer un OTP depuis votre authentificateur. [SoloKey](https://solokeys.com) et
-      [NitroKey](https://www.nitrokey.com) sont des exemples de telles clés. Elles apportent plusieurs avantages en matière 
-      de sécurité, car le navigateur communique directement avec le dispositif et ne peut pas être trompé quant à l'hôte qui 
-      demande l'authentification, car le certificat TLS est vérifié. [Ce post](https://security.stackexchange.com/a/71704) est
-      une bonne explication de la sécurité des jetons FIDO U2F. Bien sûr, il est important de stocker la clé physique dans un 
-      endroit sûr ou de la garder sur soi. Certains comptes en ligne permettent d'activer plusieurs méthodes de 2FA.
+      Une clé de sécurité U2F/ FIDO2 est un dispositif USB (ou NFC) que vous insérez lors de la connexion à un service en ligne, pour
+      vérifier votre identité, au lieu d'entrer un OTP depuis votre authentificateur. [SoloKey](https://solokeys.com) et
+      [NitroKey](https://www.nitrokey.com) sont des exemples de telles clés. Elles offrent plusieurs avantages en matière de sécurité,
+      car le navigateur communique directement avec le dispositif et ne peut pas être trompé sur l'hôte qui demande l'authentification,
+      car le certificat TLS est vérifié. [Ce post](https://security.stackexchange.com/a/71704) est
+      une bonne explication de la sécurité de l'utilisation des jetons FIDO U2F. Bien sûr, il est important de stocker la clé physique
+      dans un endroit sûr, ou de la garder sur vous. Certains comptes en ligne permettent d'activer plusieurs méthodes de 2FA.
 
-  - point: Consider Offline Password Manager
-    priority: Advanced
+  - point: Envisagez un gestionnaire de mots de passe hors ligne
+    priority: Avancé
     details: >-
-      Pour une sécurité accrue, un gestionnaire de mots de passe hors ligne chiffré vous donnera un contrôle total sur vos données.
-      [KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass) est un choix populaire, avec beaucoup de [plugins](https://[KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass).info/plugins.html) et
-      de forks communautaires avec des compatibilités et fonctionnalités supplémentaires. Les clients populaires incluent : [KeePassXC](https://keepassxc.org)
+      Pour une sécurité accrue, un gestionnaire de mots de passe chiffré hors ligne vous donnera un contrôle total sur vos données.
+      [KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass) est un choix populaire, avec de nombreux [plugins](https://[KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass).info/plugins.html) et
+      des forks communautaires avec une compatibilité et une fonctionnalité supplémentaires. Les clients populaires incluent : [KeePassXC](https://keepassxc.org)
       (bureau), [KeePassDX](https://www.keepassdx.com) (Android) et [StrongBox](https://apps.apple.com/us/app/strongbox-password-safe/id897283731)
-      (iOS). L'inconvénient étant qu'il peut être légèrement moins pratique pour certains, et ce sera à vous de le sauvegarder
+      (iOS). L'inconvénient est que cela peut être légèrement moins pratique pour certains, et il vous incombera de le sauvegarder,
       et de le stocker en toute sécurité.
 
-  - point: Consider Unique Usernames
-    priority: Advanced
+  - point: "Envisagez des noms d'utilisateur uniques"
+    priority: "Avancé"
     details: >-
-      Avoir des mots de passe différents pour chaque compte est un bon premier pas, mais si vous utilisez également un nom d'utilisateur, 
-      un e-mail ou un numéro de téléphone unique pour vous connecter, il sera beaucoup plus difficile pour quiconque d'obtenir un accès 
-      non autorisé. La méthode la plus simple pour avoir plusieurs e-mails est d'utiliser des alias générés automatiquement pour le 
-      transfert de courrier anonyme. C'est là que [n'importe quoi]@votredomaine.com arrivera dans votre boîte de réception, vous 
-      permettant d'utiliser un e-mail différent pour chaque compte (voir [Fournisseurs d'alias de messagerie](https://github.com/Lissy93/awesome-privacy#anonymous-mail-forwarding)). 
-      Les noms d'utilisateur sont plus faciles, car vous pouvez utiliser votre gestionnaire de mots de passe pour les générer, les 
-      stocker et les remplir automatiquement. Les numéros de téléphone virtuels peuvent être générés via votre fournisseur VOIP.
-  softwareLinks:
-    - title: Gestionnaires de mots de passe
-      url: https://github.com/Lissy93/awesome-privacy#password-managers
-    - title: Authentification à deux facteurs
-      url: https://github.com/Lissy93/awesome-privacy#2-factor-authentication
+      Avoir des mots de passe différents pour chaque compte est un bon premier pas, mais si vous utilisez également un nom d'utilisateur,
+      un e-mail ou un numéro de téléphone unique pour vous connecter, il sera beaucoup plus difficile pour quiconque d'essayer 
+      d'obtenir un accès non autorisé. La méthode la plus simple pour gérer plusieurs e-mails est d'utiliser des alias générés 
+      automatiquement pour le transfert de courrier anonyme. Cela signifie que [n'importe quoi]@votredomaine.com arrivera dans 
+      votre boîte de réception, vous permettant d'utiliser un e-mail différent pour chaque compte.
+    softwareLinks:
+      - title: "Password Managers"
+        url: "https://github.com/Lissy93/awesome-privacy#password-managers"
+      - title: "2-Factor Authentication"
+        url: "https://github.com/Lissy93/awesome-privacy#2-factor-authentication"
 
-- title: Navigation Web
-  slug: web-browsing
-  description: Éviter le traçage, la censure et la collecte de données en ligne
-  icon: browser
+- title: "Navigation Web"
+  slug: "web-browsing"
+  description: "Éviter le traçage, la censure et la collecte de données en ligne"
+  icon: "browser"
   intro: >-
     La plupart des sites web sur Internet utilisent une forme de traçage, souvent pour obtenir
     des informations sur le comportement et les préférences de leurs utilisateurs. Ces données peuvent être 
     incroyablement détaillées, et sont donc extrêmement précieuses pour les entreprises, les gouvernements 
     et les voleurs de propriété intellectuelle. Les violations et fuites de données sont courantes, et 
     la désanonymisation de l'activité web des utilisateurs est souvent une tâche triviale.
-
-
-    Il existe deux méthodes principales de traçage : avec état (basé sur les cookies) et sans état
-    (basé sur l'empreinte digitale). Les cookies sont de petites informations stockées dans votre navigateur
-    avec un ID unique qui est utilisé pour vous identifier. L'empreinte digitale du navigateur est un moyen
-    très précis d'identifier et de suivre les utilisateurs partout où ils vont en ligne. Les informations
-    collectées sont assez complètes et incluent souvent les détails du navigateur, le système d'exploitation, 
-    la résolution d'écran, les polices supportées, les plugins, le fuseau horaire, la langue et les préférences 
-    de police, et même les configurations matérielles.
-
-
-    Cette section décrit les étapes que vous pouvez suivre pour être mieux protégé contre les menaces,
-    minimiser le traçage en ligne et améliorer la confidentialité.
   checklist:
-  - point: Block Ads
-    priority: Essential
+  - point: "Bloquez les publicités"
+    priority: "Essentiel"
     details: >-
-      L'utilisation d'un bloqueur de publicités peut aider à améliorer votre confidentialité en bloquant les traceurs 
-      que les publicités mettent en œuvre. [uBlock Origin](https://awesome-privacy.xyz/networking/ad-blockers/ublock-origin) 
-      est une extension de navigateur très efficace et open source, développée par Raymond Hill. Lorsque des publicités 
-      tierces sont affichées sur une page web, elles ont la capacité de vous suivre, de recueillir des informations 
-      personnelles sur vous et vos habitudes, qui peuvent ensuite être vendues ou utilisées pour vous montrer des publicités 
-      plus ciblées, et certaines publicités sont simplement malveillantes ou fausses. Le blocage des publicités permet 
-      également aux pages de se charger plus rapidement, utilise moins de données et offre une expérience moins encombrée.
+      L'utilisation d'un bloqueur de publicités peut aider à améliorer votre confidentialité en bloquant les traceurs
+      que les publicités mettent en œuvre. uBlock Origin est une extension de navigateur très efficace et open source,
+      développée par Raymond Hill. Lorsque des publicités tierces sont affichées sur une page web, elles ont la capacité
+      de vous suivre, collectant des informations personnelles sur vous et vos habitudes.
 
-  - point: Ensure Website is Legitimate
-    priority: Basic
+  - point: "Assurez-vous que le site web est légitime"
+    priority: "Essentiel"
     details: >-
-      Cela peut sembler évident, mais lorsque vous vous connectez à des comptes en ligne, vérifiez bien que l'URL est correcte.
-      Stocker les sites fréquemment visités dans vos favoris est un bon moyen de s'assurer que l'URL est facile à trouver. 
-      Lorsque vous visitez de nouveaux sites web, recherchez les signes courants qu'il pourrait être dangereux : avertissements 
-      du navigateur, redirections, spam sur le site et pop-ups. Vous pouvez également vérifier un site web en utilisant un outil 
-      comme : [Virus Total](https://awesome-privacy.xyz/security-tools/online-tools/virus-total),
-      [IsLegitSite](https://www.islegitsite.com), [Google Safe Browsing Status](https://transparencyreport.google.com/safe-browsing/search)
-      si vous avez des doutes.
+      Cela peut sembler évident, mais lorsque vous vous connectez à des comptes en ligne, vérifiez que l'URL est correcte.
+      Stocker les sites fréquemment visités dans vos favoris est un bon moyen de s'assurer que l'URL est facile à trouver.
+      Lors de la visite de nouveaux sites web, recherchez les signes courants qu'il pourrait être dangereux : avertissements
+      du navigateur, redirections, spam sur site et pop-ups.
 
-  - point: Watch out for Browser Malware
-    priority: Basic
+  - point: "Méfiez-vous des logiciels malveillants du navigateur"
+    priority: "Essentiel"
     details: >-
       Votre système ou navigateur peut être compromis par des logiciels espions, des mineurs, des détourneurs de navigateur,
-      des redirections malveillantes, des logiciels publicitaires, etc. Vous pouvez généralement rester protégé simplement en : 
-      ignorant les pop-ups, en faisant attention à ce sur quoi vous cliquez, ne pas accéder à un site web si votre navigateur 
-      vous avertit qu'il peut être malveillant. Les signes courants de logiciels malveillants dans le navigateur incluent : 
-      moteur de recherche ou page d'accueil par défaut modifiés, barres d'outils, extensions ou icônes non familières, 
-      beaucoup plus de publicités, erreurs et pages se chargeant beaucoup plus lentement que d'habitude. Ces articles de Heimdal
-      expliquent les [signes de logiciels malveillants dans le navigateur](https://heimdalsecurity.com/blog/warning-signs-operating-system-infected-malware),
-      [comment les navigateurs sont infectés](https://heimdalsecurity.com/blog/practical-online-protection-where-malware-hides)
-      et [comment supprimer les logiciels malveillants du navigateur](https://heimdalsecurity.com/blog/malware-removal).
+      des redirections malveillantes, des logiciels publicitaires, etc. Vous pouvez généralement rester protégé simplement en
+      ignorant les pop-ups, en faisant attention à ce sur quoi vous cliquez, en ne continuant pas vers un site web si votre
+      navigateur vous avertit qu'il pourrait être malveillant.
 
-  - point: Use a Privacy-Respecting Browser
-    priority: Essential
+  - point: "Utilisez un navigateur respectueux de la vie privée"
+    priority: "Essentiel"
     details: >-
-      [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox) (avec quelques ajustements)
-      et [Brave](https://awesome-privacy.xyz/essentials/browsers/brave-browser)
-      sont des navigateurs sécurisés et respectueux de la vie privée. Les deux sont rapides, open source, conviviaux et 
-      disponibles sur tous les principaux systèmes d'exploitation. Votre navigateur a accès à tout ce que vous faites en ligne, 
-      donc si possible, évitez Google Chrome, Edge et Safari car (sans configuration correcte) ces trois navigateurs collectent 
-      des données d'utilisation, communiquent avec leurs serveurs et permettent un traçage invasif. Firefox nécessite quelques 
-      modifications pour atteindre une sécurité optimale, par exemple - les configurations user.js 
-      [arkenfox](https://github.com/arkenfox/user.js/wiki) ou [12byte](https://12bytes.org/firefox-configuration-guide-for-privacy-freaks-and-performance-buffs/).
-      Voir plus : [Navigateurs privés](https://github.com/Lissy93/awesome-privacy#browsers).
+      Firefox (avec quelques ajustements) et Brave sont des navigateurs sécurisés et respectueux de la vie privée. Les deux
+      sont rapides, open source, conviviaux et disponibles sur tous les principaux systèmes d'exploitation. Votre navigateur
+      a accès à tout ce que vous faites en ligne, donc si possible, évitez Google Chrome, Edge et Safari car (sans une
+      configuration correcte) tous les trois collectent des données d'utilisation.
 
-  - point: Use a Private Search Engine
-    priority: Essential
+  - point: "Utilisez un moteur de recherche privé"
+    priority: "Essentiel"
     details: >-
-      L'utilisation d'un moteur de recherche préservant la confidentialité et ne traçant pas réduira le risque que vos termes 
-      de recherche soient enregistrés ou utilisés contre vous. Considérez [DuckDuckGo](https://awesome-privacy.xyz/essentials/search-engines/duckduckgo),
-      ou [Qwant](https://awesome-privacy.xyz/essentials/search-engines/qwant).
-      Google met en œuvre des politiques de traçage [incroyablement invasives](https://hackernoon.com/data-privacy-concerns-with-google-b946f2b7afea)
-      et a un historique d'affichage de [résultats de recherche biaisés](https://www.businessinsider.com/evidence-that-google-search-results-are-biased-2014-10).
-      Par conséquent, Google, ainsi que Bing, Baidu, Yahoo et Yandex sont incompatibles avec quiconque cherche à protéger
-      sa vie privée. Il est recommandé de mettre à jour votre [moteur de recherche par défaut du navigateur](https://duckduckgo.com/install)
-      vers un moteur de recherche respectueux de la vie privée.
+      L'utilisation d'un moteur de recherche préservant la confidentialité et ne traçant pas réduira le risque que vos
+      termes de recherche soient enregistrés ou utilisés contre vous. Considérez DuckDuckGo ou Qwant. Google met en œuvre
+      des politiques de traçage incroyablement invasives et a un historique d'affichage de résultats de recherche biaisés.
 
-  - point: Remove Unnecessary Browser Addons
-    priority: Essential
+  - point: "Supprimez les extensions de navigateur inutiles"
+    priority: "Essentiel"
     details: >-
-      Les extensions peuvent voir, enregistrer ou modifier tout ce que vous faites dans le navigateur, et certaines applications 
-      de navigateur d'apparence innocente ont des intentions malveillantes. Les sites web peuvent voir quelles extensions vous 
-      avez installées et peuvent utiliser cela pour améliorer votre empreinte digitale, pour vous identifier/suivre plus 
-      précisément. Les magasins web de [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox) et Chrome
-      vous permettent de vérifier quelles permissions/droits d'accès une extension nécessite avant de l'installer.
-      Vérifiez les avis. N'installez que les extensions dont vous avez vraiment besoin et supprimez celles que vous n'avez 
-      pas utilisées depuis un moment.
+      Les extensions peuvent voir, enregistrer ou modifier tout ce que vous faites dans le navigateur, et certaines
+      applications de navigateur d'apparence innocente ont des intentions malveillantes. Les sites web peuvent voir
+      quelles extensions vous avez installées et peuvent utiliser cela pour améliorer votre empreinte digitale.
 
-  - point: Keep Browser Up-to-date
-    priority: Essential
+  - point: "Gardez le navigateur à jour"
+    priority: "Essentiel"
     details: >-
-      Les vulnérabilités des navigateurs sont constamment [découvertes](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=browser)
-      et corrigées, il est donc important de le maintenir à jour pour éviter une exploitation zero-day. Vous pouvez [voir quelle 
-      version de navigateur vous utilisez ici](https://www.whatismybrowser.com/), ou suivre [ce guide](https://www.whatismybrowser.com/guides/how-to-update-your-browser/)
-      pour les instructions sur la mise à jour. Certains navigateurs se mettent automatiquement à jour vers la dernière version stable.
+      Les vulnérabilités du navigateur sont constamment découvertes et corrigées, il est donc important de le maintenir
+      à jour pour éviter une exploitation zero-day. Vous pouvez voir quelle version de navigateur vous utilisez ici,
+      ou suivre ce guide pour les instructions sur la mise à jour.
 
-  - point: Vérifier HTTPS
-    priority: Essential
+  - point: "Vérifiez la présence de HTTPS"
+    priority: "Essentiel"
     details: >-
-      Si vous saisissez des informations sur un site web non-HTTPS, ces données sont transportées sans 
-      chiffrement et peuvent donc être lues par quiconque les intercepte. Ne saisissez aucune donnée sur 
-      un site web non-HTTPS, mais ne laissez pas non plus le cadenas vert vous donner un faux sentiment 
-      de sécurité, car ce n'est pas parce qu'un site web possède un certificat SSL qu'il est légitime 
-      ou digne de confiance. [HTTPS-Everywhere](https://www.eff.org/https-everywhere) (développé par 
-      l'[EFF](https://www.eff.org/)) était une extension/addon de navigateur qui activait automatiquement 
-      HTTPS sur les sites web, mais depuis 2022, elle est obsolète. Dans leur [article d'annonce](https://www.eff.org/), 
-      l'EFF explique que la plupart des navigateurs intègrent désormais ces protections. De plus, il 
-      fournit des instructions pour les navigateurs [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox), 
-      Chrome, Edge et Safari sur l'activation de leurs protections HTTPS.
+      Si vous saisissez des informations sur un site web non-HTTPS, ces données sont transportées non chiffrées et peuvent
+      donc être lues par quiconque les intercepte. Ne saisissez aucune donnée sur un site web non-HTTPS, mais ne laissez
+      pas non plus le cadenas vert vous donner un faux sentiment de sécurité.
 
-  - point: Utiliser DNS-over-HTTPS
-    priority: Essential
+  - point: "Utilisez DNS-over-HTTPS"
+    priority: "Essentiel"
     details: >-
-      Le DNS traditionnel effectue des requêtes en texte clair visibles par tous. Cela permet l'espionnage 
-      et la manipulation des données DNS via des attaques de type man-in-the-middle. Le DNS-over-HTTPS 
-      effectue la résolution DNS via le protocole HTTPS, ce qui signifie que les données entre vous et 
-      votre résolveur DNS sont chiffrées. Une option populaire est le [1.1.1.1](https://awesome-privacy.xyz/security-tools/mobile-apps/1.1.1.1) 
-      de [CloudFlare](https://awesome-privacy.xyz/networking/dns-providers/cloudflare), ou comparez les 
-      fournisseurs - il est simple à activer dans le navigateur. Notez que le DoH présente ses propres 
-      problèmes, principalement en empêchant le filtrage web.
+      Le DNS traditionnel fait des requêtes en texte clair que tout le monde peut voir. Il permet l'espionnage et
+      la manipulation des données DNS via des attaques homme-du-milieu. Le DNS-over-HTTPS effectue la résolution DNS
+      via le protocole HTTPS, ce qui signifie que les données entre vous et votre résolveur DNS sont chiffrées.
 
-  - point: Conteneurs Multi-[Session](https://awesome-privacy.xyz/communication/encrypted-messaging/session)
-    priority: Essential
+  - point: "Conteneurs multi-sessions"
+    priority: "Essentiel"
     details: >-
-      La compartimentation est très importante pour maintenir séparés différents aspects de votre navigation. 
-      Par exemple, utiliser différents profils pour le travail, la navigation générale, les réseaux sociaux, 
-      les achats en ligne, etc. réduira le nombre d'associations que les courtiers en données peuvent vous 
-      lier. Une option est d'utiliser [Firefox Containers](https://awesome-privacy.xyz/security-tools/browser-extensions/firefox-multi-account-containers) 
-      qui est conçu exactement dans ce but. Alternativement, vous pouvez utiliser différents navigateurs 
-      pour différentes tâches ([Brave](https://awesome-privacy.xyz/essentials/browsers/brave-browser), 
-      [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox), 
-      [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor) etc).
+      La compartimentation est vraiment importante pour garder différents aspects de votre navigation séparés. Par
+      exemple, utiliser différents profils pour le travail, la navigation générale, les médias sociaux, les achats
+      en ligne, etc. réduira le nombre d'associations que les courtiers en données peuvent vous lier.
 
-  - point: Utiliser la Navigation Privée
-    priority: Essential
+  - point: "Utilisez la navigation privée"
+    priority: "Essentiel"
     details: >-
-      Lorsque vous utilisez la machine de quelqu'un d'autre, assurez-vous d'être en session privée/incognito. 
-      Cela empêchera l'enregistrement de l'historique du navigateur, des cookies et de certaines données, 
-      mais ce n'est pas infaillible - vous pouvez toujours être tracé.
+      Lorsque vous utilisez la machine de quelqu'un d'autre, assurez-vous d'être en session privée/incognito. Cela
+      empêchera l'historique du navigateur, les cookies et certaines données d'être sauvegardés, mais ce n'est pas
+      infaillible - vous pouvez toujours être tracé.
 
-  - point: Comprendre Votre Empreinte Numérique
-    priority: Essential
+  - point: "Comprenez votre empreinte digitale de navigateur"
+    priority: "Essentiel"
     details: >-
-      L'empreinte numérique du navigateur est une méthode de traçage incroyablement précise, où un site 
-      web vous identifie en fonction des informations de votre appareil. Vous pouvez voir votre empreinte 
-      sur amiunique.org - Le but est d'être le moins unique possible.
+      L'empreinte digitale du navigateur est une méthode de traçage incroyablement précise, où un site web vous
+      identifie en fonction des informations de votre appareil. Vous pouvez voir votre empreinte sur amiunique.org
+      - Le but est d'être aussi peu unique que possible.
 
-  - point: Gérer les Cookies
-    priority: Essential
+  - point: "Gérez les cookies"
+    priority: "Essentiel"
     details: >-
-      Effacer régulièrement les cookies est une étape que vous pouvez prendre pour aider à réduire le 
-      traçage par les sites web. Les cookies peuvent également stocker votre jeton de session, qui, s'il 
-      est capturé, permettrait à quelqu'un d'accéder à vos comptes sans identifiants. Pour atténuer cela, 
-      vous devez effacer souvent les cookies.
+      Effacer régulièrement les cookies est une étape que vous pouvez prendre pour aider à réduire le traçage par
+      les sites web. Les cookies peuvent également stocker votre jeton de session, qui, s'il est capturé, permettrait
+      à quelqu'un d'accéder à vos comptes sans identifiants.
 
-  - point: Bloquer les Cookies Tiers
-    priority: Essential
+  - point: "Bloquez les cookies tiers"
+    priority: "Essentiel"
     details: >-
-      Les cookies tiers sont placés sur votre appareil par un site web autre que celui que vous visitez. 
-      Cela pose un risque pour la vie privée, car une entité tierce peut collecter des données de votre 
-      session actuelle. Ce guide explique comment vous pouvez désactiver les cookies tiers, et vous pouvez 
-      vérifier ici que cela a fonctionné.
+      Les cookies tiers sont placés sur votre appareil par un site web autre que celui que vous visitez. Cela
+      pose un risque pour la confidentialité, car une entité tierce peut collecter des données de votre session
+      actuelle.
 
-  - point: Bloquer les Traceurs Tiers
-    priority: Essential
+  - point: "Bloquez les traceurs tiers"
+    priority: "Essentiel"
     details: >-
-      Bloquer les traceurs aidera à empêcher les sites web, les publicitaires, les analyses et plus encore 
-      de vous suivre en arrière-plan. [Privacy Badger](https://awesome-privacy.xyz/security-tools/browser-extensions/privacy-badger), 
-      [DuckDuckGo Privacy Essentials](https://awesome-privacy.xyz/security-tools/browser-extensions/privacy-essentials), 
-      [uBlock Origin](https://awesome-privacy.xyz/networking/ad-blockers/ublock-origin) et uMatrix (avancé) 
-      sont tous des bloqueurs de traceurs très efficaces et open source disponibles pour tous les navigateurs 
-      majeurs.
+      Bloquer les traceurs aidera à empêcher les sites web, les annonceurs, les analyses et plus encore de vous
+      suivre en arrière-plan. Privacy Badger, DuckDuckGo Privacy Essentials, uBlock Origin et uMatrix (avancé)
+      sont tous des bloqueurs de traceurs très efficaces et open source disponibles pour tous les navigateurs majeurs.
 
-  - point: Méfiez-vous des Redirections
-    priority: Optional
+  - point: "Méfiez-vous des redirections"
+    priority: "Optionnel"
     details: >-
-      Bien que certaines redirections soient inoffensives, d'autres, comme les redirections non validées, 
-      sont utilisées dans les attaques de phishing, elles peuvent faire paraître un lien malveillant 
-      légitime. Si vous n'êtes pas sûr d'une URL de redirection, vous pouvez vérifier où elle redirige 
-      avec un outil comme RedirectDetective.
+      Bien que certaines redirections soient inoffensives, d'autres, comme les redirections non validées, sont utilisées 
+      dans les attaques de phishing et peuvent faire paraître un lien malveillant légitime. Si vous avez des doutes sur 
+      une URL de redirection, vous pouvez vérifier où elle mène avec un outil comme RedirectDetective.
 
-  - point: Ne Pas Se Connecter à Son Navigateur
-    priority: Optional
+  - point: "Ne vous connectez pas à votre navigateur"
+    priority: "Optionnel"
     details: >-
-      De nombreux navigateurs vous permettent de vous connecter pour synchroniser l'historique, les favoris 
-      et d'autres données de navigation entre les appareils. Cependant, cela permet non seulement une 
-      collecte de données supplémentaire, mais augmente aussi la surface d'attaque en fournissant une 
-      autre voie pour qu'un acteur malveillant obtienne des informations personnelles.
+      De nombreux navigateurs vous permettent de vous connecter pour synchroniser l'historique, les favoris et d'autres 
+      données de navigation entre les appareils. Cependant, cela permet non seulement une collecte de données supplémentaire, 
+      mais augmente aussi la surface d'attaque en fournissant une autre voie pour qu'un acteur malveillant obtienne des 
+      informations personnelles.
 
-  - point: Désactiver les Services de Prédiction
-    priority: Optional
+  - point: "Désactivez les services de prédiction"
+    priority: "Optionnel"
     details: >-
-      Certains navigateurs permettent des services de prédiction, où vous recevez des résultats de recherche 
-      en temps réel ou l'auto-complétion d'URL. Si c'est activé, alors les données sont envoyées à Google 
-      (ou votre moteur de recherche par défaut) à chaque frappe, plutôt que lorsque vous appuyez sur entrée.
+      Certains navigateurs proposent des services de prédiction, où vous recevez des résultats de recherche en temps réel 
+      ou l'auto-complétion d'URL. Si cette fonction est activée, les données sont envoyées à Google (ou votre moteur de 
+      recherche par défaut) à chaque frappe, plutôt que lorsque vous appuyez sur entrée.
 
-  - point: Éviter G Translate pour les Pages Web
-    priority: Optional
+  - point: "Évitez G Translate pour les pages web"
+    priority: "Optionnel"
     details: >-
-      Lorsque vous visitez une page web écrite dans une langue étrangère, on peut vous proposer d'installer 
-      l'extension Google Translate. Sachez que Google collecte toutes les données (y compris les champs 
-      de saisie), ainsi que les détails de l'utilisateur actuel. Utilisez plutôt un service de traduction 
-      qui n'est pas lié à votre navigateur.
+      Lorsque vous visitez une page web écrite dans une langue étrangère, on peut vous proposer d'installer l'extension 
+      Google Translate. Sachez que Google collecte toutes les données (y compris les champs de saisie), ainsi que les 
+      détails de l'utilisateur actuel. Utilisez plutôt un service de traduction non lié à votre navigateur.
 
-  - point: Désactiver les Notifications Web
-    priority: Optional
+  - point: "Désactivez les notifications web"
+    priority: "Optionnel"
     details: >-
-      Les notifications push du navigateur sont une méthode courante utilisée par les criminels pour vous 
-      inciter à cliquer sur leur lien, car il est facile de falsifier la source. Soyez conscient de cela, 
-      et pour les instructions sur la désactivation des notifications du navigateur, consultez cet article.
+      Les notifications push du navigateur sont une méthode courante utilisée par les criminels pour vous inciter à 
+      cliquer sur leur lien, car il est facile de falsifier la source. Soyez conscient de cela, et pour les instructions 
+      sur la désactivation des notifications du navigateur, consultez cet article.
 
-  - point: Désactiver les Téléchargements Automatiques
-    priority: Optional
+  - point: "Désactivez les téléchargements automatiques"
+    priority: "Optionnel"
     details: >-
-      Les téléchargements furtifs sont une méthode courante pour mettre des fichiers nuisibles sur l'appareil 
-      d'un utilisateur. Cela peut être atténué en désactivant les téléchargements automatiques de fichiers, 
-      et soyez prudent avec les sites web qui vous incitent à télécharger des fichiers de manière inattendue.
+      Les téléchargements furtifs sont une méthode courante pour installer des fichiers nuisibles sur l'appareil d'un 
+      utilisateur. Cela peut être atténué en désactivant les téléchargements automatiques de fichiers, et en étant 
+      prudent avec les sites web qui vous invitent à télécharger des fichiers de manière inattendue.
 
-  - point: Refuser l'Accès aux Capteurs
-    priority: Optional
+  - point: "Interdire l'accès aux capteurs"
+    priority: "Optionnel"
     details: >-
-      Les sites web mobiles peuvent accéder aux capteurs de votre appareil sans demander. Si vous accordez 
-      ces permissions à votre navigateur une fois, alors tous les sites web peuvent utiliser ces capacités, 
-      sans permission ni notification.
+      Les sites web mobiles peuvent accéder aux capteurs de votre appareil sans demander. Si vous accordez ces permissions 
+      à votre navigateur une fois, tous les sites web peuvent utiliser ces capacités, sans permission ni notification.
 
-  - point: Refuser la Localisation
-    priority: Optional
+  - point: "Désactiver la localisation"
+    priority: "Optionnel"
     details: >-
-      Les Services de Localisation permettent aux sites de demander votre position physique pour améliorer 
-      votre expérience. Cela devrait être désactivé dans les paramètres. Notez qu'il existe toujours 
-      d'autres méthodes pour déterminer votre position approximative.
+      Les services de localisation permettent aux sites de demander votre position physique pour améliorer votre expérience. 
+      Cela devrait être désactivé dans les paramètres. Notez qu'il existe encore d'autres méthodes pour déterminer votre 
+      position approximative.
 
-  - point: Refuser l'Accès Caméra/Microphone
-    priority: Optional
+  - point: "Désactiver l'accès à la caméra/au microphone"
+    priority: "Optionnel"
     details: >-
-      Vérifiez les paramètres du navigateur pour vous assurer qu'aucun site web n'a accès à la webcam 
-      ou au microphone. Il peut aussi être bénéfique d'utiliser une protection physique comme un cache 
-      webcam et un bloqueur de microphone.
+      Vérifiez les paramètres du navigateur pour vous assurer qu'aucun site web n'a accès à la webcam ou au microphone. 
+      Il peut aussi être bénéfique d'utiliser une protection physique comme un cache webcam et un bloqueur de microphone.
 
-  - point: Désactiver la Sauvegarde des Mots de Passe
-    priority: Optional
+  - point: "Désactiver la sauvegarde des mots de passe du navigateur"
+    priority: "Optionnel"
     details: >-
-      Ne permettez pas à votre navigateur de stocker les noms d'utilisateur et mots de passe. Ceux-ci 
-      peuvent être facilement consultés ou accédés. Utilisez plutôt un gestionnaire de mots de passe.
+      Ne permettez pas à votre navigateur de stocker les noms d'utilisateur et mots de passe. Ceux-ci peuvent être 
+      facilement consultés ou accédés. Utilisez plutôt un gestionnaire de mots de passe.
 
-  - point: Désactiver l'Auto-remplissage
-    priority: Optional
+  - point: "Désactiver l'auto-remplissage du navigateur"
+    priority: "Optionnel"
     details: >-
-      Désactivez l'auto-remplissage pour tous les détails confidentiels ou personnels. Cette fonctionnalité 
-      peut être dangereuse si votre navigateur est compromis de quelque manière que ce soit. À la place, 
-      envisagez d'utiliser la fonction Notes de votre gestionnaire de mots de passe.
+      Désactivez l'auto-remplissage pour toutes les informations confidentielles ou personnelles. Cette fonctionnalité 
+      peut être dangereuse si votre navigateur est compromis de quelque manière que ce soit. Utilisez plutôt la 
+      fonction Notes de votre gestionnaire de mots de passe.
 
-  - point: Protéger contre l'Attaque Exfil
-    priority: Optional
+  - point: "Protection contre l'attaque Exfil"
+    priority: "Optionnel"
     details: >-
-      L'attaque CSS Exfiltrate est une méthode où les identifiants et autres détails sensibles peuvent 
-      être récupérés avec juste du CSS pur. Vous pouvez rester protégé avec le plugin 
-      [CSS Exfil Protection](https://awesome-privacy.xyz/security-tools/browser-extensions/css-exfil-protection).
+      L'attaque CSS Exfiltrate est une méthode où les identifiants et autres détails sensibles peuvent être récupérés 
+      avec du CSS pur. Vous pouvez rester protégé avec le plugin CSS Exfil Protection.
 
-  - point: Désactiver ActiveX
-    priority: Optional
+  - point: "Désactiver ActiveX"
+    priority: "Optionnel"
     details: >-
-      ActiveX est une API d'extension de navigateur intégrée à Microsoft IE et activée par défaut. Elle 
-      n'est plus beaucoup utilisée, mais comme elle donne aux plugins des droits d'accès intimes et peut 
-      être dangereuse, vous devriez la désactiver.
+      ActiveX est une API d'extension de navigateur intégrée à Microsoft IE et activée par défaut. Elle n'est plus 
+      beaucoup utilisée, mais comme elle donne aux plugins des droits d'accès intimes et peut être dangereuse, vous 
+      devriez la désactiver.
 
-  - point: Désactiver WebRTC
-    priority: Optional
+  - point: "Désactiver WebRTC"
+    priority: "Optionnel"
     details: >-
-      WebRTC permet la communication audio/vidéo de haute qualité et le partage de fichiers peer-to-peer 
-      directement depuis le navigateur. Cependant, cela peut constituer une fuite de confidentialité. 
-      Pour en savoir plus, consultez ce guide.
+      WebRTC permet la communication audio/vidéo de haute qualité et le partage de fichiers pair à pair directement 
+      depuis le navigateur. Cependant, cela peut constituer une fuite de confidentialité. Pour en savoir plus, 
+      consultez ce guide.
 
-  - point: Falsifier la Signature HTML5 Canvas
-    priority: Optional
+  - point: "Falsifier la signature HTML5 Canvas"
+    priority: "Optionnel"
     details: >-
-      Le fingerprinting Canvas permet aux sites web d'identifier et de suivre les utilisateurs très 
-      précisément. Vous pouvez utiliser l'extension Canvas-Fingerprint-Blocker pour falsifier votre 
-      empreinte ou utiliser [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor).
-- point: Falsifier l'Agent Utilisateur
-    priority: Optional
-    details: >-
-      L'agent utilisateur indique au site web quel appareil, navigateur et version vous utilisez. Changer 
-      d'agent utilisateur périodiquement est une petite étape que vous pouvez prendre pour devenir moins unique.
+      Le Canvas Fingerprinting permet aux sites web d'identifier et de suivre les utilisateurs très précisément. Vous 
+      pouvez utiliser l'extension Canvas-Fingerprint-Blocker pour falsifier votre empreinte digitale ou utiliser Tor.
 
-  - point: Ignorer DNT
-    priority: Optional
+  - point: "Falsifier l'User Agent"
+    priority: "Optionnel"
     details: >-
-      Activer Do Not Track a un impact très limité, car de nombreux sites web ne respectent pas ou ne suivent 
-      pas cette option. Comme elle est rarement utilisée, elle peut aussi contribuer à votre signature, vous 
-      rendant plus unique.
+      L'user agent indique au site web quel appareil, navigateur et version vous utilisez. Changer d'user agent 
+      périodiquement est une petite étape que vous pouvez faire pour devenir moins unique.
 
-  - point: Prévenir le Traçage HSTS
-    priority: Optional
+  - point: "Ne pas tenir compte du DNT"
+    priority: "Optionnel"
     details: >-
-      HSTS a été conçu pour aider à sécuriser les sites web, mais des préoccupations de confidentialité ont 
-      été soulevées car il permettait aux opérateurs de sites de planter des super-cookies. Il peut être 
-      désactivé en visitant chrome://net-internals/#hsts dans les navigateurs basés sur Chromium.
+      L'activation de Do Not Track a un impact très limité, car de nombreux sites web ne respectent pas ou ne suivent 
+      pas cette option. Comme elle est rarement utilisée, elle peut aussi ajouter à votre signature, vous rendant plus unique.
 
-  - point: Empêcher les Connexions Automatiques
-    priority: Optional
+  - point: "Prévenir le suivi HSTS"
+    priority: "Optionnel"
     details: >-
-      Même lorsque vous n'utilisez pas votre navigateur, il peut communiquer pour rapporter l'activité 
-      d'utilisation, les analyses et les diagnostics. Vous pouvez souhaiter désactiver certains de ces 
-      éléments, ce qui peut être fait dans les paramètres.
+      HSTS a été conçu pour aider à sécuriser les sites web, mais des préoccupations en matière de confidentialité ont 
+      été soulevées car il permettait aux opérateurs de sites de planter des super-cookies. Il peut être désactivé en 
+      visitant chrome://net-internals/#hsts dans les navigateurs basés sur Chromium.
 
-  - point: Activer l'Isolation First-Party
-    priority: Optional
+  - point: "Empêcher les connexions automatiques du navigateur"
+    priority: "Optionnel"
     details: >-
-      [First Party Isolation](https://awesome-privacy.xyz/security-tools/browser-extensions/first-party-isolation) 
-      signifie que toutes les sources d'identification et l'état du navigateur sont limités au domaine de la 
-      barre d'URL, ce qui peut grandement réduire le traçage.
+      Même lorsque vous n'utilisez pas votre navigateur, il peut appeler à la maison pour signaler l'activité 
+      d'utilisation, les analyses et les diagnostics. Vous pouvez souhaiter désactiver certains de ces éléments, 
+      ce qui peut être fait via les paramètres.
 
-  - point: Supprimer les Paramètres de Traçage des URLs
-    priority: Advanced
+  - point: "Activer l'isolation First-Party"
+    priority: "Optionnel"
     details: >-
-      Les sites web ajoutent souvent des paramètres GET supplémentaires aux URLs sur lesquelles vous cliquez, 
-      pour identifier des informations comme la source/référent. Vous pouvez assainir manuellement, ou utiliser 
-      une extension comme [ClearURLs](https://awesome-privacy.xyz/security-tools/browser-extensions/clearurls) 
-      pour supprimer automatiquement les données de traçage des URLs.
+      L'isolation First-Party signifie que toutes les sources d'identifiants et l'état du navigateur sont limités 
+      en utilisant le domaine de la barre d'URL, ce qui peut grandement réduire le suivi.
 
-  - point: Sécurité au Premier Lancement
-    priority: Advanced
+  - point: "Supprimer les paramètres de suivi des URLs"
+    priority: "Avancé"
     details: >-
-      Après l'installation d'un navigateur web, la première fois que vous le lancez (avant de configurer ses 
-      paramètres de confidentialité), la plupart des navigateurs communiquent avec leur serveur. Par conséquent, 
-      après l'installation d'un navigateur, vous devriez d'abord désactiver votre connexion internet, puis 
-      configurer les options de confidentialité avant de réactiver votre connectivité internet.
+      Les sites web ajoutent souvent des paramètres GET supplémentaires aux URLs sur lesquelles vous cliquez, pour 
+      identifier des informations comme la source/le référent. Vous pouvez assainir manuellement, ou utiliser une 
+      extension comme ClearURLs pour supprimer automatiquement les données de suivi des URLs.
 
-  - point: Utiliser le Navigateur Tor
-    priority: Advanced
+  - point: "Sécurité au premier lancement"
+    priority: "Avancé"
     details: >-
-      Le projet [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor) fournit un navigateur qui chiffre 
-      et route votre trafic à travers plusieurs nœuds, gardant les utilisateurs à l'abri de l'interception et 
-      du traçage. Les principaux inconvénients sont la vitesse et l'expérience utilisateur.
+      Après l'installation d'un navigateur web, la première fois que vous le lancez (avant de configurer ses paramètres 
+      de confidentialité), la plupart des navigateurs appellent à la maison. Par conséquent, après l'installation d'un 
+      navigateur, vous devriez d'abord désactiver votre connexion internet, puis configurer les options de confidentialité 
+      avant de réactiver votre connectivité internet.
 
-  - point: Désactiver JavaScript
-    priority: Advanced
+  - point: "Utiliser le navigateur Tor"
+    priority: "Avancé"
     details: >-
-      De nombreuses applications web modernes sont basées sur JavaScript, donc le désactiver diminuera 
-      grandement votre expérience de navigation. Mais si vous voulez vraiment aller jusqu'au bout, cela 
-      réduira vraiment votre surface d'attaque.
+      Le projet Tor fournit un navigateur qui chiffre et route votre trafic à travers plusieurs nœuds, gardant les 
+      utilisateurs à l'abri de l'interception et du suivi. Les principaux inconvénients sont la vitesse et l'expérience 
+      utilisateur.
+
+  - point: "Désactiver JavaScript"
+    priority: "Avancé"
+    details: >-
+      De nombreuses applications web modernes sont basées sur JavaScript, donc le désactiver diminuera grandement votre 
+      expérience de navigation. Mais si vous voulez vraiment aller jusqu'au bout, cela réduira vraiment votre surface 
+      d'attaque.
   softwareLinks:
-    - title: Privacy Browsers
-      url: https://github.com/Lissy93/awesome-privacy#browsers
-    - title: Search Engines
-      utl: https://github.com/Lissy93/awesome-privacy#search-engines
-    - title: Browser Extensions
-      url: https://github.com/Lissy93/awesome-privacy#browser-extensions
-    - title: Browser & Bookmark Sync
-      url: https://github.com/Lissy93/awesome-privacy#browser-sync
-  color: emerald
+    - title: "Privacy Browsers"
+      url: "https://github.com/Lissy93/awesome-privacy#browsers"
+    - title: "Search Engines"
+      url: "https://github.com/Lissy93/awesome-privacy#search-engines"
+    - title: "Browser Extensions"
+      url: "https://github.com/Lissy93/awesome-privacy#browser-extensions"
+    - title: "Browser & Bookmark Sync"
+      url: "https://github.com/Lissy93/awesome-privacy#browser-sync"
+  color: "emerald"
 
-- title: Email
-  slug: email
-  description: Protéger la porte d'entrée de vos comptes en ligne
-  icon: email
+- title: "Email"
+  slug: "email"
+  description: "Protéger la porte d'entrée de vos comptes en ligne"
+  icon: "email"
   intro: >-
     Près de 50 ans après l'envoi du premier email, c'est encore une grande partie de notre 
     vie quotidienne, et continuera de l'être dans un avenir proche. Donc, considérant la 
@@ -761,11 +686,11 @@
       Pour les serveurs de messagerie auto-hébergés (spécifiquement SMTP), limitez votre nombre total de connexions simultanées et le taux maximal
       de connexions pour réduire l'impact des tentatives d'attaques par bots.
 
-  - point: Maintenir une liste noire d'IP
+  - point: Maintenir une liste rouge d'IP
     priority: Avancé
     details: >-
       Pour les serveurs de messagerie auto-hébergés, vous pouvez améliorer les filtres anti-spam et renforcer la sécurité en maintenant une
-      liste noire locale d'IP à jour et des listes de blocage en temps réel d'URI spam pour filtrer les hyperliens malveillants.
+      liste rouge locale d'IP à jour et des listes de blocage en temps réel d'URI spam pour filtrer les hyperliens malveillants.
   color: teal
   softwareLinks:
     - title: Fournisseurs de messagerie sécurisée
@@ -784,7 +709,7 @@
   intro: ''
   checklist:
   - point: Utiliser uniquement des messageries entièrement chiffrées de bout en bout
-    priority: Essentiel
+    priority: Essential
     details: >-
       Le chiffrement de bout en bout est un système de communication où les messages sont chiffrés sur votre appareil et
       ne sont déchiffrés que lorsqu'ils atteignent le destinataire prévu. Cela garantit que tout acteur qui intercepte
@@ -792,7 +717,7 @@
       les données sont stockées.
 
   - point: Utiliser uniquement des plateformes de messagerie open source
-    priority: Essentiel
+    priority: Essential
     details: >-
       Si le code est open source, il peut être examiné et audité de manière indépendante par toute personne qualifiée
       pour le faire, afin de s'assurer qu'il n'y a pas de portes dérobées, de vulnérabilités ou d'autres problèmes de sécurité.
@@ -900,12 +825,12 @@
     details: >-
       Si toutes les données passent par un fournisseur central, vous devez lui faire confiance avec vos données et métadonnées. Vous ne pouvez pas
       vérifier que le système en cours d'exécution est authentique sans portes dérobées.
+  color: cyan
   softwareLinks:
     - title: Applications de messagerie sécurisée
       url: https://github.com/Lissy93/awesome-privacy#encrypted-messaging
     - title: Plateformes de messagerie P2P
       url: https://github.com/Lissy93/awesome-privacy#p2p-messaging
-  color: cyan
 
 - title: Réseaux Sociaux
   slug: social-media
@@ -1053,7 +978,7 @@
       Il existe différents protocoles d'authentification pour se connecter au WiFi. Actuellement, les options les plus sécurisées
       sont WPA2 et WPA3 (sur les routeurs plus récents).
 
-- point: Maintenir le firmware du routeur à jour
+  - point: Maintenir le firmware du routeur à jour
     priority: Essentiel
     details: >-
       Les fabricants publient des mises à jour du firmware qui corrigent les vulnérabilités de sécurité, implémentent de nouvelles normes, et
@@ -1332,7 +1257,7 @@
       [Orbot](https://awesome-privacy.xyz/security-tools/mobile-apps/orbot) fournit
       une connexion Tor à l'échelle du système, qui vous aidera à vous protéger contre la surveillance et les menaces du WiFi public.
 
-- point: Éviter les claviers virtuels personnalisés
+  - point: Éviter les claviers virtuels personnalisés
     priority: Optionnel
     details: >-
       Il est recommandé de s'en tenir au clavier d'origine de votre appareil. Si vous choisissez d'utiliser une application de clavier tierce,
@@ -1497,7 +1422,7 @@
       Utilisez une batterie externe ou un chargeur mural AC plutôt que votre PC pour éviter les risques de sécurité associés aux
       connexions USB.
 
-- point: Randomiser votre adresse matérielle sur le Wi-Fi
+  - point: Randomiser votre adresse matérielle sur le Wi-Fi
     priority: Optionnel
     details: >-
       Modifiez ou randomisez votre adresse MAC pour vous protéger contre le suivi à travers différents réseaux WiFi.
@@ -1646,7 +1571,7 @@
     details: >-
       Changez les noms d'appareil par défaut pour quelque chose de générique afin de prévenir les attaques ciblées en masquant les informations de marque ou de modèle.
 
-- point: Désactiver le microphone et la caméra quand ils ne sont pas utilisés
+  - point: Désactiver le microphone et la caméra quand ils ne sont pas utilisés
     priority: Essentiel
     details: >-
       Utilisez des interrupteurs matériels pour éteindre les microphones et caméras sur les appareils intelligents pour protéger contre les enregistrements accidentels ou l'accès ciblé.
@@ -1849,7 +1774,7 @@
     details: >-
       Soyez conscient des logiciels espions installés par des connaissances pour l'espionnage. Surveillez les signes comme une utilisation inhabituelle de la batterie et effectuez des réinitialisations d'usine en cas de suspicion.
 
-- point: Installer des logiciels réputés de sources fiables
+  - point: Installer des logiciels réputés de sources fiables
     priority: Essentiel
     details: >-
       Téléchargez uniquement des logiciels de sources légitimes et vérifiez les fichiers avec des outils
