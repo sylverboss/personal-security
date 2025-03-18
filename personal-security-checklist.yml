@@ -832,10 +832,10 @@
     - title: Plateformes de messagerie P2P
       url: https://github.com/Lissy93/awesome-privacy#p2p-messaging
 
-- title: Réseaux Sociaux
-  slug: social-media
+- title: "Réseaux Sociaux"
+  slug: "social-media"
   description: Minimiser les risques associés à l'utilisation des communautés en ligne
-  icon: social
+  icon: "social"
   intro: >
     Les communautés en ligne existent depuis l'invention d'internet et donnent
     aux personnes du monde entier l'opportunité de se connecter, communiquer et partager.
@@ -849,6 +849,7 @@
     Sécurisez votre compte, verrouillez vos paramètres de confidentialité, mais sachez que même
     après l'avoir fait, toutes les données téléchargées intentionnellement et non intentionnellement sont
     effectivement publiques. Si possible, évitez d'utiliser les réseaux sociaux conventionnels.
+  
   checklist:
   - point: Sécuriser votre compte
     priority: Essentiel
@@ -940,7 +941,7 @@
     details: >-
       Les médias sociaux sont fondamentalement non-privés, donc pour une sécurité et une confidentialité en ligne maximales, évitez d'utiliser
       les réseaux sociaux grand public.
-
+  color: blue
   softwareLinks:
     - title: Médias sociaux alternatifs
       url: https://github.com/Lissy93/awesome-privacy#social-networks
@@ -950,7 +951,6 @@
       url: https://github.com/Lissy93/awesome-privacy#blogging-platforms
     - title: Lecteurs et agrégation d'actualités
       url: https://github.com/Lissy93/awesome-privacy#news-readers-and-aggregation
-  color: blue
 
 - title: Réseaux
   slug: networks
