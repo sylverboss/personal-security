@@ -8,6 +8,7 @@
     (selon [ce rapport Verizon](http://www.verizonenterprise.com/resources/reports/rp_dbir-2016-executive-summary_xg_en.pdf)).
     Utilisez des mots de passe longs, forts et uniques, gérez-les dans un gestionnaire de mots de passe sécurisé, activez
     l'authentification à deux facteurs, surveillez les violations et soyez prudent lors de la connexion à vos comptes.
+  
   checklist:
   - point: Utilisez un mot de passe fort
     priority: Essentiel
@@ -500,10 +501,10 @@
       url: "https://github.com/Lissy93/awesome-privacy#browser-sync"
   color: "emerald"
 
-- title: "Email"
-  slug: "email"
-  description: "Protéger la porte d'entrée de vos comptes en ligne"
-  icon: "email"
+- title: Email
+  slug: email
+  description: Protéger la porte d'entrée de vos comptes en ligne
+  icon: email
   intro: >-
     Près de 50 ans après l'envoi du premier email, c'est encore une grande partie de notre 
     vie quotidienne, et continuera de l'être dans un avenir proche. Donc, considérant la 
