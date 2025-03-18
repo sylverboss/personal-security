@@ -5,8 +5,7 @@
   color: yellow
   intro: >-
     La plupart des violations de données signalées sont causées par l'utilisation de mots de passe faibles, par défaut ou volés
-    (selon [ce rapport Verizon](http://www.verizonenterprise.com/resources/reports/rp_dbir-2016-executive-summary_xg_en.pdf)).
-    Utilisez des mots de passe longs, forts et uniques, gérez-les dans un gestionnaire de mots de passe sécurisé, activez
+    (selon ce rapport Verizon). Utilisez des mots de passe longs, forts et uniques, gérez-les dans un gestionnaire de mots de passe sécurisé, activez
     l'authentification à deux facteurs, surveillez les violations et soyez prudent lors de la connexion à vos comptes.
   
   checklist:
@@ -17,9 +16,9 @@
       craqué par force brute ou deviné par quelqu'un. La façon la plus simple de créer un mot de passe fort est de le rendre long
       (12+ caractères) - envisagez d'utiliser une "phrase de passe", composée de plusieurs mots. Alternativement,
       utilisez un générateur de mots de passe pour créer un mot de passe long, fort et aléatoire. Essayez
-      [HowSecureIsMyPassword.net](https://howsecureismypassword.net) pour avoir une idée de la rapidité avec laquelle les mots de passe
+      HowSecureIsMyPassword.net pour avoir une idée de la rapidité avec laquelle les mots de passe
       courants peuvent être craqués. En savoir plus sur la création de mots de passe forts :
-      [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/)
+      securityinabox.org
 
   - point: Ne réutilisez pas les mots de passe
     priority: Essentiel
@@ -37,8 +36,7 @@
       Tous vos mots de passe seront chiffrés avec un mot de passe maître (que vous devez retenir, et qui doit être très fort).
       La plupart des gestionnaires de mots de passe ont des extensions de navigateur et des applications mobiles, donc quel que soit l'appareil
       que vous utilisez, vos mots de passe peuvent être remplis automatiquement. Un bon choix est
-      [Bitwarden](https://awesome-privacy.xyz/essentials/password-managers/bitwarden), ou consultez
-      [Gestionnaires de mots de passe recommandés](https://awesome-privacy.xyz/essentials/password-managers)
+      Bitwarden, ou consultez Gestionnaires de mots de passe recommandés.
 
   - point: Évitez de partager les mots de passe
     priority: Essentiel
@@ -53,8 +51,7 @@
       La 2FA consiste à fournir à la fois quelque chose que vous connaissez (un mot de passe) et quelque chose que vous possédez (comme un
       code sur votre téléphone) pour vous connecter. Cela signifie que si quelqu'un obtient votre mot de passe (par exemple via du phishing,
       un malware ou une fuite de données), il ne pourra pas se connecter à votre compte. C'est facile à configurer, téléchargez
-      [une application d'authentification](https://github.com/Lissy93/awesome-privacy#2-factor-authentication)
-      sur votre téléphone, puis allez dans les paramètres de sécurité de votre compte et suivez les étapes pour activer la 2FA. La prochaine
+      une application d'authentification sur votre téléphone, puis allez dans les paramètres de sécurité de votre compte et suivez les étapes pour activer la 2FA. La prochaine
       fois que vous vous connecterez sur un nouvel appareil, vous serez invité à entrer le code affiché dans l'application sur votre téléphone
       (cela fonctionne sans internet, et le code change généralement toutes les 30 secondes).
 
@@ -72,12 +69,11 @@
     details: >-
       Après qu'un site web subit une violation de données importante, les données divulguées finissent souvent sur internet. Il existe
       plusieurs sites web qui collectent ces enregistrements divulgués et vous permettent de rechercher votre adresse e-mail pour vérifier
-      si vous figurez dans l'une de leurs listes. [Firefox Monitor](https://monitor.firefox.com), [Have I been pwned](https://haveibeenpwned.com)
-      et [DeHashed](https://dehashed.com) vous permettent de vous inscrire à une surveillance, où ils vous notifieront si votre adresse e-mail
+      si vous figurez dans l'une de leurs listes. Firefox Monitor, Have I been pwned
+      et DeHashed vous permettent de vous inscrire à une surveillance, où ils vous notifieront si votre adresse e-mail
       apparaît dans de nouveaux ensembles de données. Il est utile de le savoir le plus tôt possible pour que vous puissiez changer vos
-      mots de passe pour les comptes concernés. [Have I been pwned](https://awesome-privacy.xyz/security-tools/online-tools/have-i-been-pwned)
-      propose également une notification à l'échelle du domaine, où vous pouvez recevoir des alertes si des adresses e-mail sous votre domaine
-      entier apparaissent (utile si vous utilisez des alias pour [le transfert anonyme de courrier](https://github.com/Lissy93/awesome-privacy#anonymous-mail-forwarding)).
+      mots de passe pour les comptes concernés. Have I been pwned propose également une notification à l'échelle du domaine, où vous pouvez recevoir des alertes si des adresses e-mail sous votre domaine
+      entier apparaissent (utile si vous utilisez des alias pour le transfert anonyme de courrier).
 
   - point: Protégez votre mot de passe/ code PIN
     priority: Optionnel
@@ -93,8 +89,7 @@
       part en ligne. Mettre à jour occasionnellement les mots de passe des comptes critiques pour la sécurité peut aider à atténuer cela.
       Mais à condition que tous vos mots de passe soient longs, forts et uniques, il n'est pas nécessaire de le faire trop souvent - une fois
       par an devrait suffire. Forcer les changements de mot de passe obligatoires au sein des organisations est
-      [déconseillé](https://duo.com/decipher/microsoft-will-no-longer-recommend-forcing-periodic-password-changes),
-      car cela encourage les collègues à choisir des mots de passe plus faibles.
+      déconseillé, car cela encourage les collègues à choisir des mots de passe plus faibles.
 
   - point: Ne sauvegardez pas vos mots de passe dans les navigateurs
     priority: Optionnel
@@ -117,7 +112,7 @@
     details: >-
       Certains sites vous permettent de définir des indices de mot de passe. Souvent, il est très facile de deviner les réponses. Dans les
       cas où les indices de mot de passe sont obligatoires, utilisez des réponses aléatoires et enregistrez-les dans votre gestionnaire de
-      mots de passe (`Nom de la première école : 6D-02-8B-!a-E8-8F-81`).
+      mots de passe (Nom de la première école : 6D-02-8B-!a-E8-8F-81).
 
   - point: Ne répondez jamais honnêtement aux questions de sécurité en ligne
     priority: Optionnel
@@ -125,7 +120,7 @@
       Si un site pose des questions de sécurité (comme le lieu de naissance, le nom de jeune fille de la mère ou la première voiture, etc.),
       ne fournissez pas de réponses réelles. Il est trivial pour les pirates de trouver ces informations en ligne ou via l'ingénierie sociale.
       Au lieu de cela, créez une réponse fictive et stockez-la dans votre gestionnaire de mots de passe. Utiliser des mots réels est mieux
-      que des caractères aléatoires, [expliqué ici](https://news.ycombinator.com/item?id=29244870).
+      que des caractères aléatoires, expliqué ici.
 
   - point: N'utilisez pas de code PIN à 4 chiffres
     priority: Optionnel
@@ -139,8 +134,7 @@
     details: >-
       Lorsque vous activez l'authentification à plusieurs facteurs, optez pour des codes basés sur une application ou un jeton matériel, si
       pris en charge. Les SMS sont susceptibles à plusieurs menaces courantes, comme le
-      [SIM-swapping](https://www.maketecheasier.com/sim-card-hijacking)
-      et l'[interception](https://secure-voice.com/ss7_attacks). Il n'y a également aucune garantie sur la manière dont votre numéro de
+      SIM-swapping et l'interception. Il n'y a également aucune garantie sur la manière dont votre numéro de
       téléphone sera stocké, ou à quoi il sera utilisé. D'un point de vue pratique, les SMS ne fonctionnent que lorsque vous avez du signal,
       et peuvent être lents. Si un site web ou un service nécessite l'utilisation d'un numéro SMS pour la récupération, envisagez d'acheter
       un deuxième numéro de téléphone prépayé uniquement utilisé pour la récupération de compte dans ces cas.
@@ -150,7 +144,7 @@
     details: >-
       De nombreux gestionnaires de mots de passe sont également capables de générer des codes 2FA. Il est préférable de ne pas utiliser votre
       gestionnaire de mots de passe principal comme authentificateur 2FA, car il deviendrait un point de défaillance unique en cas de
-      compromission. Utilisez plutôt une [application d'authentification dédiée](https://github.com/Lissy93/awesome-privacy#2-factor-authentication)
+      compromission. Utilisez plutôt une application d'authentification dédiée
       sur votre téléphone ou ordinateur portable.
 
   - point: Évitez le déverrouillage facial
@@ -158,15 +152,14 @@
     details: >-
       La plupart des téléphones et ordinateurs portables offrent une fonctionnalité de reconnaissance faciale pour l'authentification,
       utilisant la caméra pour comparer une capture de votre visage avec un hachage stocké. Cela peut être très pratique, mais il existe de
-      nombreuses façons de [le tromper](https://www.forbes.com/sites/jvchamary/2017/09/18/security-apple-face-id-iphone-x/)
-      et d'accéder à l'appareil, via des photos numériques et des reconstructions à partir de séquences de vidéosurveillance. Contrairement
+      nombreuses façons de le tromper et d'accéder à l'appareil, via des photos numériques et des reconstructions à partir de séquences de vidéosurveillance. Contrairement
       à votre mot de passe, il y a probablement des photos de votre visage sur internet, et des vidéos enregistrées par des caméras de
       surveillance.
 
   - point: Méfiez-vous des keyloggers
     priority: Avancé
     details: >-
-      Un [keylogger matériel](https://fr.wikipedia.org/wiki/Keylogger_mat%C3%A9riel) est un dispositif physique placé entre
+      Un keylogger matériel est un dispositif physique placé entre
       votre clavier et le port USB, qui intercepte toutes les frappes, et relaie parfois les données vers un serveur distant.
       Cela donne à un pirate l'accès à tout ce que vous tapez, y compris les mots de passe. La meilleure façon de vous protéger est de
       vérifier votre connexion USB après que votre PC ait été laissé sans surveillance. Il est également possible que des keyloggers soient
@@ -178,10 +171,10 @@
     priority: Avancé
     details: >-
       Une clé de sécurité U2F/ FIDO2 est un dispositif USB (ou NFC) que vous insérez lors de la connexion à un service en ligne, pour
-      vérifier votre identité, au lieu d'entrer un OTP depuis votre authentificateur. [SoloKey](https://solokeys.com) et
-      [NitroKey](https://www.nitrokey.com) sont des exemples de telles clés. Elles offrent plusieurs avantages en matière de sécurité,
+      vérifier votre identité, au lieu d'entrer un OTP depuis votre authentificateur. SoloKey et
+      NitroKey sont des exemples de telles clés. Elles offrent plusieurs avantages en matière de sécurité,
       car le navigateur communique directement avec le dispositif et ne peut pas être trompé sur l'hôte qui demande l'authentification,
-      car le certificat TLS est vérifié. [Ce post](https://security.stackexchange.com/a/71704) est
+      car le certificat TLS est vérifié. Ce post est
       une bonne explication de la sécurité de l'utilisation des jetons FIDO U2F. Bien sûr, il est important de stocker la clé physique
       dans un endroit sûr, ou de la garder sur vous. Certains comptes en ligne permettent d'activer plusieurs méthodes de 2FA.
 
@@ -189,25 +182,25 @@
     priority: Avancé
     details: >-
       Pour une sécurité accrue, un gestionnaire de mots de passe chiffré hors ligne vous donnera un contrôle total sur vos données.
-      [KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass) est un choix populaire, avec de nombreux [plugins](https://[KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass).info/plugins.html) et
-      des forks communautaires avec une compatibilité et une fonctionnalité supplémentaires. Les clients populaires incluent : [KeePassXC](https://keepassxc.org)
-      (bureau), [KeePassDX](https://www.keepassdx.com) (Android) et [StrongBox](https://apps.apple.com/us/app/strongbox-password-safe/id897283731)
+      KeePass est un choix populaire, avec de nombreux plugins et
+      des forks communautaires avec une compatibilité et une fonctionnalité supplémentaires. Les clients populaires incluent : KeePassXC
+      (bureau), KeePassDX (Android) et StrongBox
       (iOS). L'inconvénient est que cela peut être légèrement moins pratique pour certains, et il vous incombera de le sauvegarder,
       et de le stocker en toute sécurité.
 
-  - point: "Envisagez des noms d'utilisateur uniques"
-    priority: "Avancé"
+  - point: Envisagez des noms d'utilisateur uniques
+    priority: Avancé
     details: >-
       Avoir des mots de passe différents pour chaque compte est un bon premier pas, mais si vous utilisez également un nom d'utilisateur,
       un e-mail ou un numéro de téléphone unique pour vous connecter, il sera beaucoup plus difficile pour quiconque d'essayer 
       d'obtenir un accès non autorisé. La méthode la plus simple pour gérer plusieurs e-mails est d'utiliser des alias générés 
       automatiquement pour le transfert de courrier anonyme. Cela signifie que [n'importe quoi]@votredomaine.com arrivera dans 
       votre boîte de réception, vous permettant d'utiliser un e-mail différent pour chaque compte.
-    softwareLinks:
-      - title: "Password Managers"
-        url: "https://github.com/Lissy93/awesome-privacy#password-managers"
-      - title: "2-Factor Authentication"
-        url: "https://github.com/Lissy93/awesome-privacy#2-factor-authentication"
+  softwareLinks:
+    - title: Password Managers
+      url: https://github.com/Lissy93/awesome-privacy#password-managers
+    - title: 2-Factor Authentication
+      url: https://github.com/Lissy93/awesome-privacy#2-factor-authentication
 
 - title: "Navigation Web"
   slug: "web-browsing"
