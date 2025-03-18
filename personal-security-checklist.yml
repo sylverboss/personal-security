@@ -530,7 +530,7 @@
 
   checklist:
   - point: Avoir Plus d'Une Adresse Email
-    priority: Essential
+    priority: Essentiel
     details: >-
       Envisagez d'utiliser une adresse email différente pour les communications critiques 
       en matière de sécurité et pour les courriers moins importants comme les newsletters. 
@@ -538,20 +538,20 @@
       de données, et faciliter également la récupération d'un compte compromis.
 
   - point: Garder l'Adresse Email Privée
-    priority: Essential
+    priority: Essentiel
     details: >-
       Ne partagez pas votre email principal publiquement, car les adresses mail sont souvent 
       le point de départ de la plupart des attaques de phishing.
 
   - point: Sécuriser Votre Compte
-    priority: Essential
+    priority: Essentiel
     details: >-
       Utilisez un mot de passe long et unique, activez la 2FA et soyez prudent lors de la 
       connexion. Votre compte email fournit un point d'entrée facile vers tous vos autres 
       comptes en ligne pour un attaquant.
 
   - point: Désactiver le Chargement Automatique du Contenu Distant
-    priority: Essential
+    priority: Essentiel
     details: >-
       Les messages email peuvent contenir du contenu distant comme des images ou des feuilles 
       de style, souvent chargés automatiquement depuis le serveur. Vous devriez désactiver 
@@ -560,7 +560,7 @@
       [cet article](https://www.theverge.com/2019/7/3/20680903/email-pixel-trackers-how-to-stop-images-automatic-download).
 
   - point: Utiliser le Texte Brut
-    priority: Optional
+    priority: Optionel
     details: >-
       Il existe deux types principaux d'emails sur internet : texte brut et HTML. Le premier 
       est fortement préféré pour la confidentialité et la sécurité car les messages HTML 
@@ -572,14 +572,14 @@
       [UsePlaintext.email](https://useplaintext.email/).
 
   - point: Ne Pas Connecter d'Applications Tierces
-    priority: Optional
+    priority: Optionel
     details: >-
       Si vous donnez à une application ou un plugin tiers un accès complet à votre boîte de 
       réception, ils ont effectivement un accès total et sans entrave à tous vos emails et 
       leur contenu, ce qui pose des risques significatifs pour la sécurité et la confidentialité.
 
   - point: Ne Pas Partager de Données Sensibles par Email
-    priority: Optional
+    priority: Optionel
     details: >-
       Les emails sont très facilement interceptés. De plus, vous ne pouvez pas être sûr de 
       la sécurité de l'environnement de votre destinataire. Par conséquent, les emails ne 
@@ -587,7 +587,7 @@
       sauf s'ils sont chiffrés.
 
   - point: Envisager un Fournisseur de Mail Sécurisé
-    priority: Optional
+    priority: Optionel
     details: >-
       Des fournisseurs de messagerie sécurisés et réputés comme 
       [Forward Email](https://awesome-privacy.xyz/communication/encrypted-email/forward-email), 
@@ -598,7 +598,7 @@
       boîte aux lettres ne peut être lue que par vous, car tous les messages sont chiffrés.
 
   - point: Utiliser une Clé Intelligente
-    priority: Advanced
+    priority: Avancé
     details: >-
       OpenPGP ne prend pas en charge le secret permanent, ce qui signifie que si votre clé 
       privée ou celle du destinataire est un jour volée, tous les messages précédents chiffrés 
@@ -608,7 +608,7 @@
       privée ne quitte le périphérique USB.
 
   - point: Utiliser l'Aliasing / Transfert Anonyme
-    priority: Advanced
+    priority: Avancé
     details: >-
       L'aliasing d'email permet aux messages d'être envoyés à [n'importe quoi]@mon-domaine.com 
       et d'arriver quand même dans votre boîte de réception principale. Cela vous permet 
@@ -618,7 +618,7 @@
       email.
 
   - point: Sous-adressage
-    priority: Optional
+    priority: Optionel
     details: >-
       Une alternative à l'aliasing est le sous-adressage, où tout ce qui suit le symbole `+` 
       est omis lors de la livraison du courrier. Cela vous permet de garder une trace de qui 
@@ -626,14 +626,14 @@
       protégera pas contre la révélation de votre adresse réelle.
 
   - point: Utiliser un Domaine Personnalisé
-    priority: Advanced
+    priority: Avancé
     details: >-
       Utiliser un domaine personnalisé signifie que vous n'êtes pas dépendant de l'adresse 
       attribuée par votre fournisseur de messagerie. Ainsi, vous pouvez facilement changer 
       de fournisseur à l'avenir et ne pas vous soucier de l'arrêt d'un service.
 
   - point: Synchroniser avec un Client pour Sauvegarde
-    priority: Advanced
+    priority: Avancé
     details: >-
       Pour éviter de perdre l'accès temporaire ou permanent à vos emails lors d'un événement 
       imprévu (comme une panne ou un verrouillage de compte), Thunderbird peut synchroniser/sauvegarder 
@@ -641,7 +641,7 @@
       principal.
 
   - point: Attention aux Signatures Mail
-    priority: Advanced
+    priority: Avancé
     details: >-
       Vous ne savez pas à quel point l'environnement de messagerie du destinataire de votre 
       message peut être sécurisé. Il existe plusieurs extensions qui parcourent automatiquement 
@@ -649,20 +649,20 @@
       sur les signatures email.
 
   - point: Attention aux Réponses Automatiques
-    priority: Advanced
+    priority: Avancé
     details: >-
       Les réponses automatiques d'absence du bureau sont très utiles pour informer les gens 
       qu'il y aura un délai dans la réponse, mais trop souvent les gens révèlent trop 
       d'informations - qui peuvent être utilisées dans l'ingénierie sociale et les attaques ciblées.
 
   - point: Choisir le Bon Protocole Mail
-    priority: Advanced
+    priority: Avancé
     details: >-
       N'utilisez pas de protocoles obsolètes (en dessous d'IMAPv4 ou POPv3), les deux ont 
       des vulnérabilités connues et une sécurité dépassée.
 
   - point: Auto-hébergement
-    priority: Advanced
+    priority: Avancé
     details: >-
       L'auto-hébergement de votre propre serveur de messagerie n'est pas recommandé pour les 
       utilisateurs non avancés, car le sécuriser correctement est critique et nécessite de 
@@ -709,7 +709,7 @@
   intro: ''
   checklist:
   - point: Utiliser uniquement des messageries entièrement chiffrées de bout en bout
-    priority: Essential
+    priority: Essentiel
     details: >-
       Le chiffrement de bout en bout est un système de communication où les messages sont chiffrés sur votre appareil et
       ne sont déchiffrés que lorsqu'ils atteignent le destinataire prévu. Cela garantit que tout acteur qui intercepte
@@ -717,7 +717,7 @@
       les données sont stockées.
 
   - point: Utiliser uniquement des plateformes de messagerie open source
-    priority: Essential
+    priority: Essentiel
     details: >-
       Si le code est open source, il peut être examiné et audité de manière indépendante par toute personne qualifiée
       pour le faire, afin de s'assurer qu'il n'y a pas de portes dérobées, de vulnérabilités ou d'autres problèmes de sécurité.
