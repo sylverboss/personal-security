@@ -10,7 +10,7 @@
     l\'authentification à deux facteurs, surveillez les violations et soyez prudent lors de la connexion à vos comptes.
   checklist:
   - point: Utilisez un mot de passe fort
-    priority: Essentiel
+    priority: Essential
     details: >-
       Si votre mot de passe est trop court ou contient des mots du dictionnaire, des lieux ou des noms, il peut être facilement
       craqué par force brute ou deviné par quelqu'un. La façon la plus simple de créer un mot de passe fort est de le rendre long
@@ -21,7 +21,7 @@
       [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/)
 
   - point: Ne réutilisez pas les mots de passe
-    priority: Essentiel
+    priority: Essential
     details: >-
       Si quelqu'un réutilise un mot de passe et qu'un site sur lequel il a un compte subit une fuite, un criminel pourrait facilement
       accéder sans autorisation à ses autres comptes. Cela se fait généralement par des demandes de connexion automatisées à grande échelle,
