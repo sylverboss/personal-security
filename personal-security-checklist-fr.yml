@@ -145,7 +145,7 @@
       un deuxième numéro de téléphone prépayé uniquement utilisé pour la récupération de compte dans ces cas.
 
   - point: Évitez d'utiliser votre gestionnaire de mots de passe pour générer des OTP
-    priority: Avancé
+    priority: Pro
     details: >-
       De nombreux gestionnaires de mots de passe sont également capables de générer des codes 2FA. Il est préférable de ne pas utiliser votre
       gestionnaire de mots de passe principal comme authentificateur 2FA, car il deviendrait un point de défaillance unique en cas de
@@ -153,7 +153,7 @@
       sur votre téléphone ou ordinateur portable.
 
   - point: Évitez le déverrouillage facial
-    priority: Avancé
+    priority: Pro
     details: >-
       La plupart des téléphones et ordinateurs portables offrent une fonctionnalité de reconnaissance faciale pour l'authentification,
       utilisant la caméra pour comparer une capture de votre visage avec un hachage stocké. Cela peut être très pratique, mais il existe de
@@ -163,7 +163,7 @@
       surveillance.
 
   - point: Méfiez-vous des keyloggers
-    priority: Avancé
+    priority: Pro
     details: >-
       Un [keylogger matériel](https://fr.wikipedia.org/wiki/Keylogger_mat%C3%A9riel) est un dispositif physique placé entre
       votre clavier et le port USB, qui intercepte toutes les frappes, et relaie parfois les données vers un serveur distant.
@@ -174,7 +174,7 @@
       par un gestionnaire de mots de passe ne peuvent pas être interceptées par un keylogger matériel.
 
   - point: Envisagez un jeton matériel
-    priority: Avancé
+    priority: Pro
     details: >-
       Une clé de sécurité U2F/ FIDO2 est un dispositif USB (ou NFC) que vous insérez lors de la connexion à un service en ligne, pour
       vérifier votre identité, au lieu d'entrer un OTP depuis votre authentificateur. [SoloKey](https://solokeys.com) et
@@ -185,7 +185,7 @@
       dans un endroit sûr, ou de la garder sur vous. Certains comptes en ligne permettent d'activer plusieurs méthodes de 2FA.
 
   - point: Envisagez un gestionnaire de mots de passe hors ligne
-    priority: Avancé
+    priority: Pro
     details: >-
       Pour une sécurité accrue, un gestionnaire de mots de passe chiffré hors ligne vous donnera un contrôle total sur vos données.
       [KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass) est un choix populaire, avec de nombreux [plugins](https://[KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass).info/plugins.html) et
@@ -195,7 +195,7 @@
       et de le stocker en toute sécurité.
 
   - point: "Envisagez des noms d'utilisateur uniques"
-    priority: Avancé
+    priority: Pro
     details: >-
       Avoir des mots de passe différents pour chaque compte est un bon premier pas, mais si vous utilisez également un nom d'utilisateur,
       un e-mail ou un numéro de téléphone unique pour vous connecter, il sera beaucoup plus difficile pour quiconque d'essayer 
@@ -462,14 +462,14 @@
       en utilisant le domaine de la barre d'URL, ce qui peut grandement réduire le suivi.
 
   - point: "Supprimer les paramètres de suivi des URLs"
-    priority: Avancé
+    priority: Pro
     details: >-
       Les sites web ajoutent souvent des paramètres GET supplémentaires aux URLs sur lesquelles vous cliquez, pour 
       identifier des informations comme la source/le référent. Vous pouvez assainir manuellement, ou utiliser une 
       extension comme ClearURLs pour supprimer automatiquement les données de suivi des URLs.
 
   - point: "Sécurité au premier lancement"
-    priority: Avancé
+    priority: Pro
     details: >-
       Après l'installation d'un navigateur web, la première fois que vous le lancez (avant de configurer ses paramètres 
       de confidentialité), la plupart des navigateurs appellent à la maison. Par conséquent, après l'installation d'un 
@@ -477,14 +477,14 @@
       avant de réactiver votre connectivité internet.
 
   - point: "Utiliser le navigateur Tor"
-    priority: Avancé
+    priority: Pro
     details: >-
       Le projet Tor fournit un navigateur qui chiffre et route votre trafic à travers plusieurs nœuds, gardant les 
       utilisateurs à l'abri de l'interception et du suivi. Les principaux inconvénients sont la vitesse et l'expérience 
       utilisateur.
 
   - point: "Désactiver JavaScript"
-    priority: Avancé
+    priority: Pro
     details: >-
       De nombreuses applications web modernes sont basées sur JavaScript, donc le désactiver diminuera grandement votre 
       expérience de navigation. Mais si vous voulez vraiment aller jusqu'au bout, cela réduira vraiment votre surface 
@@ -598,7 +598,7 @@
       boîte aux lettres ne peut être lue que par vous, car tous les messages sont chiffrés.
 
   - point: Utiliser une Clé Intelligente
-    priority: Avancé
+    priority: Pro
     details: >-
       OpenPGP ne prend pas en charge le secret permanent, ce qui signifie que si votre clé 
       privée ou celle du destinataire est un jour volée, tous les messages précédents chiffrés 
@@ -608,7 +608,7 @@
       privée ne quitte le périphérique USB.
 
   - point: Utiliser l'Aliasing / Transfert Anonyme
-    priority: Avancé
+    priority: Pro
     details: >-
       L'aliasing d'email permet aux messages d'être envoyés à [n'importe quoi]@mon-domaine.com 
       et d'arriver quand même dans votre boîte de réception principale. Cela vous permet 
@@ -626,14 +626,14 @@
       protégera pas contre la révélation de votre adresse réelle.
 
   - point: Utiliser un Domaine Personnalisé
-    priority: Avancé
+    priority: Pro
     details: >-
       Utiliser un domaine personnalisé signifie que vous n'êtes pas dépendant de l'adresse 
       attribuée par votre fournisseur de messagerie. Ainsi, vous pouvez facilement changer 
       de fournisseur à l'avenir et ne pas vous soucier de l'arrêt d'un service.
 
   - point: Synchroniser avec un Client pour Sauvegarde
-    priority: Avancé
+    priority: Pro
     details: >-
       Pour éviter de perdre l'accès temporaire ou permanent à vos emails lors d'un événement 
       imprévu (comme une panne ou un verrouillage de compte), Thunderbird peut synchroniser/sauvegarder 
@@ -641,7 +641,7 @@
       principal.
 
   - point: Attention aux Signatures Mail
-    priority: Avancé
+    priority: Pro
     details: >-
       Vous ne savez pas à quel point l'environnement de messagerie du destinataire de votre 
       message peut être sécurisé. Il existe plusieurs extensions qui parcourent automatiquement 
@@ -649,45 +649,45 @@
       sur les signatures email.
 
   - point: Attention aux Réponses Automatiques
-    priority: Avancé
+    priority: Pro
     details: >-
       Les réponses automatiques d'absence du bureau sont très utiles pour informer les gens 
       qu'il y aura un délai dans la réponse, mais trop souvent les gens révèlent trop 
       d'informations - qui peuvent être utilisées dans l'ingénierie sociale et les attaques ciblées.
 
   - point: Choisir le Bon Protocole Mail
-    priority: Avancé
+    priority: Pro
     details: >-
       N'utilisez pas de protocoles obsolètes (en dessous d'IMAPv4 ou POPv3), les deux ont 
       des vulnérabilités connues et une sécurité dépassée.
 
   - point: Auto-hébergement
-    priority: Avancé
+    priority: Pro
     details: >-
       L'auto-hébergement de votre propre serveur de messagerie n'est pas recommandé pour les 
       utilisateurs non avancés, car le sécuriser correctement est critique et nécessite de 
       solides connaissances en réseaux.
 
   - point: Toujours utiliser les ports TLS
-    priority: Avancé
+    priority: Pro
     details: >-
       Il existe des options SSL pour POP3, IMAP et SMTP comme ports TCP/IP standard. Ils sont faciles à utiliser et largement
       pris en charge, ils devraient donc toujours être utilisés à la place des ports email en texte brut.
 
   - point: Disponibilité DNS
-    priority: Avancé
+    priority: Pro
     details: >-
       Pour les serveurs de messagerie auto-hébergés, afin de prévenir les problèmes DNS impactant la disponibilité - utilisez au moins 2 enregistrements MX, avec
       des enregistrements MX secondaires et tertiaires pour la redondance en cas de défaillance de l'enregistrement MX primaire.
 
   - point: Prévenir les attaques DDoS et par force brute
-    priority: Avancé
+    priority: Pro
     details: >-
       Pour les serveurs de messagerie auto-hébergés (spécifiquement SMTP), limitez votre nombre total de connexions simultanées et le taux maximal
       de connexions pour réduire l'impact des tentatives d'attaques par bots.
 
   - point: Maintenir une liste rouge d'IP
-    priority: Avancé
+    priority: Pro
     details: >-
       Pour les serveurs de messagerie auto-hébergés, vous pouvez améliorer les filtres anti-spam et renforcer la sécurité en maintenant une
       liste rouge locale d'IP à jour et des listes de blocage en temps réel d'URI spam pour filtrer les hyperliens malveillants.
@@ -804,24 +804,24 @@
       l'intention de partager.
 
   - point: Considérer la juridiction
-    priority: Avancé
+    priority: Pro
     details: >-
       Les juridictions où l'organisation est basée et où les données sont hébergées doivent également être prises en compte.
 
   - point: Utiliser une plateforme anonyme
-    priority: Avancé
+    priority: Pro
     details: >-
       Si vous pensez que vous pourriez être ciblé, vous devriez opter pour une plateforme de messagerie anonyme qui ne nécessite pas
       de numéro de téléphone ou toute autre information personnellement identifiable pour s'inscrire ou l'utiliser.
 
   - point: S'assurer que la confidentialité persistante est prise en charge
-    priority: Avancé
+    priority: Pro
     details: >-
       Optez pour une plateforme qui implémente la confidentialité persistante. C'est là que votre application génère une nouvelle clé de chiffrement
       pour chaque message.
 
   - point: Considérer une plateforme décentralisée
-    priority: Avancé
+    priority: Pro
     details: >-
       Si toutes les données passent par un fournisseur central, vous devez lui faire confiance avec vos données et métadonnées. Vous ne pouvez pas
       vérifier que le système en cours d'exécution est authentique sans portes dérobées.
@@ -917,26 +917,26 @@
       données EXIF) à chaque photographie. Supprimez ces données avant le téléchargement.
 
   - point: Implémenter le camouflage d'image
-    priority: Avancé
+    priority: Pro
     details: >-
       Des outils comme Fawkes peuvent être utilisés pour modifier très subtilement la structure des visages dans les photos d'une
       manière imperceptible par les humains, mais qui empêchera les systèmes de reconnaissance faciale de reconnaître
       un visage donné.
 
   - point: Envisager de falsifier le GPS à proximité du domicile
-    priority: Avancé
+    priority: Pro
     details: >-
       Même si vous n'utilisez jamais les médias sociaux vous-même, il y aura toujours d'autres personnes qui ne sont pas aussi prudentes,
       et qui pourraient révéler votre localisation.
 
   - point: Envisager de fausses informations
-    priority: Avancé
+    priority: Pro
     details: >-
       Si vous voulez juste lire et n'avez pas l'intention de publier beaucoup - envisagez d'utiliser un nom d'alias et de fausses
       coordonnées.
 
   - point: Ne pas avoir de comptes sur les réseaux sociaux
-    priority: Avancé
+    priority: Pro
     details: >-
       Les médias sociaux sont fondamentalement non-privés, donc pour une sécurité et une confidentialité en ligne maximales, évitez d'utiliser
       les réseaux sociaux grand public.
@@ -1098,13 +1098,13 @@
       surface d'attaque est augmentée lorsque votre réseau WiFi peut être capté de l'autre côté de la rue.
 
   - point: Acheminer tout le trafic via [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor)
-    priority: Avancé
+    priority: Pro
     details: >-
       Les VPN ont leurs faiblesses. Pour une sécurité accrue, acheminez tout votre trafic internet via le réseau
       [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor).
 
   - point: Désactiver le WiFi sur tous les appareils
-    priority: Avancé
+    priority: Pro
     details: >-
       Se connecter même à un réseau WiFi sécurisé augmente votre surface d'attaque. Désactivez votre WiFi domestique et
       connectez chaque appareil via Ethernet.
@@ -1252,7 +1252,7 @@
       Empêchez les applications gourmandes en permissions d'accéder à vos données privées avec [Island](https://awesome-privacy.xyz/security-tools/mobile-apps/island), un environnement isolé.
 
   - point: Trafic Tor
-    priority: Avancé
+    priority: Pro
     details: >-
       [Orbot](https://awesome-privacy.xyz/security-tools/mobile-apps/orbot) fournit
       une connexion Tor à l'échelle du système, qui vous aidera à vous protéger contre la surveillance et les menaces du WiFi public.
@@ -1295,7 +1295,7 @@
       plutôt que d'installer des applications dédiées.
 
   - point: Envisager d'exécuter une ROM personnalisée (Android)
-    priority: Avancé
+    priority: Pro
     details: >-
       Si vous êtes préoccupé par le fait que votre fabricant d'appareil collecte trop
       d'informations personnelles, envisagez une ROM personnalisée axée sur la confidentialité.
@@ -1457,19 +1457,19 @@
       d'invasion de la vie privée et de collecte de données.
 
   - point: Vérifier périodiquement la présence de rootkits
-    priority: Avancé
+    priority: Pro
     details: >-
       Vérifiez régulièrement la présence de rootkits pour détecter et atténuer les menaces de contrôle total du système en utilisant des outils comme
       [chkrootkit](https://awesome-privacy.xyz/operating-systems/linux-defenses/chkrootkit).
 
   - point: Mot de passe de démarrage BIOS
-    priority: Avancé
+    priority: Pro
     details: >-
       Activez un mot de passe BIOS ou UEFI pour ajouter une couche de sécurité supplémentaire lors du démarrage, mais soyez conscient de
       ses limitations.
 
   - point: Utiliser un système d'exploitation axé sur la sécurité
-    priority: Avancé
+    priority: Pro
     details: >-
       Envisagez de passer à Linux ou à une distribution axée sur la sécurité comme QubeOS ou
       [Tails](https://awesome-privacy.xyz/operating-systems/desktop-operating-systems/tails)
@@ -1477,48 +1477,48 @@
       sécurité améliorées.
 
   - point: Utiliser des machines virtuelles
-    priority: Avancé
+    priority: Pro
     details: >-
       Utilisez des machines virtuelles pour les activités risquées ou tester des logiciels suspects afin d'isoler les menaces potentielles
       de votre système principal.
 
   - point: Compartimenter
-    priority: Avancé
+    priority: Pro
     details: >-
       Isolez autant que possible les différents programmes et sources de données les uns des autres pour limiter l'étendue des
       violations potentielles.
 
   - point: Désactiver les fonctionnalités non désirées (Windows)
-    priority: Avancé
+    priority: Pro
     details: >-
       Désactivez les fonctionnalités et services Windows inutiles qui s'exécutent en arrière-plan pour réduire la collecte de données
       et l'utilisation des ressources.
 
   - point: Démarrage sécurisé
-    priority: Avancé
+    priority: Pro
     details: >-
       Assurez-vous que le Secure Boot est activé pour empêcher les logiciels malveillants de remplacer votre chargeur de démarrage et autres logiciels
       critiques.
 
   - point: Sécuriser l'accès SSH
-    priority: Avancé
+    priority: Pro
     details: >-
       Prenez des mesures pour protéger l'accès SSH contre les attaques en changeant le port par défaut, en utilisant des clés SSH et en
       configurant les pare-feu.
 
   - point: Fermer les ports ouverts non utilisés
-    priority: Avancé
+    priority: Pro
     details: >-
       Désactivez les services écoutant sur les ports externes qui ne sont pas nécessaires pour vous protéger contre les exploits à distance et
       améliorer la sécurité.
 
   - point: Implémenter le contrôle d'accès obligatoire
-    priority: Avancé
+    priority: Pro
     details: >-
       Restreignez l'accès privilégié pour limiter les dommages qui peuvent être causés si un système est compromis.
 
   - point: Utiliser des jetons canaris
-    priority: Avancé
+    priority: Pro
     details: >-
       Déployez des jetons canaris pour détecter plus rapidement l'accès non autorisé à vos fichiers ou emails et recueillir
       des informations sur l'intrus.
@@ -1624,12 +1624,12 @@
       Utilisez des outils comme FingBox ou les fonctionnalités du routeur pour surveiller toute activité réseau inhabituelle.
 
   - point: Refuser l'accès Internet lorsque possible
-    priority: Avancé
+    priority: Pro
     details: >-
       Utilisez des pare-feu pour bloquer l'accès Internet pour les appareils qui n'en ont pas besoin, limitant le fonctionnement à l'utilisation du réseau local.
 
   - point: Évaluer les risques
-    priority: Avancé
+    priority: Pro
     details: >-
       Considérez les implications sur la confidentialité pour tous les membres du foyer et ajustez les paramètres des appareils pour la sécurité et la confidentialité, comme la désactivation des appareils à certains moments.
   color: red
@@ -1685,7 +1685,7 @@
       les transactions en ligne pour maintenir l'anonymat. Utilisez les cryptomonnaies judicieusement pour assurer la confidentialité.
 
   - point: Stocker les cryptos de manière sécurisée
-    priority: Avancé
+    priority: Pro
     details: >-
       Stockez les cryptomonnaies en toute sécurité en utilisant la génération de portefeuille hors ligne, des portefeuilles matériels
       comme [Trezor](https://awesome-privacy.xyz/finance/crypto-wallets/trezor) ou
@@ -1694,24 +1694,24 @@
       [CryptoSteel](https://awesome-privacy.xyz/finance/crypto-wallets/cryptosteel).
 
   - point: Acheter des cryptos anonymement
-    priority: Avancé
+    priority: Pro
     details: >-
       Achetez des cryptomonnaies sans lier à votre identité via des services
       comme [LocalBitcoins](https://awesome-privacy.xyz/finance/crypto-exchanges/localbitcoins),
       [Bisq](https://awesome-privacy.xyz/finance/crypto-exchanges/bisq), ou des guichets automatiques Bitcoin.
 
   - point: Mélanger les pièces
-    priority: Avancé
+    priority: Pro
     details: >-
       Utilisez un mélangeur bitcoin ou CoinJoin avant de convertir le Bitcoin en monnaie pour masquer les traces de transaction.
 
   - point: Utiliser des détails d'alias pour les achats en ligne
-    priority: Avancé
+    priority: Pro
     details: >-
       Pour les achats en ligne, envisagez d'utiliser des détails d'alias, des adresses email de transfert, des numéros VOIP et des méthodes de livraison sécurisées pour protéger votre identité.
 
   - point: Utiliser une adresse de livraison alternative
-    priority: Avancé
+    priority: Pro
     details: >-
       Optez pour des livraisons à des adresses non personnelles comme des boîtes postales, des adresses de transfert ou des points de retrait locaux pour éviter de lier directement les achats à vous.
   color: purple
@@ -1826,22 +1826,22 @@
       Vérifiez et mettez à jour régulièrement vos paramètres de réseaux sociaux en raison des mises à jour fréquentes des conditions qui peuvent affecter vos paramètres de confidentialité.
 
   - point: Compartimenter
-    priority: Avancé
+    priority: Pro
     details: >-
       Gardez différentes zones d'activité numérique séparées pour limiter l'exposition des données en cas de violation.
 
   - point: Protection de la confidentialité WhoIs
-    priority: Avancé
+    priority: Pro
     details: >-
       Utilisez la protection de la confidentialité WhoIs pour les enregistrements de domaine afin de protéger vos informations personnelles des recherches publiques.
 
   - point: Utiliser une adresse de transfert
-    priority: Avancé
+    priority: Pro
     details: >-
       Utilisez une boîte postale ou une adresse de transfert pour le courrier afin d'empêcher les entreprises de connaître votre véritable adresse, ajoutant une couche de protection de la vie privée.
 
   - point: Utiliser des méthodes de paiement anonymes
-    priority: Avancé
+    priority: Pro
     details: >-
       Optez pour des méthodes de paiement anonymes comme les cryptomonnaies pour éviter d'entrer des informations identifiables en ligne.
 
@@ -1925,23 +1925,23 @@
     details: Utilisez des lieux alternatifs, des adresses de transfert et des méthodes de paiement anonymes pour protéger votre adresse personnelle.
 
   - point: Utiliser un code PIN, pas la biométrie
-    priority: Avancé
+    priority: Pro
     details: Préférez les codes PIN à la biométrie pour la sécurité des appareils dans les situations où une coercition légale pour déverrouiller les appareils pourrait survenir.
 
   - point: Réduire l'exposition aux caméras de surveillance
-    priority: Avancé
+    priority: Pro
     details: Portez des déguisements et choisissez des itinéraires avec moins de caméras pour éviter la surveillance.
 
   - point: Vêtements anti-reconnaissance faciale
-    priority: Avancé
+    priority: Pro
     details: Portez des vêtements avec des motifs qui trompent la technologie de reconnaissance faciale.
 
   - point: Réduire l'exposition à la vision nocturne
-    priority: Avancé
+    priority: Pro
     details: Utilisez des sources de lumière IR ou des lunettes réfléchissantes pour obstruer les caméras de vision nocturne.
 
   - point: Protéger votre ADN
-    priority: Avancé
+    priority: Pro
     details: Évitez de partager votre ADN avec les sites web d'héritage et soyez prudent quant aux traces d'ADN laissées.
 
   color: lime
