@@ -765,7 +765,7 @@
       Dans certaines situations, il peut être utile d'établir un plan de communication. Celui-ci devrait inclure des méthodes principales et de secours
       pour entrer en contact de manière sécurisée.
 
-  - point: Supprimer les métadonnées des médias
+  - point: Supprimer les métadonnées des photos
     priority: Optionnel
     details: >-
       Les métadonnées sont des données sur les données ou des informations supplémentaires jointes à un fichier ou une transaction. Lorsque vous envoyez une
@@ -910,11 +910,11 @@
       C'est particulièrement important lorsque vous êtes en voyage, au restaurant, sur un campus, dans un hôtel/resort, un bâtiment
       public ou un aéroport.
 
-  - point: Supprimer les métadonnées avant de télécharger des médias
+  - point: Supprimer les métadonnées avant de téléverser des photos
     priority: Optionnel
     details: >-
       La plupart des smartphones et certains appareils photo attachent automatiquement un ensemble complet de données supplémentaires (appelées
-      données EXIF) à chaque photographie. Supprimez ces données avant le téléchargement.
+      données EXIF) à chaque photographie. Supprimez ces données avant le téléversement.
 
   - point: Implémenter le camouflage d'image
     priority: Pro
