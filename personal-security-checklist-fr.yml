@@ -1,15 +1,15 @@
-- title: Authentication
+- title: Authentification
   slug: authentication
-  description: Securing your online account login credentials
+  description: Sécuriser vos identifiants de connexion en ligne
   icon: password
   color: yellow
   intro: >-
-    Most reported data breaches are caused by the use of weak, default or stolen passwords
-    (according to [this Verizon report](http://www.verizonenterprise.com/resources/reports/rp_dbir-2016-executive-summary_xg_en.pdf)).
-    Use long, strong and unique passwords, manage them in a secure password manager, enable
-    2-factor authentication, keep on top of breaches and take care while logging into your accounts.
+    La plupart des violations de données signalées sont causées par l\'utilisation de mots de passe faibles, par défaut ou volés
+    (selon [ce rapport Verizon](http://www.verizonenterprise.com/resources/reports/rp_dbir-2016-executive-summary_xg_en.pdf)).
+    Utilisez des mots de passe longs, forts et uniques, gérez-les dans un gestionnaire de mots de passe sécurisé, activez
+    l\'authentification à deux facteurs, surveillez les violations et soyez prudent lors de la connexion à vos comptes.
   checklist:
-  - point: Use a Strong Password
+  - point: Utilisez un mot de passe fort
     priority: Essential
     details: >-
       If your password is too short, or contains dictionary words, places or names- then it can be easily
