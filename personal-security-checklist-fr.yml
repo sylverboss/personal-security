@@ -10,23 +10,23 @@
     l\'authentification à deux facteurs, surveillez les violations et soyez prudent lors de la connexion à vos comptes.
   checklist:
   - point: Utilisez un mot de passe fort
-    priority: Essential
+    priority: Essentiel
     details: >-
-      If your password is too short, or contains dictionary words, places or names- then it can be easily
-      cracked through brute force, or guessed by someone. The easiest way to make a strong password, is by
-      making it long (12+ characters)- consider using a 'passphrase', made up of many words. Alternatively,
-      use a password generator to create a long, strong random password. Have a play with
-      [Security.org's How Secure Is My Password?](https://security.org/how-secure-is-my-password/), to get an idea of how quickly common
-      passwords can be cracked. Read more about creating strong passwords:
+      Si votre mot de passe est trop court ou contient des mots du dictionnaire, des lieux ou des noms, il peut être facilement
+      craqué par force brute ou deviné par quelqu'un. La façon la plus simple de créer un mot de passe fort est de le rendre long
+      (12+ caractères) - envisagez d'utiliser une "phrase de passe", composée de plusieurs mots. Alternativement,
+      utilisez un générateur de mots de passe pour créer un mot de passe long, fort et aléatoire. Essayez
+      [HowSecureIsMyPassword.net](https://howsecureismypassword.net) pour avoir une idée de la rapidité avec laquelle les mots de passe
+      courants peuvent être craqués. En savoir plus sur la création de mots de passe forts :
       [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/)
 
-  - point: Don't reuse Passwords
-    priority: Essential
+  - point: Ne réutilisez pas les mots de passe
+    priority: Essentiel
     details: >-
-      If someone was to reuse a password, and one site they had an account with suffered a leak, then a
-      criminal could easily gain unauthorized access to their other accounts. This is usually done through
-      large-scale automated login requests, and it is called Credential Stuffing. Unfortunately this is all
-      too common, but it's simple to protect against- use a different password for each of your online accounts
+      Si quelqu'un réutilise un mot de passe et qu'un site sur lequel il a un compte subit une fuite, un criminel pourrait facilement
+      accéder sans autorisation à ses autres comptes. Cela se fait généralement par des demandes de connexion automatisées à grande échelle,
+      et cela s'appelle le "Credential Stuffing". Malheureusement, c'est trop courant, mais il est simple de s'en protéger - utilisez un
+      mot de passe différent pour chacun de vos comptes en ligne.
 
   - point: Use a Secure Password Manager
     priority: Essential
